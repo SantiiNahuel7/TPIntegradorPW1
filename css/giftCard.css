@@ -1,0 +1,32 @@
+.footer{
+
+    background-color: #adc4ce;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.footer p { 
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-footer {
+  display: flex;
+  gap:  0.5em;
+  margin-top: 0.3em;
+}
+
+.redes-footer img {
+  width: 2em;
+  height: 2em;
+}
