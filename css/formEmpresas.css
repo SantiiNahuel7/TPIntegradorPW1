@@ -112,11 +112,7 @@ footer {
 }
 
 .footer__group ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
     list-style-type: none;
-    margin: 1% auto;
 }
 
 .footer__menu a {
