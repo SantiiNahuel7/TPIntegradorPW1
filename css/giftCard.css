@@ -1,23 +1,249 @@
-.footer{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 
-    background-color: #adc4ce;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 2em;
-    flex-wrap: wrap;
+/*header*/
+
+.header {
+  background-color: #96B6C5;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 2.5em;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+  width: 5em;
+  height: auto;
+  margin: 0;
+}
+
+.buscador {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buscador input {
+  flex: 1;
+  max-width: 20em;
+  padding: 0.5em 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  margin-left: 0;
+}
+
+.buscador button {
+  padding: 0.5em 1em;
+  margin-left: 0.5em;
+  background-color: #EEE0C9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.buscador button:hover {
+  background-color: #555;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif; 
+} 
+
+/*main*/
+
+.container {
+ display: flex;
+  justify-content: center;    
+  align-items: flex-start;    
+  gap: 10em;                   
+  padding: 2em;
+  flex-wrap: wrap; 
+  
+}
+
+.formulario-gift-card {
+  flex: 1;
+  min-width: 30em;
+}
+
+.formulario-gift-card h2 {
+  margin-bottom: 1em;
+}
+
+.formulario-gift-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.formulario, .preview {
+  flex: 1;
+  min-width: 18em;
+}
+
+.formulario-gift-card {
+  flex: 1;
+  min-width: 25em;
+  max-width: 35em;            
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+  margin: 0;  
+}
+
+.formulario-gift-card form input,
+.formulario-gift-card form select,
+.formulario-gift-card form textarea {
+  width: 80%;     
+  max-width: 25em;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+
+
+.preview {
+ flex: 1;
+  min-width: 25em;
+  max-width: 35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview h2 {
+  margin-bottom: 1em;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tamanio-texto {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em; 
+}
+
+form button {
+  background-color: #EEE0C9;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.gift-card {
+  width: 300px;
+  height: 180px;
+  border-radius: 15px;
+  background:#adc4ce;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.gift-card .destinatario {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.gift-card .monto {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.link-vista{
+    margin-top: 1em;
+    font-size: 1em;
+    color: #96B6C5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column
+}
+
+.main {
+  flex: 1;
+}
+
+/*footer*/
+
+.footer {
+  margin-top: auto;
+  background-color: #adc4ce;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1em;
+  flex-wrap: wrap;
 }
 
 .footer p { 
-    font-weight: bold;
-    margin-bottom: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
 }
 
 .footer ul {
+  color: black;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif; 
 }
 
 .redes-footer {
