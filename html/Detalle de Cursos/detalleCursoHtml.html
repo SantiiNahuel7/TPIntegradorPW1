@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCursoHtml.css">
+    <title>MentorApp</title>
+</head>
+<header>
+    <img src="./imagenes/logo1-sin-fondo.png" alt="Logo" id="logo">
+    <form class="busqueda" action="./contacto.html" method="get">
+        <input type="text" name="campo-busqueda" id="campo-busqueda" placeholder="Buscar en el sitio...">
+        <button type="submit" id="button-busqueda" name="button-busqueda">🔍</button>
+    </form>
+    <button type="submit" id="boton-carrito" name="boton-carrito">
+        <img src="./imagenes/carrito-de-compras.png" alt="carrito">
+    </button>
+    <nav>
+        <ul>
+            <li> <a href="./index.html">Home</a> </li>
+            <li> <a href="./contacto.html">Cursos</a></li>
+            <li> <a href="./contacto.html">Contacto</a></li>
+             <li> <a href="./contacto.html">Gift Card</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="curso">
+        <img src="./imagenes/html.png" alt="HTML" class="imagen-curso">
+        <div class="info-curso">
+            <h2 id="titulo-curso">Curso de HTML</h2>
+            <p id="valor">Valor: $20.000</p>
+            <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 20hs</p>
+            <p id="descripcion">Curso práctico para aprender los fundamentos de HTML, el lenguaje base de la web. Incluye estructura de páginas, etiquetas principales, enlaces, imágenes, tablas y formularios, preparando al alumno para crear sitios web desde cero o avanzar hacia CSS y JavaScript.</p>
+            <p id="requisito">Requisitos Previos: Ninguno</p>
+            <button id="boton-inscribirse">Inscribirse</button>
+        </div> 
+    </section>
+    <section class="contenido">
+        <h2 id="contenido-curso">CONTENIDO POR CLASE</h2>
+        <details>
+            <summary>INTRODUCCION</summary>
+            <ul class="content">
+                <li>Qué es HTML y su papel en la construcción de páginas web.</li>
+                <li>Estructura básica de un documento HTML.</li>
+                <li>Herramientas necesarias: editor de código y navegador.</li>
+                <li>Buenas prácticas de organización de archivos y carpetas.</li>
+            </ul>
+        </details>
+        <details>
+            <summary>UNIDAD 1</summary>
+            <ul class="content">
+                <li>Etiquetas esenciales.</li>
+                <li>Encabezados, párrafos y texto enriquecido.</li>
+                <li>Enlaces y rutas: absolutas y relativas.</li>
+                <li>Listas ordenadas y desordenadas.</li>
+                <li>Imágenes y atributos principales .</li>
+            </ul>
+        </details>
+        <details>
+            <summary>UNIDAD 2</summary>
+            <ul class="content">
+                <li>Tablas: creación y atributos.</li>
+                <li>Formularios: campos de texto, botones, selectores, validación básica.</li>
+                <li>Elementos semánticos de HTML5.</li>
+                <li>Buenas prácticas de accesibilidad.</li>
+                </ul>
+        </details>
+    </section>
+    <section class="docente">
+        <h2>DOCENTE</h2>
+        <div id="info-profesor">
+            <img src="./imagenes/profesor.jpg" alt="profesor" id="profesor-foto">
+            <div class="detalle-profesor">
+                <p id="nombre-profesor">Juan Martín López</p>
+                <div class="rating" style="--percent:80%;"></div>
+                <p id="profesor-bio">Juan Martín López es desarrollador web con más de 8 años de experiencia en diseño y programación de sitios web. Especializado en HTML, CSS y JavaScript, ha trabajado en proyectos para empresas locales y startups, combinando creatividad y buenas prácticas de desarrollo. Apasionado por la enseñanza, busca que sus estudiantes comprendan los fundamentos del desarrollo web de manera práctica y aplicada.</p>
+            </div>   
+        </div>  
+    </section>
+    <section class="cursos-relacionados">
+        <article class="curso-card">
+            <div class="card-imagen-container">
+                <img src="./imagenes/css.png" alt="Imagen de CSS">
+                <div class="card-precio">$25.000</div>
+            </div>
+            <div class="card-info">
+                <p class="card-duracion">30</p> <span class="unidad">hs</span></p>
+                <div>
+                    <p class="card-nombre-curso">Curso de CSS</p>
+                    <a href="./contacto.html" class="detalle-link">Ver detalle-link</a>
+                </div>
+            </div>
+            <button class="card-button">Comprar</button>
+        </article>
+    </section>
+    
+    </body>
+<footer>
+    <section class="integrantes">
+        <p>Orellana Santiago</p>
+        <p>Ibanez Alan</p>
+        <p>Santillan Yamila</p>
+        <p>Amarrilla Adrian</p>
+        <p>Caceres Jennifer</p>
+    </section>
+</footer>
+</html>

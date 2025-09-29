@@ -1,0 +1,220 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F0E8;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #ADC4CE;
+    align-items: center;
+}
+
+#logo{
+    height: 5em;
+    width: 5em;
+    margin-left: 1em;
+}   
+
+.busqueda{
+    display: flex;
+    border: 0,4em solid;
+}
+
+#campo-busqueda{
+    width: 30em;
+    height: 2.5em;
+    border-radius: 0.7em;
+    padding: 1em;
+    border: none;
+}
+
+#button-busqueda{
+    width: 3em;
+    border: none;
+    border-radius: 0.7em;
+    cursor: pointer;
+}
+
+#button-busqueda:hover{
+    background-color: #96B6C5;
+}
+
+#boton-carrito{
+    border: none;
+    background: none;
+    padding-right: 2em;
+    cursor: pointer;
+}
+
+#boton-carrito img {
+    width: 28px;
+    height: 28px;
+}
+
+nav{
+    background-color: #96B6C5;
+    width: 100%;
+    margin-left: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    gap: 8em;
+    padding: 0.5em;
+    color: #F1F0E8;
+}
+
+.curso{
+    display: flex;
+    gap: 4em;
+    align-items: flex-start;
+    padding: 2em 20em 0 10em;
+    font-weight: 600;
+}
+
+.curso .imagen-curso {
+    width: 20em; 
+    height: 20em; 
+    border-radius: 4px;
+}
+
+.info-curso{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.curso .info-curso #boton-inscribirse{
+    width: 12em;
+    height: 3em;
+    border-radius: 1em;
+    background-color: #ADC4CE;
+    border: none;
+    color: #F1F0E8;
+    font-size: 0.9em;
+}
+
+.curso .info-curso #boton-inscribirse:hover{
+    background-color: #96B6C5;
+    cursor: pointer;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3em 20em 2em 34em; 
+ 
+}
+
+#contenido-curso{
+    padding-bottom: 1em;
+}
+.contenido summary {
+    padding: 0.7em;
+    width: 35em;
+    height: 3em;
+    justify-items: center;
+    cursor: pointer;
+    background-color: white;
+    font-size: 0.9em;
+    border: #96B6C5 solid;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 240, 240);
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.docente h2{
+    display: flex;
+    padding-left: 7em;
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+
+.docente #info-profesor {
+    padding: 1em;
+    display: flex;
+    background-color: #ADC4CE;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.docente #info-profesor #profesor-foto{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    margin-left: 4em;
+    margin-right: 2em;
+    flex-shrink: 0;
+}
+
+.docente #info-profesor .detalle-profesor{
+    text-align: left;
+    padding-top: 1.5em;
+}
+
+#nombre-profesor{
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+#profesor-bio{
+    font-size: 0.95em;
+    line-height: 2;
+    margin-top: 0.8em;
+    width: 80%;
+}
+
+.rating {
+    --percent: 100%; /* Valor predeterminado */
+    display: inline-block;
+    font-size: 0; /* Elimina espacios entre elementos inline */
+    position: relative;
+    width: 100px; /* 5 estrellas * 20px por estrella = 100px */
+    height: 20px;
+}
+
+/* Base de estrellas (fondo gris) */
+.rating::before {
+    content: "★★★★★";
+    font-size: 20px;
+    color: #ccc; /* Estrellas grises de fondo */
+    letter-spacing: -2px; /* Ajusta el espaciado para que se vean compactas */
+}
+
+/* Estrellas llenas (color amarillo) */
+.rating::after {
+    content: "★★★★★";
+    font-size: 20px;
+    color: gold; /* Color amarillo de las estrellas llenas */
+    letter-spacing: -2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* Oculta el exceso de estrellas amarillas */
+    width: var(--percent); /* Controlado por el valor 'percent' del HTML */
+}
