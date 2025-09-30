@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
+    <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCursoHtml.css">
     <title>MentorApp</title>
 </head>
 <header>
@@ -11,7 +11,7 @@
             <nav class="barra-superior">
                 <div class="logo-contenedor">
                      <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" class="logo">
+                        <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" alt="" class="logo">
                     </a>
                 </div>                               
                 <div class="barra-busqueda"> 
@@ -36,7 +36,7 @@
                         <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                         <li><a href="#">Cursos</a></li>
                         <li><a href="#">Calendario De Cursos</a></li>
-                        <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                        <li><a href="../../html/giftCard.html">Crea Tu Gift Card</a></li>
                         <li><a href="#">Contacto</a></li>
                    </ul>
                 </div>
@@ -45,13 +45,13 @@
 </header>
 <body>
     <section class="curso">
-        <img src="../../Imagenes/Detalle de Curso/css.png" alt="CSS" class="imagen-curso">
+        <img src="../../Imagenes/Detalle de Curso/java.png" alt="Java" class="imagen-curso">
         <div class="info-curso">
-            <h2 id="titulo-curso">Curso de CSS</h2>
-            <p id="valor">Valor: $25.000</p>
+            <h2 id="titulo-curso">Curso de Java</h2>
+            <p id="valor">Valor: $30.000</p>
             <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
-            <p id="descripcion">El curso de CSS (Cascading Style Sheets) enseña a dar estilo y diseño a páginas web. Comienza con lo básico: cómo aplicar reglas CSS a elementos HTML, trabajar con colores, tipografías, márgenes y bordes. Luego avanza hacia temas más complejos como posicionamiento, modelos de caja, uso de flexbox y grid para crear diseños responsivos y modernos.</p>
-            <p id="requisito">Requisitos Previos: HTML</p>
+            <p id="descripcion">Este curso ofrece una introducción práctica al lenguaje de programación Java, abordando desde los fundamentos de la programación orientada a objetos hasta la creación de aplicaciones básicas. Está diseñado para principiantes y estudiantes que deseen adquirir una base sólida en el desarrollo de software con uno de los lenguajes más utilizados en la industria.</p>
+            <p id="requisito">Requisitos Previos: Ninguno</p>
             <button id="boton-inscribirse">Inscribirse</button>
         </div> 
     </section>
@@ -60,40 +60,38 @@
         <details>
             <summary>INTRODUCCION</summary>
             <ul class="content">
-                <li>¿Qué es CSS y para qué sirve?</li>
-                <li>Diferencia entre HTML y CSS</li>
-                <li>Formas de aplicar CSS: inline, interno y externo</li>
-                <li>Estructura básica de una regla CSS</li>
+                <li>Presentación del lenguaje Java y sus usos.</li>
+                <li>Instalación y configuración del entorno de desarrollo (JDK y IDE).</li>
+                <li>Primeros pasos: estructura básica de un programa en Java.</li>
             </ul>
         </details>
         <details>
             <summary>UNIDAD 1</summary>
             <ul class="content">
-                <li>Selectores básicos (elementos, clases, IDs)</li>
-                <li>Propiedades de texto y tipografía</li>
-                <li>Colores, fondos y bordes</li>
-                <li>El modelo de caja (box model)</li>
-                <li>Márgenes, padding y dimensiones</li>
+                <li>Variables, tipos de datos y operadores.</li>
+                <li>Sentencias de control (condicionales y bucles).</li>
+                <li>Métodos y funciones.</li>
+                <li>Introducción a arrays.</li>
             </ul>
         </details>
         <details>
             <summary>UNIDAD 2</summary>
             <ul class="content">
-                <li>Posicionamiento (static, relative, absolute, fixed, sticky)</li>
-                <li>Flexbox: diseño flexible y alineación</li>
-                <li>CSS Grid: creación de layouts avanzados</li>
-                <li>Media Queries y diseño responsivo</li>
+                <li>Clases y objetos.</li>
+                <li>Atributos y métodos.</li>
+                <li>Encapsulamiento y constructores.</li>
+                <li>Herencia y polimorfismo.</li>
                 </ul>
         </details>
     </section>
     <section class="docente">
         <h2>DOCENTE</h2>
         <div id="info-profesor">
-            <img src="../../Imagenes/Detalle de Curso/profesorCSS.jpg" alt="profesor" id="profesor-foto">
+            <img src="../../Imagenes/Detalle de Curso/profesor.jpg" alt="profesor" id="profesor-foto">
             <div class="detalle-profesor">
-                <p id="nombre-profesor">Martín Fernández</p>
+                <p id="nombre-profesor">Laura Fernandez</p>
                 <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Martín es diseñador web y front-end developer con más de 8 años de experiencia creando sitios y aplicaciones responsivas. Se especializa en CSS, animaciones y frameworks modernos, ayudando a sus alumnos a dominar desde lo básico hasta las técnicas más avanzadas de maquetación.</p>
+                <p id="profesor-bio">Ingeniera en Sistemas con más de 10 años de experiencia en desarrollo de software. Ha trabajado en proyectos de banca digital y aplicaciones móviles utilizando Java como lenguaje principal. Se destaca por su enfoque práctico y claro a la hora de enseñar, guiando a los estudiantes desde los fundamentos hasta la creación de aplicaciones reales.</p>
             </div>   
         </div>  
     </section>
@@ -102,25 +100,23 @@
         <div class="contenedor-cursos">
             <article class="contenedor-curso">
                 <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/css.png" alt="Imagen CSS">
+                    <span class="precio-curso">$25.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">CSS</h3>
+                    <button class="contenedor-comprar">Comprar</button>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
                     <img src="../../Imagenes/Detalle de Curso/html.png" alt="Imagen HTML">
                     <span class="precio-curso">$20.000</span>
                 </div>
                 <div class="contenedor-info">
                     <p class="horas">20 hs</p>
                     <h3 class="contenedor-nombre">HTML</h3>
-                    <a href="../Detalle de Cursos/detalleCursoHtml.html">
-                        <button class="contenedor-comprar">Comprar</button>
-                    </a>
-                </div>
-            </article>
-            <article class="contenedor-curso">
-                <div class="img-container">
-                    <img src="../../Imagenes/Detalle de Curso/java.png" alt="Imagen Java">
-                    <span class="precio-curso">$30.000</span>
-                </div>
-                <div class="contenedor-info">
-                    <p class="horas">30 hs</p>
-                    <h3 class="contenedor-nombre">Java</h3>
                     <button class="contenedor-comprar">Comprar</button>
                 </div>
             </article>
