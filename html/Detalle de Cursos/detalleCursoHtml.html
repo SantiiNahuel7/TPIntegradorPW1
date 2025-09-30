@@ -7,22 +7,41 @@
     <title>MentorApp</title>
 </head>
 <header>
-    <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" alt="Logo" id="logo">
-    <form class="busqueda" action="./contacto.html" method="get">
-        <input type="text" name="campo-busqueda" id="campo-busqueda" placeholder="Buscar en el sitio...">
-        <button type="submit" id="button-busqueda" name="button-busqueda">🔍</button>
-    </form>
-    <button type="submit" id="boton-carrito" name="boton-carrito">
-        <img src="../../Imagenes/Detalle de Curso/carrito-de-compras.png" alt="carrito">
-    </button>
-    <nav>
-        <ul>
-            <li> <a href="./index.html">Home</a> </li>
-            <li> <a href="./contacto.html">Cursos</a></li>
-            <li> <a href="./contacto.html">Contacto</a></li>
-             <li> <a href="./contacto.html">Gift Card</a></li>
-        </ul>
-    </nav>
+        <div class="container">
+            <nav class="barra-superior">
+                <div class="logo-contenedor">
+                     <a href="../../index.html" class="logo-link">
+                        <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" alt="" class="logo">
+                    </a>
+                </div>                               
+                <div class="barra-busqueda"> 
+                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                        <datalist id="cursos">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="SQL">
+                            <option value="JAVA"></option>
+                        </datalist>
+                    <button class="lupa"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+                    <button class="carrito">                        
+                        <i class="fa-solid fa-cart-shopping"> </i> 
+                        <span class="contador">3</span>                                 
+                    </button>
+            </nav>
+            <nav class="menu-principal">
+                <div class="menu-principal-container">
+                   <ul>
+                        <li><a class="inicio" href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Calendario De Cursos</a></li>
+                        <li><a href="#">Crea Tu Gift Card</a></li>
+                        <li><a href="#">Contacto</a></li>
+                   </ul>
+                </div>
+            </nav>
+        </div>
 </header>
 <body>
     <section class="curso">
@@ -78,31 +97,68 @@
             </div>   
         </div>  
     </section>
-    <section class="cursos-relacionados">
-        <article class="curso-card">
-            <div class="card-imagen-container">
-                <img src="../../Imagenes/Detalle de Curso/imagenes/css.png" alt="Imagen de CSS">
-                <div class="card-precio">$25.000</div>
-            </div>
-            <div class="card-info">
-                <p class="card-duracion">30</p> <span class="unidad">hs</span></p>
-                <div>
-                    <p class="card-nombre-curso">Curso de CSS</p>
-                    <a href="./contacto.html" class="detalle-link">Ver detalle-link</a>
+    <section class="tarjetas-curso">
+        <h2>CURSOS DESTACADOS</h2>
+        <div class="contenedor-cursos">
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/css.png" alt="Imagen CSS">
+                    <span class="precio-curso">$25.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">CSS</h3>
+                    <button class="contenedor-comprar">Comprar</button>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/java.png" alt="Imagen Java">
+                    <span class="precio-curso">$30.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">Java</h3>
+                    <button class="contenedor-comprar">Comprar</button>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/javascript.png" alt="Imagen JS">
+                    <span class="precio-curso">$30.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">Java Script</h3>
+                    <button class="contenedor-comprar">Comprar</button>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/sql.png" alt="Imagen SQL">
+                    <span class="precio-curso">$40.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">35 hs</p>
+                    <h3 class="contenedor-nombre">SQL</h3>
+                    <button class="contenedor-comprar">Comprar</button>
+                </div>
+            </article>
+        </div>
+    </section>
+    </body>
+    <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Datos Del Grupo</h3>
+                    <ul>
+                        <li>Alan Leonel Ibañez</li>
+                        <li>Santiago Orellana</li>
+                        <li>Yamila Santillan</li>
+                        <li>Adrian Amarilla</li>
+                        <li>Jennifer Caceres</li>
+                    </ul>
                 </div>
             </div>
-            <button class="card-button">Comprar</button>
-        </article>
-    </section>
-    
-    </body>
-<footer>
-    <section class="integrantes">
-        <p>Orellana Santiago</p>
-        <p>Ibanez Alan</p>
-        <p>Santillan Yamila</p>
-        <p>Amarrilla Adrian</p>
-        <p>Caceres Jennifer</p>
-    </section>
-</footer>
+    </footer>
 </html>
