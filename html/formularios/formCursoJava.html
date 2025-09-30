@@ -4,23 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../../css/Estilos Formularios Pagos/formInscripcion.css">
+    <link rel="stylesheet" href="../../css/Estilos Index/index.css">
     <title>MentorApp - Formulario de Inscripción</title>
 </head>
 
 <body>
     <header>
-        <div class="header__icons">
-            <img src="../Imagenes/logos/logo1-sin-fondo.png" alt="logo-web" id="logo-header">
-            <img src="../Imagenes/logos/icono-inscipcion.png" alt="icono-inscripcion" id="icono-header">
-        </div>
-        <div class="header__nav">
-            <nav>Menú</nav>
+
+        <div class="container">
+
+            <nav class="barra-superior">
+
+                <div class="usuario-iniciado">
+                    <a href="../../html/Inicio/index.html"><i class="fa-regular fa-user"></i>Hola David</a>
+
+                </div>
+
+                <div class="logo-contenedor">
+                    <a href="../../html/Inicio/index.html" class="logo-link">
+                        <img src="../../Imagenes/logos/logo5.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="contador">3</span>
+                </button>
+
+                <form action="giftCard.html" method="get" class="barra-busqueda">
+                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                    <button class="lupa" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+
+
+
+            </nav>
+
+            <nav class="menu-principal">
+
+                <div class="menu-principal-container">
+                    <ul>
+                        <li><a class="inicio" href="../../html/Inicio/index.html"><i class="fa-solid fa-house"></i>
+                                Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Calendario De Cursos</a></li>
+                        <li><a href="#">Crea Tu Gift Card</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+
+
+
+                </div>
+
+            </nav>
+
+
         </div>
     </header>
     <main>
@@ -32,7 +81,8 @@
                 <h3>Curso elegido: Java</h3>
                 <p>Ingrese los datos de las personas a las que desea inscribir al curso:</p>
             </div>
-            <form action="../../html/Sitios De Pagos/pagosCursoJava.html" method="get" autocomplete="off" id="company-register-form">
+            <form action="../../html/Sitios De Pagos/pagosCursoJava.html" method="get" autocomplete="off"
+                id="company-register-form">
                 <h4>Inscripto Nº1:</h4>
                 <div class="fields">
                     <input type="text" name="firstName1" id="firstName1" placeholder="Nombre" required
@@ -61,23 +111,43 @@
             </form>
         </section>
     </main>
-    <footer>
-        <section class="footer__group">
-            <p><strong>Datos del grupo</strong></p>
-            <ul>
-                <li>Yamila Santillan</li>
-                <li>Santiago Orellana</li>
-                <li>Adrián Amarilla</li>
-                <li>Jennifer Caceres</li>
-                <li>Alan Ibañez</li>
-            </ul>
-        </section>
-        <section class="footer__menu">
-            <p><strong>Menú Inferior</strong></p>
-            <p><a href="../index.html"> Volver al Inicio</a></p>
-            <p><a href="#"> Preguntas Frecuentes</a></p>
-            <p><a href="#"> Términos y Condiciones</a></p>
-        </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Inferior</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="../../Imagenes/icono-redes/facebook.png"></img></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="../../Imagenes/icono-redes/instagram.png"></img></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="../../Imagenes/icono-redes/youtube.png"></img></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

@@ -14,12 +14,10 @@
 <body>
     <main>
         <h1 class="main__title">Proceso de Compra</h1>
-        <h2 class="pay-info">Seleccioná el método de pago:</h2>
+        <h2 class="pay-info">Elegí el método de pago:</h2>
         <section class="card-container">
             <form action="../Sitios De Pagos/avisoInscripcion.html" method="get" autocomplete="off" id="form-pays-card">
-                <label for="card-check">
-                    <input type="radio" name="card-check" id="card-check" value="card-check" required>
-                    <h3>Pagar con tarjeta de crédito o débito</h3>
+                <h3>Pagar con tarjeta de crédito o débito</h3>
                 </label>
                 <h4>Completá los datos de tu tarjeta:</h4>
                 <label for="card-number">
@@ -38,7 +36,8 @@
                 </label>
                 <label for="cvv">
                     CVV:
-                    <input type="password" inputmode="numeric" name="cvv" id="cvv" placeholder="Ingrese el código de seguridad" minlength="3" maxlength="4" required>
+                    <input type="password" inputmode="numeric" name="cvv" id="cvv"
+                        placeholder="Ingrese el código de seguridad" minlength="3" maxlength="4" required>
                 </label>
                 <label for="dni">
                     DNI del titular:
@@ -51,8 +50,6 @@
             <form action="../Sitios De Pagos/avisoInscripcion.html" method="get" autocomplete="off"
                 id="form-pays-mercado-pago">
                 <label for="mercado-pago-check">
-                    <input type="radio" name="mercado-pago-check" id="mercado-pago-check" value="mercado-pago-check"
-                        required>
                     <h3>Pagar con Mercado Pago</h3>
                 </label>
                 <h4>Alias de transferencia: mentorapp.mp</h4>
