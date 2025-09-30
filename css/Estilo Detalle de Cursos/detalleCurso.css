@@ -1,0 +1,507 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.barra-busqueda {
+
+    display: flex;
+
+
+
+}
+
+input {
+
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    width: 500px;
+    font-weight:normal
+  
+}
+
+.lupa {
+
+    color: #E0E0E0;
+    background: #ffffff;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+
+
+.barra-superior {
+
+    display: flex;
+    align-items: center;
+    background-color: #1E1E2E;
+    padding: 10px 20px;
+    justify-content: space-between;
+
+
+}
+
+
+.logo-link {
+    
+    display: block;
+    width: 70px;
+    
+
+}
+
+
+
+.carrito {
+
+    color: #E0E0E0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+.carrito .contador {
+
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #F1F0E8;
+    color: #1E1E2E;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+
+
+}
+
+
+.logo {
+
+width: 80%;
+height: auto;
+
+}
+
+.carrito {
+
+    margin-right: 20px;
+    
+}
+
+.carrito i {
+
+    font-size: 23px;
+}
+
+
+
+.menu-principal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #1E1E2E;
+    padding-bottom: 30px;
+    
+}
+
+.menu-principal-container {
+
+    width: 100%;
+
+
+}
+
+
+.menu-principal-container ul {
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+     
+}
+
+
+
+.menu-principal-container li a {
+    margin: 0; 
+    text-decoration: none;   
+    color: #E0E0E0;              
+}
+
+.menu-principal-container li a:hover {
+
+
+    color: gray;
+
+}
+
+.menu-principal-container inicio:hover {
+
+
+    color: #FF6D00;
+
+}
+
+.curso{
+    background-color: #2E3A59;
+    color: #E0E0E0;
+    display: flex;
+    gap: 4em;
+    align-items: flex-start;
+    padding: 2em 20em 0 10em;
+    font-weight: 600;
+}
+
+.curso .imagen-curso {
+    width: 20em; 
+    height: 20em; 
+    border-radius: 4px;
+}
+
+.info-curso{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.curso .info-curso #boton-inscribirse{
+    width: 12em;
+    height: 3em;
+    border-radius: 1em;
+    background-color: #4CC9F0;
+    border: none;
+    color: #F1F0E8;
+    font-size: 0.9em;
+}
+
+.curso .info-curso #boton-inscribirse:hover{
+    background-color: #e6691c;
+    cursor: pointer;
+}
+
+#titulo-curso{
+    color: #E0E0E0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contenido{
+    color: #E0E0E0;
+    background-color: #2E3A59;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3em 20em 2em 34em; 
+ 
+}
+
+#contenido-curso{
+    padding-bottom: 1em;
+}
+.contenido summary {
+    background-color: #2E3A59;
+    padding: 0.7em;
+    width: 35em;
+    height: 3em;
+    justify-items: center;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: #e6691c solid;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #ADC4CE;
+    color: #0F111A;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    justify-content: space-between;
+    gap: 1em;
+}
+.docente{
+    background-color: #2E3A59;
+}
+.docente h2{
+    background-color: #2E3A59;
+    color: #E0E0E0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+.docente #info-profesor {
+    padding: 1em;
+    display: flex;
+    background-color: #ADC4CE;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.docente #info-profesor #profesor-foto{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    margin-left: 4em;
+    margin-right: 2em;
+    flex-shrink: 0;
+}
+
+.docente #info-profesor .detalle-profesor{
+    text-align: left;
+    padding-top: 1.5em;
+}
+
+#nombre-profesor{
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+#profesor-bio{
+    font-size: 0.95em;
+    line-height: 2;
+    margin-top: 0.8em;
+    width: 80%;
+}
+
+.rating {
+    --percent: 100%; /* Valor predeterminado */
+    display: inline-block;
+    font-size: 0; /* Elimina espacios entre elementos inline */
+    position: relative;
+    width: 100px; /* 5 estrellas * 20px por estrella = 100px */
+    height: 20px;
+}
+
+/* Base de estrellas (fondo gris) */
+.rating::before {
+    content: "★★★★★";
+    font-size: 20px;
+    color: #ccc; /* Estrellas grises de fondo */
+    letter-spacing: -2px; /* Ajusta el espaciado para que se vean compactas */
+}
+
+/* Estrellas llenas (color amarillo) */
+.rating::after {
+    content: "★★★★★";
+    font-size: 20px;
+    color: gold; /* Color amarillo de las estrellas llenas */
+    letter-spacing: -2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* Oculta el exceso de estrellas amarillas */
+    width: var(--percent); /* Controlado por el valor 'percent' del HTML */
+}
+
+.tarjetas-curso{
+    background-color: #1E1E2E;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tarjetas-curso h2{
+    color: #E0E0E0;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contenedor-cursos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.contenedor-curso{
+    background-color: #2E3A59;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #E0E0E0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+}
+
+.contenedor-curso:hover{
+    transform: translateY(-5px);
+}
+
+.img-container{
+    position: relative;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.img-container img{
+    max-width: 90%;  
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.precio-curso{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: red;
+    color: #E0E0E0;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 0.9em;
+    z-index: 10;
+}
+
+.contenedor-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.horas{
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7); 
+    margin: 0 0 5px 0;
+}
+
+.contenedor.nombre{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 5px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.contenedor-comprar{
+    background-color:#4CC9F0; 
+    color:#E0E0E0;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s; 
+    margin-top: auto;
+}
+
+.contenedor-comprar:hover{
+    background-color: #e6691c;
+}
+
+@media (max-width: 1200px) {
+    .grid-cursos {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-cursos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-cursos {
+        grid-template-columns: 1fr; 
+        padding: 0 15px; 
+    .cursos h2 {
+        font-size: 1.8em; 
+        }
+    }
+}
+
+.footer {
+
+    background: #0F111A;
+    color: #E0E0E0;
+    padding: 40px 20px;
+
+}
+
+.footer-container {
+
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+
+}
+
+.footer-col h3 {
+
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+
+}
+
+.footer-col ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.footer-col ul li {
+
+    margin-bottom: 8px;
+
+}
+
+.footer-col a {
+
+    color: #E0E0E0;
+    text-decoration: none;
+
+
+}
+
+.footer-col a:hover {
+
+    text-decoration: underline;
+
+
+}
