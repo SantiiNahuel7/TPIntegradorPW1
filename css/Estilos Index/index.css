@@ -597,6 +597,7 @@ input {
 
     margin-bottom: 2em;
     font-size: 1.2rem;
+    margin-top: 2em;
 
 }
 
@@ -684,6 +685,7 @@ input {
 
         order: 1;
         flex-shrink: 0;
+        margin-right: 3em;
 
     }
 
@@ -726,20 +728,13 @@ input {
     }
 
 
-    .header-lado-derecho {
 
-        display: flex;
-        align-items: center;
-        gap: 1.5em;
-        margin-left: auto;
-
-
-    }
 
     .carrito {
 
         position: relative;
         margin: 0;
+        margin-right: 2em;
         order: 4;
 
 
