@@ -11,6 +11,7 @@
 .barra-busqueda {
 
     display: flex;
+    padding-left: 0em;
 
 
 
@@ -18,23 +19,23 @@
 
 input {
 
-    border-radius: 5px 0 0 5px;
+    border-radius: 1em 0 0 1em;
     border: 0;
     outline: none;
-    padding: 10px;
-    width: 500px;
+    padding: 1em;
+    width: 40em;
     font-weight:normal
   
 }
 
 .lupa {
 
-    color: #E0E0E0;
+    color: #ff6d00;
     background: #ffffff;
     border: 0;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0em 1em 1em 0em;
     cursor: pointer;
-    padding: 10px;
+    padding: 1em;
 
 }
 
@@ -45,20 +46,13 @@ input {
     display: flex;
     align-items: center;
     background-color: #1E1E2E;
-    padding: 10px 20px;
+    padding: 1em 2em;
     justify-content: space-between;
 
 
 }
 
 
-.logo-link {
-    
-    display: block;
-    width: 70px;
-    
-
-}
 
 
 
@@ -76,14 +70,14 @@ input {
 .carrito .contador {
 
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -1em;
+    right: -1em;
     background-color: #F1F0E8;
     color: #1E1E2E;
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 2px 6px;
-    border-radius: 50%;
+    padding: 0.1em 0.5em;
+    border-radius: 100%;
 
 
 }
@@ -91,20 +85,55 @@ input {
 
 .logo {
 
-width: 80%;
+width: 10em;
 height: auto;
 
 }
 
 .carrito {
 
-    margin-right: 20px;
+    margin-right: 3em;
     
 }
 
 .carrito i {
 
-    font-size: 23px;
+    font-size: 1.8em;
+}
+
+.header-lado-derecho {
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.icono-usuario {
+
+
+    display: flex;
+    gap: 2.5em;
+
+
+}
+
+.usuario-iniciado {
+
+    text-decoration: none;
+    color: #E0E0E0;
+    
+
+}
+
+
+.usuario-iniciado a {
+
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #E0E0E0;
+
+
 }
 
 
@@ -114,11 +143,11 @@ height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding: 0.3em;
+    padding-left: 20em;
+    padding-right: 20em;
     background-color: #1E1E2E;
-    padding-bottom: 30px;
+    padding-bottom: 2em;
     
 }
 
@@ -152,16 +181,11 @@ height: auto;
 .menu-principal-container li a:hover {
 
 
-    color: gray;
+    color: #ff6d00;
 
 }
 
-.menu-principal-container inicio:hover {
 
-
-    color: #FF6D00;
-
-}
 
 
 
@@ -179,7 +203,7 @@ height: auto;
 .slide {
 
     width: 100%;
-    height: 600px;
+    height: 45em;
     overflow: hidden;
     position: relative;
 
@@ -194,7 +218,8 @@ height: auto;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0px 100px;
+    padding: 0em 10em;
+
     
     
   
@@ -207,7 +232,7 @@ height: auto;
     background: none;
     cursor: pointer;
     transform: rotate(90deg);
-    font-size: 70px;
+    font-size: 7em;
     color: #E0E0E0;
     
 
@@ -220,7 +245,7 @@ height: auto;
     background: none;
     cursor: pointer;
     transform: rotate(-90deg);
-    font-size: 70px;
+    font-size: 7em;
     color: #E0E0E0;;
 
 }
@@ -230,31 +255,43 @@ height: auto;
 .pasos {
 
     display: flex;
-    padding: 40px 0px;
-    justify-content: center;
-    max-width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    justify-content: space-between;
+    padding-top: 6em;
+    padding-bottom: 6em;
     background-color: #2E3A59;
+    padding-left: 10em;
+    padding-right: 10em;
 
     
 
 }
 
+.pasos h2 {
+
+    color: #ff6d00;
+
+
+}
+
 .paso-1 {
 
-
+    display: flex;
     background-color: #1E1E2E;
-    padding: 70px;
+    padding: 4em;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1.5em;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2em;
+    
+    
     
 
 }
 
 .paso-1 p {
 
-    width: 300px;
+    width: 20em;
     color: #E0E0E0;
 
 
@@ -263,18 +300,20 @@ height: auto;
 .paso-2 {
 
 
+    display: flex;
     background-color: #1E1E2E;
-    padding: 70px;
+    padding: 4em;
     text-align: center;
-    margin-right: 40px;
-    margin-left: 40px;
-    border-radius: 20px;
+    border-radius: 1.5em;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2em;
 
 }
 
 .paso-2 p {
 
-    width: 300px;
+    width: 20em;
     color: #E0E0E0;
 
 
@@ -283,16 +322,20 @@ height: auto;
 .paso-3 {
 
 
+    display: flex;
     background-color: #1E1E2E;
-    padding: 70px;
+    padding: 4em;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 1.5em;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2em;
 
 }
 
 .paso-3 p {
 
-    width: 300px;
+    width: 20em;
     color: #E0E0E0;
 
 
@@ -303,7 +346,7 @@ height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 10em;
 
 
 }
@@ -312,16 +355,26 @@ height: auto;
 .cursos {
 
     background-color: #1E1E2E;
-    padding-bottom: 100px;
+    padding-bottom: 9em;
 
+
+}
+
+.cursos .fondo {
+
+
+    position: absolute;
+    max-width: 100%;
+    filter: brightness(0.2);
 
 }
 
 .cursos h2 {
 
+    position: relative;
     text-align: center;
-    margin-bottom: 60px;
-    padding-top: 60px;
+    margin-bottom: 3em;
+    padding-top: 3em;
     color: #E0E0E0;
     
 }
@@ -329,23 +382,24 @@ height: auto;
 .grid-cursos {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 2em;
+    max-width: 50%;
     margin: 0 auto;
+    position: relative;
+
 
 
 }
 
 .curso {
 
-    border: 5px solid #2E3A59;
-    border-radius: 5px;
+    border: 0.5em solid #2E3A59;
+    border-radius: 0.2em;
     background: #2E3A59;
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
 
 }
@@ -374,7 +428,7 @@ height: auto;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 0.2em;
 
 
 }
@@ -382,11 +436,11 @@ height: auto;
 .precio {
 
     position: absolute;
-    bottom: 8px;
-    right: 8px;
+    bottom: 1em;
+    right: 1em;
     background: red;
     color: #E0E0E0;
-    padding: 4px 8px;
+    padding: 0.3em 0.7em;
     font-size: 0.9rem;
 
 
@@ -395,7 +449,7 @@ height: auto;
 
 .info {
 
-    padding: 15px;
+    padding: 1em;
 
 
 }
@@ -410,19 +464,19 @@ height: auto;
 .nombre {
 
     font-size: 1rem;
-    margin: 5px 0 15px;
+    margin: 0.4em 0 1em;
 
 
 }
 
 .comprar {
 
-    background: #FF6D00;
+    background: #ff6d00;
     color: #E0E0E0;
     border: none;
-    padding: 8px 16px;
+    padding: 0.8em 1em;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 0.5em;
 
 }
 
@@ -435,10 +489,13 @@ height: auto;
 
 .medios-pago {
 
+    display: flex;
     position: relative;
     justify-content: space-between;
+    flex-direction: column;
     background-color: #2E3A59;
-    padding-bottom: 60px;
+    padding-bottom: 4em;
+    gap: 3em;
     
 
 }
@@ -446,9 +503,8 @@ height: auto;
 .medios-pago h2 {
 
     color: #E0E0E0;
-    margin-bottom: 50px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 2em;
 
 }
 
@@ -457,19 +513,19 @@ height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 5em;
 
 }
 
 .logo-item {
 
-    width: 120px;
-    height: 80px;
+    width: 9em;
+    height: 5em;
     background: #E0E0E0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 0.5em;
 
 
 }
@@ -484,58 +540,29 @@ height: auto;
 
 }
 
-.flecha-izq-metodo-pago {
 
-    border: none;
-    background: none;
-    cursor: pointer;
-    transform: rotate(90deg);
-    font-size: 70px;
-    color: #E0E0E0;
-    position: absolute;
-    left: 0;
-    top: 45%
-
-   
-}
-
-
-.flecha-der-metodo-pago {
-
-
-    border: none;
-    background: none;
-    cursor: pointer;
-    transform: rotate(-90deg);
-    font-size: 70px;
-    color: #E0E0E0;
-    position: absolute;
-    right: 0%;
-    top: 45%
-
-}
 
 .footer {
 
     background: #0F111A;
     color: #E0E0E0;
-    padding: 40px 20px;
 
 }
 
 .footer-container {
 
-    max-width: 1100px;
+    max-width: 90em;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    padding: 3em;
 
 
 }
 
 .footer-col h3 {
 
-    margin-bottom: 15px;
+    margin-bottom: 2em;
     font-size: 1.2rem;
 
 }
@@ -550,7 +577,7 @@ height: auto;
 
 .footer-col ul li {
 
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
 
 }
 
@@ -571,9 +598,9 @@ height: auto;
 
 .redes img {
 
-    width: 30px;
-    height: 30px;
-    margin-right: 12px;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
     transition: transform 0.2s;
 
 }
