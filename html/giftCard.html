@@ -1,59 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MentorApp - Gift Card</title>
-    <link rel="stylesheet" href="../css/giftCard.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MentorApp - Gift Card</title>
+  <link rel="stylesheet" href="../css/giftCard.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-<header>
-
- 
-</header>
-    
-</body>
-
-<footer class="footer">
-
-    <div class="columna-footer">
-    <p>integrantes del grupo</p>
-    <ul>
-     <li>Yamila Santillan</li>
-     <li>Santiago Orellana</li>
-     <li>Adrián Amarilla</li>
-     <li>Jennifer Caceres</li>
-     <li>Alan Ibañez</li>
-    </ul>
-
-   </div>
-
-   <div class="columna-footer">
-
-   <p>navegación</p>
-
-    <ul>
-     <li><a href="../index.html">Inicio</a></li>
-     <li><a href="aboutUs.html">Sobre Nosotros</a></li>
-     <li><a href="contact.html">Contacto</a></li>
-     <li><a href="giftCard.html">Gift Card</a></li>
-
-
-   </div>
-
-    <div class="columna-footer-redes">
-      
-        <p>Redes Sociales</p>
-      
-        <ul class="redes-footer">
-         <li><a href=""><img src="/Imagenes/icono-redes/facebook.png" alt="Facebook"></a></li>
-         <li><a href=""><img src="/Imagenes/icono-redes/instagram.png" alt="Instagram"></a></li>
-         <li><a href=""><img src="/Imagenes/icono-redes/youtube.png" alt="Youtube"></a></li>
-         <li><a href=""><img src="/Imagenes/icono-redes/tik-tok.png" alt="TikTok"></a></li>
-        <li><a href=""><img src="/Imagenes/icono-redes/gorjeo.png" alt="Twitter"></a></li>
-
+  
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../Imagenes/logos/logo1.png" alt="Logo de MentorApp">
+      </a>
     </div>
 
-</footer>
+    <form class="buscador" action="buscador" method="get">
+      <input type="text" name="buscador" placeholder="Buscar cursos...">
+      <button type="submit">🔍</button>
+    </form>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="aboutUs.html">Cursos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="giftCard.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="formulario-gift-card">
+      <h2>Personaliza tu Gift Card</h2>
+   
+      <form>
+        <label for="nombre-destinatario">Nombre del destinatario:</label>
+        <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" required>
+        
+        <label for="color-tarjeta">Color de la tarjeta:</label>
+        <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
+        
+        <label>Tamaño de texto:</label>
+        <div class="tamanio-texto">
+          <input type="number" min="20" max="60" value="20">
+          <span>px</span> 
+        </div>
+        
+                <label for="amount">Valor de la Gift Card:</label>
+                <select id="amount" name="amount" required>
+                  <option value="10000">$10000</option>
+                  <option value="30000">$30000</option>
+                  <option value="50000">$50000</option>
+                  <option value="100000">$100000</option>
+                </select>
+
+        <label>Ubicación del monto:</label>
+        <div class="ubicacion">
+
+          <label>
+            <input type="radio" name="ubicacion" value="arriba-izquierda">
+            <div class="opcion-ubicacion">
+              <span>Arriba Izquierda</span>
+              <img src="../Imagenes/imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="ubicacion" value="arriba-derecha">
+            <div class="opcion-ubicacion">
+              <span>Arriba Derecha</span>
+              <img src="../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="ubicacion" value="abajo-izquierda">
+            <div class="opcion-ubicacion">
+              <span>Abajo Izquierda</span>
+              <img src="../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="ubicacion" value="abajo-derecha">
+            <div class="opcion-ubicacion">
+              <span>Abajo Derecha</span>
+              <img src="../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
+            </div>
+          </label>
+
+        </div>
+
+        <button type="submit">Continuar</button>
+      </form>
+    </section>
+        
+    <section class="preview">
+      <h2>Vista Previa de la Gift Card</h2>
+      <div class="gift-card" id="tarjeta-preview">
+        <img src="../Imagenes/logos/logo1.png" alt="logo de MentorApp" class="logo-tarjeta">
+        <p class="destinatario" id="preview-nombre">Juan Pérez</p>
+        <p class="monto" id="preview-monto">$10000</p>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="columna-footer">
+      <p>Integrantes del grupo</p>
+      <ul>
+        <li>Yamila Santillan</li>
+        <li>Santiago Orellana</li>
+        <li>Adrián Amarilla</li>
+        <li>Jennifer Caceres</li>
+        <li>Alan Ibañez</li>
+      </ul>
+    </div>
+
+    <div class="columna-footer">
+      <p>Navegación</p>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="aboutUs.html">Sobre Nosotros</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="giftCard.html">Gift Card</a></li>
+      </ul>
+    </div>
+
+    <div class="columna-footer-redes">
+      <p>Redes Sociales</p>
+      <ul class="redes-footer">
+        <li><a href="#"><img src="../Imagenes/icono-redes/facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="../Imagenes/icono-redes/instagram.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="../Imagenes/icono-redes/youtube.png" alt="Youtube"></a></li>
+        <li><a href="#"><img src="../Imagenes/icono-redes/tik-tok.png" alt="TikTok"></a></li>
+        <li><a href="#"><img src="../Imagenes/icono-redes/gorjeo.png" alt="Twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
 </html>
