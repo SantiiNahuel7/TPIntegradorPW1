@@ -779,6 +779,14 @@ input {
         height: 35em;
     }
 
+    .medios-pago {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
 
 
     .footer {
