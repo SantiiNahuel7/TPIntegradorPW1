@@ -1,4 +1,4 @@
-/* Contacto - Mobile First */
+
 main {
     padding: 2rem;
     background-color: #F1F0E8;
@@ -11,14 +11,14 @@ h1 {
     color: #96B6C5;
 }
 
-/* Contenedor principal del contacto */
+
 .contacto {
     display: flex;
-    flex-direction: column; /* apilado por defecto en móviles */
+    flex-direction: column; 
     gap: 1.5rem;
 }
 
-/* Formulario */
+
 form {
     flex: 1;
     display: flex;
@@ -40,7 +40,7 @@ form textarea {
     color: #333;
 }
 
-/* Botón enviar */
+
 button[type="submit"] {
     background-color: #96B6C5;
     color: white;
@@ -50,7 +50,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-/* Información con mapa */
+
 .info {
     flex: 1;
     background-color: #2E3A59;
@@ -67,15 +67,15 @@ button[type="submit"] {
     border-radius: 10px;
 }
 
-/* Media queries para pantallas más grandes */
+
 @media (min-width: 768px) {
     .contacto {
-        flex-direction: row; /* lado a lado en tablets y desktops */
+        flex-direction: row; 
         gap: 2rem;
     }
 
     form, .info {
-        flex: 1; /* mismo ancho */
+        flex: 1; 
     }
 }
 

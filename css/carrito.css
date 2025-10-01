@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #2E3A59; /* main */
+  background: #2E3A59; 
   color: #E0E0E0;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .mensaje-de-carrito-vacio {
   text-align: center;
-  background: #1E1E2E; /* header color */
+  background: #1E1E2E; 
   padding: 2rem;
   border-radius: 10px;
   max-width: 500px;
@@ -25,14 +25,14 @@ body {
 
 .icono {
   font-size: 3rem;
-  color: #96B6C5; /* un celeste similar al que usabas */
+  color: #96B6C5;
   margin-bottom: 1rem;
 }
 
 h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #96B6C5; /* mismo celeste */
+  color: #96B6C5; 
   margin-bottom: 1rem;
 }
 
@@ -50,7 +50,7 @@ p a {
 .boton-volver {
   display: inline-block;
   padding: 0.7em 1.5em;
-  background-color: #96B6C5; /* celeste */
+  background-color: #96B6C5; 
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -60,6 +60,6 @@ p a {
 }
 
 .boton-volver:hover {
-  background-color: #4C7A8B; /* más oscuro al pasar el mouse */
+  background-color: #4C7A8B; 
 }
 

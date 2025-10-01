@@ -1,13 +1,13 @@
-/* Reinicio de márgenes y paddings */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main */
+
 main {
-    padding: 1rem; /* Mobile First */
+    padding: 1rem; 
     background: white;
 }
 
@@ -20,14 +20,14 @@ h1 {
 /* Grid del calendario */
 .calendario {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columnas */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
     background: #96B6C5;
     padding: 0.5rem;
     border-radius: 10px;
 }
 
-/* Días de la semana */
+
 .dia {
     font-weight: bold;
     text-align: center;
@@ -38,7 +38,7 @@ h1 {
     font-size: 0.9rem;
 }
 
-/* Celdas de los días */
+
 .celda {
     height: 60px;
     background: white;
@@ -48,7 +48,7 @@ h1 {
     font-size: 0.8rem;
 }
 
-/* Cursos destacados */
+
 .curso {
     background: #96B6C5;
     color: white;
@@ -60,7 +60,7 @@ h1 {
     font-weight: bold;
 }
 
-/* Día actual */
+
 .hoy {
     background: #EEE0C9;
     border-radius: 50%;
@@ -70,7 +70,7 @@ h1 {
     font-weight: bold;
 }
 
-/* Tablets */
+
 @media (min-width: 481px) and (max-width: 768px) {
     .calendario {
         grid-template-columns: repeat(4, 1fr); /* Tablets: 4 columnas */
