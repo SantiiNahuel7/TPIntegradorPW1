@@ -70,13 +70,13 @@
         </div>
 
         <label for="numero-tarjeta">Número de tarjeta:</label>
-        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"  pattern="[0-9]{16}" maxlength="16" required>
 
         <label for="fecha-expiracion">Fecha de vencimiento:</label>
         <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
 
         <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+        <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
 
        <button type="submit" class="boton-comprar">Comprar</button>
 
