@@ -24,6 +24,7 @@
     display: flex;
     width: 100%;
     padding: 2em;
+    
 
 
 
@@ -391,7 +392,7 @@ input {
 
 .curso {
 
-    border: 0.5em solid #2E3A59;
+    
     border-radius: 0.2em;
     background: #2E3A59;
     display: flex;
@@ -664,6 +665,8 @@ input {
        justify-content: center; 
        display: flex;
        order: 2;
+       position: relative; 
+       left: -1em;
         
 
 
