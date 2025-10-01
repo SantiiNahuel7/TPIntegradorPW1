@@ -1,88 +1,56 @@
-:root {
-    --azul: #96B6C5;
-    --celeste: #ADC4CE;
-    --beige: #EEE0C9;
-    --blanco: #F1F0E8;
-}
-
+/* Reinicio de márgenes y paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--blanco);
-    color: #333;
-}
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--azul);
-    color: white;
-    padding: 1rem;
-}
-
-.buscador {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.buscador select,
-.buscador button {
-    padding: 0.4rem;
-    border-radius: 5px;
-    border: none;
-}
-
-.buscador button {
-    background: var(--celeste);
-    cursor: pointer;
-}
-
-/* Calendario */
+/* Main */
 main {
-    padding: 2rem;
+    padding: 1rem; /* Mobile First */
+    background: white;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
+/* Grid del calendario */
 .calendario {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columnas */
     gap: 5px;
-    background: var(--celeste);
-    padding: 1rem;
+    background: #96B6C5;
+    padding: 0.5rem;
     border-radius: 10px;
 }
 
+/* Días de la semana */
 .dia {
     font-weight: bold;
     text-align: center;
-    background: var(--beige);
-    padding: 0.5rem;
+    background: #ff6d00;
+    padding: 0.3rem;
     border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
 }
 
+/* Celdas de los días */
 .celda {
-    height: 80px;
+    height: 60px;
     background: white;
     border-radius: 5px;
     padding: 5px;
     text-align: left;
+    font-size: 0.8rem;
 }
 
-/* Cursos destacados en el calendario */
+/* Cursos destacados */
 .curso {
-    background: var(--azul);
+    background: #96B6C5;
     color: white;
 }
 
@@ -92,9 +60,9 @@ h1 {
     font-weight: bold;
 }
 
-
+/* Día actual */
 .hoy {
-    background: var(--beige);
+    background: #EEE0C9;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -102,15 +70,40 @@ h1 {
     font-weight: bold;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-around;
-    background: var(--celeste);
-    padding: 1rem;
-    margin-top: 2rem;
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .calendario {
+        grid-template-columns: repeat(4, 1fr); /* Tablets: 4 columnas */
+        gap: 5px;
+        padding: 1rem;
+    }
+
+    .celda {
+        height: 70px;
+        font-size: 0.9rem;
+    }
+
+    .dia {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
 }
 
-footer div h3 {
-    margin-bottom: 0.5rem;
+/* Desktop */
+@media (min-width: 769px) {
+    .calendario {
+        grid-template-columns: repeat(7, 1fr); /* Desktop: 7 columnas */
+        gap: 5px;
+        padding: 1rem;
+    }
+
+    .celda {
+        height: 80px;
+        font-size: 1rem;
+    }
+
+    .dia {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }

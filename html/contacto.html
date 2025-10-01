@@ -4,25 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\css\Estilos Index\index.css">
+    <link rel="stylesheet" href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\css\contacto.css">
+
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">Plataforma Cursos</div>
+<header>
 
-        <!-- select que va a un mismo detalle -->
-        <form action="aca va el link a un detalle" method="get" class="buscador">
-            <label for="curso">Buscar:</label>
-            <select id="curso" name="curso">
-                <option value="html">Curso HTML</option>
-                <option value="css">Curso CSS</option>
-                <option value="flexbox">Curso Flexbox</option>
-            </select>
-            <button type="submit">Buscar</button>
-        </form>
+        <div class="container">
 
-        <div class="carrito">🛒 0</div>
+            <nav class="barra-superior">
+
+                <div class="usuario-iniciado">
+                    <a href="../../index.html"><i class="fa-regular fa-user"></i>Hola David</a>
+
+                </div>
+
+                <div class="logo-contenedor">
+                    <a href="../../index.html" class="logo-link">
+                        <img src="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\Imagenes\logos\logo5.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="contador">0</span>
+                </button>
+
+                <form action="giftCard.html" method="get" class="barra-busqueda">
+                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                    <button class="lupa" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+
+
+
+            </nav>
+
+            <nav class="menu-principal">
+
+                <div class="menu-principal-container">
+                    <ul>
+                        <li><a class="inicio" href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\index.html#cursos-destacados">Cursos</a></li>
+                        <li><a href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\html\calendario.html">Calendario De Cursos</a></li>
+                        <li><a href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\html\giftCard.html">Crea Tu Gift Card</a></li>
+                        <li><a href="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\html\contacto.html">Contacto</a></li>
+                    </ul>
+
+
+
+                </div>
+
+            </nav>
+
+
+        </div>
     </header>
 
     <main>
@@ -56,23 +95,42 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div>
-            <h3>Grupo</h3>
-            <p>Nombre Apellido - DNI</p>
-        </div>
-        <div>
-            <h3>Menú</h3>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Redes</h3>
-            <p>Facebook | Instagram | Twitter</p>
+    <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Inferior</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\Imagenes\icono-redes\facebook.png"></img></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\Imagenes\icono-redes\instagram.png"></img></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="C:\Users\PC\Desktop\programacion web\TPIntegradorPW1\Imagenes\icono-redes\youtube.png"></img></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
