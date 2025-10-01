@@ -4,12 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../../css/Estilos Formularios Pagos/pagos.css">
+    <link rel="stylesheet" href="../../css/Estilos Index/index.css">
     <title>MentorApp - Sitio seguro de Pagos</title>
 </head>
 <header>
 
-</header>
+        <div class="container">
+
+            <nav class="barra-superior">
+
+                <div class="usuario-iniciado">
+                    <a href="../../html/Inicio/index.html"><i class="fa-regular fa-user"></i>Hola David</a>
+
+                </div>
+
+                <div class="logo-contenedor">
+                    <a href="../../html/Inicio/index.html" class="logo-link">
+                        <img src="../../Imagenes/logos/logo5.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="contador">1</span>
+                </button>
+
+                <form action="giftCard.html" method="get" class="barra-busqueda">
+                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                    <button class="lupa" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+
+
+
+            </nav>
+
+            <nav class="menu-principal">
+
+                <div class="menu-principal-container">
+                    <ul>
+                        <li><a class="inicio" href="../../html/Inicio/index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Calendario De Cursos</a></li>
+                        <li><a href="#">Crea Tu Gift Card</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+
+
+
+                </div>
+
+            </nav>
+
+
+        </div>
+    </header>
 
 <body>
     <main>
@@ -53,7 +112,7 @@
                     <h3>Pagar con Mercado Pago</h3>
                 </label>
                 <h4>Alias de transferencia: mentorapp.mp</h4>
-                <p>Para confirmar la incripción, envíanos el comprobante de la transferencia al correo
+                <p>Para confirmar la inscripción, envíanos el comprobante de la transferencia al correo
                     pagos@mentorapp.com en un plazo no mayor a 48 hrs.</p>
                 <button type="submit">Transferencia Realizada</button>
             </form>
@@ -71,6 +130,41 @@
             </div>
         </section>
     </main>
+        <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Inferior</h3>
+                <ul>
+                    <li><a href="../../html/Inicio/index.html">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/icono-redes/facebook.png"></img></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/icono-redes/instagram.png"></img></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/icono-redes/youtube.png"></img></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
