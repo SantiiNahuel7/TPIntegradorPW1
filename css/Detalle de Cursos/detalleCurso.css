@@ -68,6 +68,7 @@ input {
     border: none;
     cursor: pointer;
     position: relative;
+    margin-right: 20px;
 
 
 }
@@ -90,15 +91,28 @@ input {
 
 .logo {
 
-width: 80%;
-height: auto;
+width: 7em;
 
 }
+input {
 
-.carrito {
+    border-radius: 1em 0 0 1em;
+    border: 0;
+    outline: none;
+    padding: 1em;
+    font-weight:normal
+  
+}
 
-    margin-right: 20px;
-    
+.lupa {
+
+    color: #ff6d00;
+    background: #ffffff;
+    border: 0;
+    border-radius: 0em 1em 1em 0em;
+    cursor: pointer;
+    padding: 1em;
+
 }
 
 .carrito i {
@@ -151,7 +165,7 @@ height: auto;
 .menu-principal-container li a:hover {
 
 
-    color: gray;
+    color: #e6691c;
 
 }
 
