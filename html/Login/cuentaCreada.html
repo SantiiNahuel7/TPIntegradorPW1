@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estiloCreada.css">
+    <link rel="stylesheet" href="../../css/Login/estiloCreada.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,18 +12,11 @@
             <nav class="barra-superior">
                 <div class="logo-contenedor">
                      <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" alt="" class="logo">
+                        <img src="../../Imagenes/logos/logo5.png" alt="" class="logo">
                     </a>
                 </div>                               
                 <div class="barra-busqueda"> 
                     <input list="cursos" name="curso" type="text" placeholder="Buscar..." id="inputBuscar">
-                        <datalist id="cursos">
-                            <option value="HTML">
-                            <option value="CSS">
-                            <option value="JavaScript">
-                            <option value="SQL">
-                            <option value="JAVA"></option>
-                        </datalist>
                     <button class="lupa"> <i class="fa-solid fa-magnifying-glass"></i> </button>
                 </div>
                     <button class="carrito">                        
@@ -46,10 +39,9 @@
     </header>
     <main>
         <section class="contenedor-formulario">
-            <img src="../cheque.png" alt="Check" class="logo-check">
+            <img src="../../Imagenes/Login/cheque.png" alt="Check" class="logo-check">
             <h2 class="titulo-formulario">Su cuenta fue creada con exito!</h2>
-            <form>
-                <div class="formulario">
+            <form action="../../index.html">
                     <button type="submit" id="boton-cuenta">Volver al Inicio</button>
             </form>
         </section>

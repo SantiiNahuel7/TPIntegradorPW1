@@ -90,8 +90,7 @@
 
 .logo {
 
-width: 80%;
-height: auto;
+width: 7em;
 
 }
 
@@ -151,7 +150,7 @@ height: auto;
 .menu-principal-container li a:hover {
 
 
-    color: gray;
+    color: #FF6D00;
 
 }
 

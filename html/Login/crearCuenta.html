@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../../css/Login/estilloCrearCuenta.css">
-    <title>Document</title>
+    <title>MentorApp</title>
 </head>
 <body>
     <header>
@@ -12,18 +16,11 @@
             <nav class="barra-superior">
                 <div class="logo-contenedor">
                      <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" alt="" class="logo">
+                        <img src="../../Imagenes/logos/logo5.png" alt="" class="logo">
                     </a>
                 </div>                               
                 <div class="barra-busqueda"> 
                     <input list="cursos" name="curso" type="text" placeholder="Buscar..." id="inputBuscar">
-                        <datalist id="cursos">
-                            <option value="HTML">
-                            <option value="CSS">
-                            <option value="JavaScript">
-                            <option value="SQL">
-                            <option value="JAVA"></option>
-                        </datalist>
                     <button class="lupa"> <i class="fa-solid fa-magnifying-glass"></i> </button>
                 </div>
                     <button class="carrito">                        
@@ -47,7 +44,7 @@
     <main>
         <section class="contenedor-formulario">
             <h2 class="titulo-formulario">Crea tu cuenta!</h2>
-            <form action="./cuentaCreada.html"">
+            <form action="./cuentaCreada.html">
                 <div class="formulario">
                     <div class="creacion-input">
                         <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>

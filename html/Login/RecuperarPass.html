@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../../css/Login/recuperarPass.css">
     <title>Document</title>
 </head>
@@ -12,48 +16,42 @@
             <nav class="barra-superior">
                 <div class="logo-contenedor">
                      <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/Detalle de Curso/logo1-sin-fondo.png" alt="" class="logo">
+                        <img src="../../Imagenes/logos/logo5.png" class="logo">
                     </a>
-                </div>                               
-                <div class="barra-busqueda"> 
-                    <input list="cursos" name="curso" type="text" placeholder="Buscar..." id="inputBuscar">
-                        <datalist id="cursos">
-                            <option value="HTML">
-                            <option value="CSS">
-                            <option value="JavaScript">
-                            <option value="SQL">
-                            <option value="JAVA"></option>
-                        </datalist>
-                    <button class="lupa"> <i class="fa-solid fa-magnifying-glass"></i> </button>
-                </div>
+                </div>      
+
+                <form action="giftCard.html" method="get" class="barra-busqueda">
+                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                    <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
                     <button class="carrito">                        
                         <i class="fa-solid fa-cart-shopping"> </i> 
-                        <span class="contador">3</span>                                 
+                        <span class="contador">0</span>                                 
                     </button>
             </nav>
             <nav class="menu-principal">
                 <div class="menu-principal-container">
                    <ul>
                         <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="#">Cursos</a></li>
-                        <li><a href="#">Calendario De Cursos</a></li>
-                        <li><a href="../../html/giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#destacados-cursos">Cursos</a></li>
+                        <li><a href="../calendario.html">Calendario De Cursos</a></li>
+                        <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                        <li><a href="../contacto.html">Contacto</a></li>
                    </ul>
                 </div>
             </nav>
         </div>
-    </header>
+</header>
     <main>
         <section class="contenedor-formulario">
             <h2 class="titulo-formulario">Recuperar Contraseña</h2>
             <h3 class="texto-formulario">Ingrese su mail para que se le envie un link de recuperacion!</h3>
-            <form>
+            <form action="./cuentaCreada.html">
                 <div class="formulario">
                     <input type="email" name="email" id="email">
-                    <a href="./codigoEnviado.html">
                         <button type="submit" id="boton-cuenta">Enviar Codigo</button>
-                    </a>
             </form>
         </section>
     </main>
