@@ -83,6 +83,13 @@ form select {
   box-shadow: 0 0 8px rgba(255, 109, 0, 0.7);
 }
 
+#fecha-expiracion {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
 .boton-comprar {
   display: inline-block;
   background-color: #ff6d00;
@@ -112,6 +119,7 @@ form select {
 .preview-giftcard h3 {
   margin-bottom: 1em;
   color: #fff;
+  font-size: 1.5em;
 }
 
 .giftcard {
@@ -151,4 +159,75 @@ form select {
   font-size: 1.1em;
   font-weight: bold;
   color: #000;
+}
+
+@media (max-width: 1024px) {
+  .barra-superior {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .menu-principal-container ul {
+    gap: 1.5em;
+  }
+
+  .container-pago {
+    gap: 2em;
+    padding: 1.5em;
+  }
+
+  .giftcard {
+    width: 300px;
+    height: 170px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* para celulares */
+@media (max-width: 768px) {
+  .barra-superior {
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .barra-busqueda {
+    margin: 1em 0;
+    max-width: 100%;
+  }
+
+  .menu-principal-container ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .container-pago {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario-pago,
+  .preview-giftcard {
+    width: 100%;
+    max-width: 28em;
+  }
+
+  .giftcard {
+    width: 100%;
+    max-width: 300px;
+    margin: 1em auto;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .redes {
+    justify-content: center;
+  }
 }

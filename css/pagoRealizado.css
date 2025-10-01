@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #2D3A5A;
+}
+
+main {
+  background-color: #2D3A5A;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+
+
+
+.container-pago {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5em;
+  padding: 2em;
+  flex-wrap: wrap;
+  background-color: #2D3A5A;
+}
+
+.pago-realizado {
+  background-color: #1E1E2E;
+  color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.8em 2em;
+  background-color: #ff6d00;
+  color: #fff;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .pago-realizado {
+    max-width: 90%;
+    padding: 1.5em;
+  }
+
+  .pago-realizado h2 {
+    font-size: 1.5em;
+  }
+
+  .pago-realizado p {
+    font-size: 1em;
+  }
+
+  .boton-volver {
+    padding: 0.7em 1.2em;
+    font-size: 0.95em;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .barra-superior {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  .barra-busqueda {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  .menu-principal-container ul {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  main {
+    padding: 2em 1em;
+  }
+
+  .pago-realizado {
+    width: 100%;
+    max-width: 90%;
+    padding: 1.5em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 6em;
+  }
+
+  .pago-realizado h2 {
+    font-size: 1.2em;
+  }
+
+  .pago-realizado p {
+    font-size: 0.9em;
+  }
+
+  .boton-volver {
+    font-size: 0.9em;
+    padding: 0.6em 1em;
+  }
+
+  .footer-col h3 {
+    font-size: 1em;
+  }
+
+  .footer-col ul li {
+    font-size: 0.9em;
+  }
+}

@@ -353,3 +353,98 @@ html, body {
     width: 30px;
     height: 30px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 4em;
+    padding: 1.5em;
+  }
+
+  .formulario-gift-card,
+  .preview {
+    max-width: 100%;
+  }
+
+  .gift-card {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .barra-superior {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .barra-busqueda {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  .menu-principal-container ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .formulario-gift-card,
+  .preview {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .gift-card {
+    width: 90%;
+    height: auto;
+    padding: 2em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .barra-superior {
+    padding: 0.5em 1em;
+  }
+
+  .logo {
+    width: 6em;
+  }
+
+  .barra-busqueda input {
+    padding: 0.6em;
+  }
+
+  .formulario-gift-card {
+    padding: 1em;
+  }
+
+  .formulario-gift-card form input,
+  .formulario-gift-card form select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gift-card {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .ubicacion {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .redes {
+    justify-content: center;
+  }
+}
