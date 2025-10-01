@@ -2,25 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #adc4ce;
+    font-size: 0.9em;
+    background-color: #1E1E2E;
+    color: #fff;
     text-align: center;
 }
 
 main {
-    background-color: #f1f0e8;
+    background-color: #2E3A59;
     border: #000 solid 0.1em;
     border-radius: 1em;
+    width: 80%;
+    margin: 0 auto;
     padding: 2% 5%;
     box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 4%;
 }
 
 a {
@@ -29,7 +33,7 @@ a {
 }
 
 button {
-    background-color: #96b6c5;
+    background-color: #ff6d00;
     border: none;
     border-radius: 0.5em;
     color: #fff;
