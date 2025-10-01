@@ -16,7 +16,7 @@ main {
     background-color: #2E3A59;
     border: #000 solid 0.1em;
     border-radius: 1em;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 2% 5%;
     box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.4);
@@ -41,4 +41,32 @@ button {
     font-size: 1em;
     margin: 1% 0.5% 0 0;
     padding: 0.5em 1em;
+}
+
+.barra-busqueda button{
+    height: 100%;
+    margin: 0;
+    text-align: end;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.85em;
+    }
+
+    main {
+        width: 95%;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding-bottom: 2%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 1em;
+    }
 }

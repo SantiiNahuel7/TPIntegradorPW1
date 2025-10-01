@@ -93,3 +93,44 @@ button {
     font-weight: bold;
     width: 40%;
 }
+
+.barra-busqueda button{
+    height: 100%;
+    margin: 0;
+    text-align: end;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; 
+        width: 95%; 
+        padding: 5%;
+    }
+
+    .main__title {
+        grid-column: 1 / 2; 
+    }
+
+    .course-detail img {
+        width: 60%; 
+        margin: 0 auto;
+        display: block;
+    }
+
+    .card-container form input,
+    .mercado-pago-container form input {
+        width: 100%; 
+    }
+
+    button {
+        width: 100%; 
+        margin-top: 1em;
+    }
+
+    .buy-resume {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        margin-top: 2em;
+    }
+}
