@@ -444,27 +444,6 @@ input {
     background-color: #e6691c;
 }
 
-@media (max-width: 1200px) {
-    .grid-cursos {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}
-
-@media (max-width: 900px) {
-    .grid-cursos {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-cursos {
-        grid-template-columns: 1fr; 
-        padding: 0 15px; 
-    .cursos h2 {
-        font-size: 1.8em; 
-        }
-    }
-}
 
 .footer {
 
@@ -523,4 +502,189 @@ input {
 #boton-inscribirse a {
     text-decoration: none;
     color: #E0E0E0;
+}
+
+@media (max-width: 1024px) {
+
+   
+    .barra-superior {
+        padding: 10px 15px;
+    }
+
+    input {
+        width: 300px; 
+    }
+
+    .menu-principal {
+        padding: 10px 15px 20px;
+    }
+
+    
+    .curso {
+        padding: 2em 3%;
+        gap: 2em;
+    }
+
+    .curso .imagen-curso {
+        width: 200px;
+        height: 200px;
+    }
+
+    
+    .contenido {
+        padding: 3em 3%;
+    }
+
+ 
+    .docente h2, .docente #info-profesor {
+        margin-left: 3%;
+    }
+    .contenedor-cursos {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .barra-superior {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .logo-contenedor {
+        order: 1; 
+    }
+
+    .barra-busqueda {
+        order: 3; 
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.8em;
+    }
+
+    .lupa {
+        padding: 0.8em;
+    }
+
+    .carrito a {
+        order: 2;
+        margin-right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+        margin: 0 10px;
+    }
+
+    .menu-principal {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 0; 
+    }
+
+    .menu-principal-container ul {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-principal-container li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu-principal-container li:last-child {
+        border-bottom: none;
+    }
+
+    .curso {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .curso .imagen-curso {
+        width: 80%; 
+        height: auto;
+        max-width: 300px;
+    }
+
+    .info-curso {
+        align-items: center; 
+    }
+    
+    #descripcion, #requisito {
+        text-align: left;
+        padding: 0 5%;
+    }
+
+    .contenido {
+        align-items: center;
+        padding: 3em 2%;
+    }
+
+    .contenido summary {
+        width: 90vw; 
+        max-width: 400px;
+    }
+    
+    .content {
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .docente h2 {
+        text-align: center;
+        margin: 0 0 1em 0;
+    }
+
+    .docente #info-profesor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2em 15px;
+    }
+
+    .docente #info-profesor #profesor-foto {
+        margin: 0 0 1em 0;
+    }
+    
+    .docente #info-profesor .detalle-profesor {
+        text-align: center;
+    }
+    
+    #profesor-bio {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-cursos {
+        grid-template-columns: 1fr;
+    }
+    .tarjetas-curso h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .barra-busqueda {
+        margin-left: -50px; 
+    }
+
+    .logo-link {
+        width: 60px;
+    }
+
+    .contenedor-curso{
+        height: auto; 
+    }
 }

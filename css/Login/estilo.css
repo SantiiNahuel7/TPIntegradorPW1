@@ -354,54 +354,6 @@ main {
     color: #0056b3;
 }
 
-@media (max-width: 768px) {
-    .contenedor {
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-    }
-    .seccion-bienvenida{
-        min-height: 250px;
-        border-radius: 20px 20px 0 0;
-    }
-    .seccion-bienvenida h1{
-        font-size: 2.5em;
-    }
-    .seccion-bienvenida p{
-        font-size: 1em;
-    }
-    .seccion-login{
-        padding: 30px 20px;
-        border-radius: 0 0 20px 20px;
-    }
-    .seccion-login h2{
-        font-size: 2em;
-        margin-bottom: 20px;
-    }
-    .grupo-input input{
-        padding: 12px 12px 12px 45px;
-    }
-}
-
-@media (max-width: 480px){
-    .contenedor{
-        width: 95%;
-    }
-    .seccion-bienvenida h1{
-        font-size: 2em;
-    }
-    .seccion-bienvenida p{
-        font-size: 0.9em;
-    }
-    .seccion-login h2{
-        font-size: 1.8em;
-    }
-    .opciones{
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-}
 
 .footer {
 
@@ -455,4 +407,120 @@ main {
     text-decoration: underline;
 
 
+}
+
+@media (max-width: 768px) {
+
+    .barra-superior {
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    .logo-contenedor { order: 1; } 
+    .barra-busqueda {
+        order: 3; 
+        width: 100%;
+        margin: 10px 0;
+    }
+    .barra-busqueda input {
+        width: 100%; 
+        padding: 0.8em;
+    }
+    .lupa { padding: 0.8em; }
+    .carrito { order: 2; margin-right: 0; }
+    
+    .menu-toggle {
+        display: block; 
+        order: 2;
+    }
+
+    .menu-principal {
+        display: none; 
+        width: 100%;
+        padding: 0;
+        padding-bottom: 0;
+    }
+
+    .menu-principal-container ul {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-principal-container li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu-principal-container li:last-child {
+        border-bottom: none;
+    }
+
+    .contenedor {
+        flex-direction: column; 
+        width: 90%;
+        height: auto; 
+    }
+
+    .seccion-bienvenida{
+        border-radius: 20px 20px 0 0; 
+        min-height: 250px;
+        padding: 3em 1em; 
+    }
+
+    .seccion-bienvenida h1{
+        font-size: 2.5em;
+    }
+    .seccion-bienvenida p{
+        font-size: 1em;
+        max-width: 90%;
+    }
+    
+    .seccion-login{
+        border-radius: 0 0 20px 20px;
+        padding: 30px 20px;
+    }
+    .seccion-login h2{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .seccion-login form {
+        max-width: 400px;
+    }
+    .grupo-input input{
+        padding: 12px 12px 12px 45px; 
+    }
+    
+    .shape {
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .contenedor{
+        width: 95%;
+    }
+    .seccion-bienvenida h1{
+        font-size: 2em;
+    }
+    .seccion-bienvenida p{
+        font-size: 0.9em;
+    }
+    .seccion-login h2{
+        font-size: 1.8em;
+    }
+    .opciones{
+        flex-direction: column; 
+        gap: 10px;
+        align-items: flex-start;
+    }
+    #forgotpass {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-principal.menu-activo {
+        display: block;
+    }
 }
