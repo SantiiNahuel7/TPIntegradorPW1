@@ -31,7 +31,7 @@
     <div class="header-lado-derecho">
       <button class="carrito">
         <i class="fa-solid fa-cart-shopping"></i>
-        <span class="contador">3</span>
+        <span class="contador">0</span>
       </button>
     </div>
   </div>
@@ -55,68 +55,65 @@
     <section class="formulario-gift-card">
       <h2>Personaliza tu Gift Card</h2>
    
-      <form>
-        <label for="nombre-destinatario">Nombre completo del destinatario:</label>
-        <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" required>
-        
-        <label for="color-tarjeta">Color de la tarjeta:</label>
-        <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
-        
-        <label>Tamaño de texto:</label>
-        <div class="tamanio-texto">
-          <input type="number" min="20" max="60" value="20">
-          <span>px</span> 
-        </div>
-        
-                <label for="amount">Valor de la Gift Card:</label>
-                <select id="amount" name="amount" required>
-                  <option value="20000">$20000</option>
-                  <option value="25000">$25000</option>
-                  <option value="30000">$30000</option>
-                  <option value="40000">$40000</option>
-                  <option value="60000">$60000</option>
+      <form action="../html/pagoGiftCard.html" method="get">
+  <label for="nombre-destinatario">Nombre completo del destinatario:</label>
+  <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" required>
+  
+  <label for="color-tarjeta">Color de la tarjeta:</label>
+  <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
+  
+  <label>Tamaño de texto:</label>
+  <div class="tamanio-texto">
+    <input type="number" min="20" max="60" value="20">
+    <span>px</span> 
+  </div>
+  
+  <label for="amount">Valor de la Gift Card:</label>
+  <select id="amount" name="amount" required>
+    <option value="20000">$20000</option>
+    <option value="25000">$25000</option>
+    <option value="30000">$30000</option>
+    <option value="40000">$40000</option>
+    <option value="60000">$60000</option>
+  </select>
 
-                </select>
+  <label>Ubicación del monto:</label>
+  <div class="ubicacion">
+    <label>
+      <input type="radio" name="ubicacion" value="arriba-izquierda">
+      <div class="opcion-ubicacion">
+        <span>Arriba Izquierda</span>
+        <img src="../Imagenes/imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
+      </div>
+    </label>
 
-        <label>Ubicación del monto:</label>
-        <div class="ubicacion">
+    <label>
+      <input type="radio" name="ubicacion" value="arriba-derecha">
+      <div class="opcion-ubicacion">
+        <span>Arriba Derecha</span>
+        <img src="../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
+      </div>
+    </label>
 
-          <label>
-            <input type="radio" name="ubicacion" value="arriba-izquierda">
-            <div class="opcion-ubicacion">
-              <span>Arriba Izquierda</span>
-              <img src="../Imagenes/imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
-            </div>
-          </label>
+    <label>
+      <input type="radio" name="ubicacion" value="abajo-izquierda">
+      <div class="opcion-ubicacion">
+        <span>Abajo Izquierda</span>
+        <img src="../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
+      </div>
+    </label>
 
-          <label>
-            <input type="radio" name="ubicacion" value="arriba-derecha">
-            <div class="opcion-ubicacion">
-              <span>Arriba Derecha</span>
-              <img src="../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
-            </div>
-          </label>
+    <label>
+      <input type="radio" name="ubicacion" value="abajo-derecha">
+      <div class="opcion-ubicacion">
+        <span>Abajo Derecha</span>
+        <img src="../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
+      </div>
+    </label>
+  </div>
 
-          <label>
-            <input type="radio" name="ubicacion" value="abajo-izquierda">
-            <div class="opcion-ubicacion">
-              <span>Abajo Izquierda</span>
-              <img src="../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
-            </div>
-          </label>
-
-          <label>
-            <input type="radio" name="ubicacion" value="abajo-derecha">
-            <div class="opcion-ubicacion">
-              <span>Abajo Derecha</span>
-              <img src="../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
-            </div>
-          </label>
-
-        </div>
-
-        <a href="../html/pagoGiftCard.html" class="boton-continuar">Continuar</a>
-      </form>
+  <button type="submit" class="boton-continuar">Continuar</button>
+</form>
     </section>
         
     <section class="preview">
