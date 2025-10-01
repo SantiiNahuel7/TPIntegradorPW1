@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.9em;
-    background-color: #adc4ce;
-    padding: 5%;
+    background-color: #1E1E2E;
+    color: #fff;
 }
 
 main {
@@ -17,15 +17,16 @@ main {
     gap: 1em;
     width: 80%;
     margin: 0% auto;
-    padding: 5%;
-    background-color: #f1f0e8;
+    padding: 2% 5%;
+    background-color: #2E3A59;
     border: #adc4ce solid 0.1em;
 
 }
 
 .course-detail img {
-    width: 10%;
+    width: 20%;
     height: auto;
+    padding-top: 4%;
 }
 
 .main__title {
@@ -43,10 +44,11 @@ main {
     text-align: flex-start;
 }
 
-.card-container, .mercado-pago-container {
+.card-container,
+.mercado-pago-container {
     grid-column: 1 / 2;
     border: #adc4ce solid 0.1em;
-    border-radius: 5%; 
+    border-radius: 5%;
     padding: 4%;
     margin-bottom: 1%;
 }
@@ -56,20 +58,23 @@ main {
     grid-row: 3 / 5;
 }
 
-.card-container form, .mercado-pago-container form {
+.card-container form,
+.mercado-pago-container form {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.card-container form label, .mercado-pago-container form label {
+.card-container form label,
+.mercado-pago-container form label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5em;
 }
 
-.card-container form input, .mercado-pago-container form input {
+.card-container form input,
+.mercado-pago-container form input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -81,7 +86,7 @@ main {
 
 button {
     padding: 0.5em;
-    background-color: #adc4ce;
+    background-color: #ff6d00;
     border: none;
     border-radius: 0.3em;
     cursor: pointer;
