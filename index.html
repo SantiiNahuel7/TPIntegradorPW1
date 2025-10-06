@@ -1,91 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>MentorApp</title>
     <link rel="icon" href="../../Imagenes/Logos/logo6.png">
     <link rel="stylesheet" href="./css/Estilos Index/index.css">
-    
+
 </head>
+
 <body>
-    <header >
+    <header>
 
-            
-            <nav class="barra-superior">
 
-                <div class="usuario-iniciado">
-                    <a href="./html/Login/login.html"><i class="fa-regular fa-user"></i>Acceder</a>
-                    
-                </div>
+        <nav class="barra-superior">
 
-                <div class="logo-contenedor">
-                    <a href="./index.html" class="logo-link">
+            <div class="usuario-iniciado">
+                <a href="./html/Login/login.html"><i class="fa-regular fa-user"></i>Acceder</a>
+
+            </div>
+
+            <div class="logo-contenedor">
+                <a href="./index.html" class="logo-link">
                     <img src="./Imagenes/logos/logo5.png" alt="Logo" class="logo">
-                    </a>
-                </div>
-
-                
-                <a class="carrito" href="./html/carrito.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="contador">0</span>
                 </a>
+            </div>
 
-                <form action="./html/Detalle de Cursos/detalleCursoHtml.html" method="get" class="barra-busqueda">
-                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
-                    <button class="lupa" type="submit">
+
+            <a class="carrito" href="./html/carrito.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="contador">0</span>
+            </a>
+
+            <form action="./html/Detalle de Cursos/detalleCursoHtml.html" method="get" class="barra-busqueda">
+                <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                <datalist id="cursos">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Java"></option>
+                    <option value="SQL"></option>
+                    <option value="UX/UI"></option>
+                </datalist>
+                <button class="lupa" type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                
-                
-                
+                </button>
+            </form>
 
-            </nav>
 
-            <nav class="menu-principal">
 
-                <div class="menu-principal-container">
-                   <ul>
-                        <li><a class="inicio" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="#cursos-destacados">Cursos Destacados</a></li>
-                        <li><a href="./html/calendario.html">Calendario De Cursos</a></li>
-                        <li><a href="./html/giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="./html/contacto.html">Contacto</a></li>
-                   </ul>
 
-                   
+        </nav>
 
-                </div>
+        <nav class="menu-principal">
 
-            </nav>
-            
+            <div class="menu-principal-container">
+                <ul>
+                    <li><a class="inicio" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#cursos-destacados">Cursos Destacados</a></li>
+                    <li><a href="./html/calendario.html">Calendario De Cursos</a></li>
+                    <li><a href="./html/giftCard.html">Crea Tu Gift Card</a></li>
+                    <li><a href="./html/contacto.html">Contacto</a></li>
+                </ul>
 
-       
+
+
+            </div>
+
+        </nav>
+
+
+
     </header>
 
     <section class="slide">
-    <img src="./Imagenes/Imagenes Slide/1.jpg" alt="Imagen Principal">
-    <div class="overlay"></div>
+        <img src="./Imagenes/Imagenes Slide/1.jpg" alt="Imagen Principal">
+        <div class="overlay"></div>
 
-    <div class="slide-text">
-        <h1>Bienvenido a MentorApp</h1>
-        <p>Aprendé desde casa con nuestros cursos online</p>
-    </div>
+        <div class="slide-text">
+            <h1>Bienvenido a MentorApp</h1>
+            <p>Aprendé desde casa con nuestros cursos online</p>
+        </div>
 
-    <div class="flechas">
-        <button class="flecha-izq">
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <button class="flecha-der">
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-    </div>
-</section>
+        <div class="flechas">
+            <button class="flecha-izq">
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="flecha-der">
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
 
     <section class="pasos-section">
 
@@ -95,43 +108,46 @@
 
             <div class="paso-1">
 
-            <h2>Registro o inicio de sesión</h2> 
+                <h2>Registro o inicio de sesión</h2>
 
-            <p>
+                <p>
 
-                Crear una cuenta en la plataforma o ingresar si ya se tiene una cuenta existente. Completar datos personales básicos (nombre, correo, teléfono, etc.).
+                    Crear una cuenta en la plataforma o ingresar si ya se tiene una cuenta existente. Completar datos
+                    personales básicos (nombre, correo, teléfono, etc.).
 
-            </p>
+                </p>
+
+            </div>
+
+            <div class="paso-2">
+
+                <h2>Selección del curso y forma de pago</h2>
+
+                <p>
+
+                    Elegir el curso deseado de la lista de disponibles. Revisar horarios, modalidad (presencial o
+                    online) y precios. Seleccionar método de pago y abonar la inscripción.
+
+                </p>
+
+            </div>
+
+            <div class="paso-3">
+
+                <h2>Confirmación y acceso al curso</h2>
+
+                <p>
+
+                    Recibir comprobante de inscripción por correo o en la plataforma. Acceder al material del curso,
+                    plataforma de clases, o esperar instrucciones para el inicio.
+
+                </p>
+
+            </div>
 
         </div>
 
-        <div class="paso-2">
 
-            <h2>Selección del curso y forma de pago</h2> 
-
-            <p>
-
-                Elegir el curso deseado de la lista de disponibles. Revisar horarios, modalidad (presencial o online) y precios. Seleccionar método de pago y abonar la inscripción.
-
-            </p>
-
-        </div>
-
-        <div class="paso-3">
-
-            <h2>Confirmación y acceso al curso</h2> 
-
-            <p>
-
-                Recibir comprobante de inscripción por correo o en la plataforma. Acceder al material del curso, plataforma de clases, o esperar instrucciones para el inicio.
-
-            </p>
-
-        </div>
-
-        </div>
-
-        
     </section>
 
 
@@ -140,50 +156,50 @@
 
     <section class="cursos" id="cursos-destacados">
 
-            <img class="fondo" src="./Imagenes/Imagen de fondo/fondo.jpg" alt="Imagen-fondo-cursos-destacados">
+        <img class="fondo" src="./Imagenes/Imagen de fondo/fondo.jpg" alt="Imagen-fondo-cursos-destacados">
 
-            <h2> CURSOS DESTACADOS </h2>
-
-            
-
-           <div class="grid-cursos">
+        <h2> CURSOS DESTACADOS </h2>
 
 
 
-                <article class="curso">
-
-                    <div class="img-container">
-
-                        <img src="./Imagenes/cursos/html.jpg" alt="HTML">
-                        <span class="precio">$20.000</span>
-                    
-                    </div>
-
-                    <div class="info">
-
-                        <p class="horas"> 20 hs</p>
-                        <h3 class="nombre"> HTML </h3>
-
-                        <a href="./html/Detalle de Cursos/detalleCursoHtml.html">
-                            <button class="comprar"> Comprar </button>
-
-                        </a>
-                        
-
-                     </div>
-
-                </article>
+        <div class="grid-cursos">
 
 
 
-                <article class="curso">
+            <article class="curso">
 
-                    <div class="img-container">
+                <div class="img-container">
 
-                        <img src="./Imagenes/cursos/css.jpg" alt="CSS">
-                        <span class="precio">$25.000</span>
-                    
-                    </div>
+                    <img src="./Imagenes/cursos/html.jpg" alt="HTML">
+                    <span class="precio">$20.000</span>
+
+                </div>
+
+                <div class="info">
+
+                    <p class="horas"> 20 hs</p>
+                    <h3 class="nombre"> HTML </h3>
+
+                    <a href="./html/Detalle de Cursos/detalleCursoHtml.html">
+                        <button class="comprar"> Comprar </button>
+
+                    </a>
+
+
+                </div>
+
+            </article>
+
+
+
+            <article class="curso">
+
+                <div class="img-container">
+
+                    <img src="./Imagenes/cursos/css.jpg" alt="CSS">
+                    <span class="precio">$25.000</span>
+
+                </div>
 
                 <div class="info">
 
@@ -193,24 +209,24 @@
 
                     <a href="./html/Detalle de Cursos/detalleCursoCSS.html">
 
-                            <button class="comprar"> Comprar </button>
+                        <button class="comprar"> Comprar </button>
 
                     </a>
 
                 </div>
 
-                </article>
+            </article>
 
 
 
-                <article class="curso">
+            <article class="curso">
 
-                    <div class="img-container">
+                <div class="img-container">
 
-                        <img src="./Imagenes/cursos/javascript.avif" alt="Javascript">
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
+                    <img src="./Imagenes/cursos/javascript.avif" alt="Javascript">
+                    <span class="precio">$30.000</span>
+
+                </div>
 
                 <div class="info">
 
@@ -222,22 +238,22 @@
                         <button class="comprar"> Comprar </button>
 
                     </a>
-                    
+
 
                 </div>
 
-                </article>
+            </article>
 
 
 
-                <article class="curso">
+            <article class="curso">
 
-                    <div class="img-container">
+                <div class="img-container">
 
-                        <img src="./Imagenes/cursos/java.png" alt="Java">
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
+                    <img src="./Imagenes/cursos/java.png" alt="Java">
+                    <span class="precio">$30.000</span>
+
+                </div>
 
                 <div class="info">
 
@@ -249,22 +265,22 @@
                         <button class="comprar"> Comprar </button>
 
                     </a>
-                    
+
 
                 </div>
 
-                </article>
+            </article>
 
 
 
-                <article class="curso">
+            <article class="curso">
 
-                    <div class="img-container">
+                <div class="img-container">
 
-                        <img src="./Imagenes/cursos/sql.jpg" alt="SQL">
-                        <span class="precio">$40.000</span>
-                    
-                    </div>
+                    <img src="./Imagenes/cursos/sql.jpg" alt="SQL">
+                    <span class="precio">$40.000</span>
+
+                </div>
 
                 <div class="info">
 
@@ -276,22 +292,22 @@
                         <button class="comprar"> Comprar </button>
 
                     </a>
-                    
+
 
                 </div>
 
-                </article>
+            </article>
 
 
 
-                <article class="curso">
+            <article class="curso">
 
-                    <div class="img-container">
+                <div class="img-container">
 
-                        <img src="./Imagenes/cursos/ux-ui.jpg" alt="UX-UI">
-                        <span class="precio">$60.000</span>
-                    
-                    </div>
+                    <img src="./Imagenes/cursos/ux-ui.jpg" alt="UX-UI">
+                    <span class="precio">$60.000</span>
+
+                </div>
 
                 <div class="info">
 
@@ -303,24 +319,24 @@
                         <button class="comprar"> Comprar </button>
 
                     </a>
-                    
+
 
                 </div>
 
-                </article>
+            </article>
 
-           </div>
-
-    
+        </div>
 
 
-            
 
-            
 
-        
 
-        
+
+
+
+
+
+
 
     </section>
 
@@ -328,7 +344,7 @@
 
         <h2>Medios de pago</h2>
 
-      
+
 
         <div class="logos">
 
@@ -338,11 +354,11 @@
 
         </div>
 
-         
 
-             
 
-        
+
+
+
 
     </section>
 
@@ -370,13 +386,16 @@
                 </ul>
             </div>
 
-            
+
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./Imagenes/icono-redes/facebook.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./Imagenes/icono-redes/instagram.png"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="./Imagenes/icono-redes/youtube.png"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="./Imagenes/icono-redes/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="./Imagenes/icono-redes/instagram.png"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="./Imagenes/icono-redes/youtube.png"></a>
                 </div>
             </div>
 
@@ -387,4 +406,5 @@
 
     </footer>
 </body>
+
 </html>

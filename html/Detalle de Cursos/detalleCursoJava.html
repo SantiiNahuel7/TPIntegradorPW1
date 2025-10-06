@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="../../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <title>MentorApp</title>
 </head>
 <header>
-        <div class="container">
-            <nav class="barra-superior">
-                <div class="logo-contenedor">
-                     <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/logos/logo5.png" class="logo">
-                    </a>
-                </div>      
-
-                <form action="giftCard.html" method="get" class="barra-busqueda">
-                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
-                    <button class="lupa" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                    <a href="../carrito.html">
-                    <button class="carrito">                        
-                        <i class="fa-solid fa-cart-shopping"> </i> 
-                        <span class="contador">0</span>                                 
-                    </button>
+    <div class="container">
+        <nav class="barra-superior">
+            <div class="logo-contenedor">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/logos/logo5.png" class="logo">
                 </a>
-            </nav>
-            <nav class="menu-principal">
-                <div class="menu-principal-container">
-                   <ul>
-                        <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="#destacados-cursos">Cursos</a></li>
-                        <li><a href="../calendario.html">Calendario De Cursos</a></li>
-                        <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="../contacto.html">Contacto</a></li>
-                   </ul>
-                </div>
-            </nav>
-        </div>
+            </div>
+
+            <form action="../../index.html#cursos-destacados" method="get" class="barra-busqueda">
+                <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                <datalist id="cursos">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Java"></option>
+                    <option value="SQL"></option>
+                    <option value="UX/UI"></option>
+                </datalist>
+                <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <a href="../carrito.html">
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"> </i>
+                    <span class="contador">0</span>
+                </button>
+            </a>
+        </nav>
+        <nav class="menu-principal">
+            <div class="menu-principal-container">
+                <ul>
+                    <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#destacados-cursos">Cursos</a></li>
+                    <li><a href="../calendario.html">Calendario De Cursos</a></li>
+                    <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
+
 <body>
     <section class="curso">
         <img src="../../Imagenes/Detalle de Curso/java.png" alt="Java" class="imagen-curso">
@@ -53,12 +66,15 @@
             <h2 id="titulo-curso">Curso de Java</h2>
             <p id="valor">Valor: $30.000</p>
             <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
-            <p id="descripcion">Este curso ofrece una introducción práctica al lenguaje de programación Java, abordando desde los fundamentos de la programación orientada a objetos hasta la creación de aplicaciones básicas. Está diseñado para principiantes y estudiantes que deseen adquirir una base sólida en el desarrollo de software con uno de los lenguajes más utilizados en la industria.</p>
+            <p id="descripcion">Este curso ofrece una introducción práctica al lenguaje de programación Java, abordando
+                desde los fundamentos de la programación orientada a objetos hasta la creación de aplicaciones básicas.
+                Está diseñado para principiantes y estudiantes que deseen adquirir una base sólida en el desarrollo de
+                software con uno de los lenguajes más utilizados en la industria.</p>
             <p id="requisito">Requisitos Previos: Ninguno</p>
             <a href="../formularios/formCursoJava.html">
                 <button id="boton-inscribirse">Inscribirse</button>
-            </a> 
-        </div> 
+            </a>
+        </div>
     </section>
     <section class="contenido">
         <h2 id="contenido-curso">CONTENIDO POR CLASE</h2>
@@ -86,7 +102,7 @@
                 <li>Atributos y métodos.</li>
                 <li>Encapsulamiento y constructores.</li>
                 <li>Herencia y polimorfismo.</li>
-                </ul>
+            </ul>
         </details>
     </section>
     <section class="docente">
@@ -96,9 +112,12 @@
             <div class="detalle-profesor">
                 <p id="nombre-profesor">Laura Fernandez</p>
                 <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Ingeniera en Sistemas con más de 10 años de experiencia en desarrollo de software. Ha trabajado en proyectos de banca digital y aplicaciones móviles utilizando Java como lenguaje principal. Se destaca por su enfoque práctico y claro a la hora de enseñar, guiando a los estudiantes desde los fundamentos hasta la creación de aplicaciones reales.</p>
-            </div>   
-        </div>  
+                <p id="profesor-bio">Ingeniera en Sistemas con más de 10 años de experiencia en desarrollo de software.
+                    Ha trabajado en proyectos de banca digital y aplicaciones móviles utilizando Java como lenguaje
+                    principal. Se destaca por su enfoque práctico y claro a la hora de enseñar, guiando a los
+                    estudiantes desde los fundamentos hasta la creación de aplicaciones reales.</p>
+            </div>
+        </div>
     </section>
     <section class="tarjetas-curso" id="destacados-cursos">
         <h2>CURSOS DESTACADOS</h2>
@@ -157,19 +176,20 @@
             </article>
         </div>
     </section>
-    </body>
-    <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Datos Del Grupo</h3>
-                    <ul>
-                        <li>Alan Leonel Ibañez</li>
-                        <li>Santiago Orellana</li>
-                        <li>Yamila Santillan</li>
-                        <li>Adrian Amarilla</li>
-                        <li>Jennifer Caceres</li>
-                    </ul>
-                </div>
-            </div>
-    </footer>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Datos Del Grupo</h3>
+            <ul>
+                <li>Alan Leonel Ibañez</li>
+                <li>Santiago Orellana</li>
+                <li>Yamila Santillan</li>
+                <li>Adrian Amarilla</li>
+                <li>Jennifer Caceres</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </html>

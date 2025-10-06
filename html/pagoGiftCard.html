@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gift card - Pago</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/giftCard.css">
   <link rel="stylesheet" href="../css/gift-card-pago/pago-Giftcard.css">
 </head>
+
 <body>
   <header>
     <div class="barra-superior">
@@ -19,17 +24,25 @@
           <img src="../Imagenes/logos/logo5.png" alt="Logo" class="logo">
         </a>
       </div>
-      <form action="giftCard.html" method="get" class="barra-busqueda">
+      <form action="../index.html#cursos-destacados" method="get" class="barra-busqueda">
         <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+        <datalist id="cursos">
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="JavaScript"></option>
+          <option value="Java"></option>
+          <option value="SQL"></option>
+          <option value="UX/UI"></option>
+        </datalist>
         <button class="lupa" type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
       <div class="header-lado-derecho">
         <a href="../html/carrito.html" class="carrito">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span class="contador">0</span>
-           </a>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="contador">0</span>
+        </a>
 
       </div>
     </div>
@@ -51,7 +64,8 @@
       <h2>Finalizar la compra de la gift Card</h2>
       <form action="../html/pagoRealizado.html" method="get">
         <label for="gmail-destinatario">Gmail del destinatario:</label>
-        <input type="email" id="gmail-destinatario" name="gmail-destinatario" placeholder="ej. user222@gmail.com" required>
+        <input type="email" id="gmail-destinatario" name="gmail-destinatario" placeholder="ej. user222@gmail.com"
+          required>
 
         <h3>Elegí tu método de pago</h3>
         <div class="metodos-pago">
@@ -70,15 +84,17 @@
         </div>
 
         <label for="numero-tarjeta">Número de tarjeta:</label>
-        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"  pattern="[0-9]{16}" maxlength="16" required>
+        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"
+          pattern="[0-9]{16}" maxlength="16" required>
 
         <label for="fecha-expiracion">Fecha de vencimiento:</label>
-        <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
+        <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA"
+          pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
 
         <label for="cvv">CVV:</label>
         <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
 
-       <button type="submit" class="boton-comprar">Comprar</button>
+        <button type="submit" class="boton-comprar">Comprar</button>
 
       </form>
     </section>
@@ -124,4 +140,5 @@
     </div>
   </footer>
 </body>
+
 </html>

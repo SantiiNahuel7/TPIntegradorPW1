@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="../../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <title>MentorApp</title>
 </head>
 <header>
-        <div class="container">
-            <nav class="barra-superior">
-                <div class="logo-contenedor">
-                     <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/logos/logo5.png" class="logo">
-                    </a>
-                </div>      
-
-                <form action="giftCard.html" method="get" class="barra-busqueda">
-                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
-                    <button class="lupa" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                    <a href="../carrito.html">
-                    <button class="carrito">                        
-                        <i class="fa-solid fa-cart-shopping"> </i> 
-                        <span class="contador">0</span>                                 
-                    </button>
+    <div class="container">
+        <nav class="barra-superior">
+            <div class="logo-contenedor">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/logos/logo5.png" class="logo">
                 </a>
-            </nav>
-            <nav class="menu-principal">
-                <div class="menu-principal-container">
-                   <ul>
-                        <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="#destacados-cursos">Cursos</a></li>
-                        <li><a href="../calendario.html">Calendario De Cursos</a></li>
-                        <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="../contacto.html">Contacto</a></li>
-                   </ul>
-                </div>
-            </nav>
-        </div>
+            </div>
+
+            <form action="../../index.html#cursos-destacados" method="get" class="barra-busqueda">
+                <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                <datalist id="cursos">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Java"></option>
+                    <option value="SQL"></option>
+                    <option value="UX/UI"></option>
+                </datalist>
+                <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <a href="../carrito.html">
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"> </i>
+                    <span class="contador">0</span>
+                </button>
+            </a>
+        </nav>
+        <nav class="menu-principal">
+            <div class="menu-principal-container">
+                <ul>
+                    <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#destacados-cursos">Cursos</a></li>
+                    <li><a href="../calendario.html">Calendario De Cursos</a></li>
+                    <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
+
 <body>
     <section class="curso">
         <img src="../../Imagenes/Detalle de Curso/html.png" alt="HTML" class="imagen-curso">
@@ -53,12 +66,14 @@
             <h2 id="titulo-curso">Curso de HTML</h2>
             <p id="valor">Valor: $20.000</p>
             <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 20hs</p>
-            <p id="descripcion">Curso práctico para aprender los fundamentos de HTML, el lenguaje base de la web. Incluye estructura de páginas, etiquetas principales, enlaces, imágenes, tablas y formularios, preparando al alumno para crear sitios web desde cero o avanzar hacia CSS y JavaScript.</p>
+            <p id="descripcion">Curso práctico para aprender los fundamentos de HTML, el lenguaje base de la web.
+                Incluye estructura de páginas, etiquetas principales, enlaces, imágenes, tablas y formularios,
+                preparando al alumno para crear sitios web desde cero o avanzar hacia CSS y JavaScript.</p>
             <p id="requisito">Requisitos Previos: Ninguno</p>
             <a href="../formularios/formCursoHtml.html">
                 <button id="boton-inscribirse">Inscribirse</button>
             </a>
-        </div> 
+        </div>
     </section>
     <section class="contenido">
         <h2 id="contenido-curso">CONTENIDO POR CLASE</h2>
@@ -88,7 +103,7 @@
                 <li>Formularios: campos de texto, botones, selectores, validación básica.</li>
                 <li>Elementos semánticos de HTML5.</li>
                 <li>Buenas prácticas de accesibilidad.</li>
-                </ul>
+            </ul>
         </details>
     </section>
     <section class="docente">
@@ -98,9 +113,13 @@
             <div class="detalle-profesor">
                 <p id="nombre-profesor">Juan Martín López</p>
                 <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Juan Martín López es desarrollador web con más de 8 años de experiencia en diseño y programación de sitios web. Especializado en HTML, CSS y JavaScript, ha trabajado en proyectos para empresas locales y startups, combinando creatividad y buenas prácticas de desarrollo. Apasionado por la enseñanza, busca que sus estudiantes comprendan los fundamentos del desarrollo web de manera práctica y aplicada.</p>
-            </div>   
-        </div>  
+                <p id="profesor-bio">Juan Martín López es desarrollador web con más de 8 años de experiencia en diseño y
+                    programación de sitios web. Especializado en HTML, CSS y JavaScript, ha trabajado en proyectos para
+                    empresas locales y startups, combinando creatividad y buenas prácticas de desarrollo. Apasionado por
+                    la enseñanza, busca que sus estudiantes comprendan los fundamentos del desarrollo web de manera
+                    práctica y aplicada.</p>
+            </div>
+        </div>
     </section>
     <section class="tarjetas-curso">
         <h2>CURSOS DESTACADOS</h2>
@@ -159,19 +178,20 @@
             </article>
         </div>
     </section>
-    </body>
-    <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Datos Del Grupo</h3>
-                    <ul>
-                        <li>Alan Leonel Ibañez</li>
-                        <li>Santiago Orellana</li>
-                        <li>Yamila Santillan</li>
-                        <li>Adrian Amarilla</li>
-                        <li>Jennifer Caceres</li>
-                    </ul>
-                </div>
-            </div>
-    </footer>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Datos Del Grupo</h3>
+            <ul>
+                <li>Alan Leonel Ibañez</li>
+                <li>Santiago Orellana</li>
+                <li>Yamila Santillan</li>
+                <li>Adrian Amarilla</li>
+                <li>Jennifer Caceres</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
 </html>
