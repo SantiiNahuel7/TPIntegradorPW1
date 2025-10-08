@@ -17,83 +17,65 @@ body {
     color: #333;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--azul);
-    color: white;
-    padding: 1rem;
-}
-
-.buscador {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.buscador select,
-.buscador button {
-    padding: 0.4rem;
-    border-radius: 5px;
-    border: none;
-}
-
-.buscador button {
-    background: var(--celeste);
-    cursor: pointer;
-}
 
 /* Contacto */
 main {
     padding: 2rem;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../TPIntegradorPW1/Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+    padding-bottom: 5rem;
 }
 
-h1 {
+main h1 {
     text-align: center;
     margin-bottom: 1.5rem;
+    color: #ff6d00;;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .contacto {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     flex-wrap: wrap;
+    
 }
 
-form {
+.form-contacto {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    background: var(--beige);
+    background-color: rgba(255,255,255,0.1);
     padding: 1rem;
     border-radius: 10px;
+    color: #E0E0E0;
 }
 
-form input, form textarea {
+.form-contacto input, .form-contacto textarea {
+    width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button[type="submit"] {
-    background: var(--azul);
-    color: white;
+.form-contacto button[type="submit"] {
+    background: #ff6d00;
+    color: #E0E0E0;
     border: none;
     padding: 0.7rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.info {
+.info-contacto {
     flex: 1;
-    background: var(--celeste);
+    background-color: rgba(255,255,255,0.1);
     padding: 1rem;
     border-radius: 10px;
+    color: #E0E0E0;
 }
 
-.info iframe {
+.info-contacto iframe {
     width: 100%;
     height: 200px;
     margin-top: 1rem;
@@ -101,15 +83,46 @@ button[type="submit"] {
     border-radius: 10px;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-around;
-    background: var(--celeste);
-    padding: 1rem;
-    margin-top: 2rem;
+@media (min-width: 1024px) {
+
+
+    main {
+
+
+        padding: 5rem;
+
+    }
+
+   .form-contacto input, .form-contacto textarea {
+
+    width: 90%;
+
 }
 
-footer div h3 {
-    margin-bottom: 0.5rem;
+   .form-contacto textarea {
+
+    padding-bottom: 4rem;
+
 }
+
+.form-contacto button[type="submit"] {
+   margin-top: 3rem;
+
+}
+
+main h1 {
+
+    padding-bottom: 5rem;
+
+
+}
+
+.info-contacto {
+
+
+    padding-bottom: 4rem;
+
+}
+    
+}
+

@@ -7,198 +7,73 @@
 
 }
 
-.barra-busqueda {
 
-    display: flex;
+.curso-container{
 
-
-
-}
-
-input {
-
-    border-radius: 5px 0 0 5px;
-    border: 0;
-    outline: none;
-    padding: 10px;
-    width: 500px;
-    font-weight:normal
-  
-}
-
-.lupa {
-
-    color: #E0E0E0;
-    background: #ffffff;
-    border: 0;
-    border-radius: 0px 5px 5px 0px;
-    cursor: pointer;
-    padding: 10px;
-
-}
-
-
-
-.barra-superior {
-
-    display: flex;
-    align-items: center;
-    background-color: #1E1E2E;
-    padding: 10px 20px;
-    justify-content: space-between;
-
-
-}
-
-
-.logo-link {
-    
-    display: block;
-    width: 70px;
-    
-
-}
-
-
-
-.carrito {
-
-    color: #E0E0E0;
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    margin-right: 20px;
-
-
-}
-
-.carrito .contador {
-
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: #F1F0E8;
-    color: #1E1E2E;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 2px 6px;
-    border-radius: 50%;
-
-
-}
-
-
-.logo {
-
-width: 7em;
-
-}
-input {
-
-    border-radius: 1em 0 0 1em;
-    border: 0;
-    outline: none;
-    padding: 1em;
-    font-weight:normal
-  
-}
-
-.lupa {
-
-    color: #ff6d00;
-    background: #ffffff;
-    border: 0;
-    border-radius: 0em 1em 1em 0em;
-    cursor: pointer;
-    padding: 1em;
-
-}
-
-.carrito i {
-
-    font-size: 23px;
-}
-
-
-
-.menu-principal {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    padding-left: 300px;
-    padding-right: 300px;
-    background-color: #1E1E2E;
-    padding-bottom: 30px;
-    
-}
-
-.menu-principal-container {
-
-    width: 100%;
-
-
-}
-
-
-.menu-principal-container ul {
-
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-     
-}
-
-
-
-.menu-principal-container li a {
-    margin: 0; 
-    text-decoration: none;   
-    color: #E0E0E0;              
-}
-
-.menu-principal-container li a:hover {
-
-
-    color: #e6691c;
-
-}
-
-.menu-principal-container inicio:hover {
-
-
-    color: #FF6D00;
-
-}
-
-.curso{
-    background-color: #2E3A59;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
     color: #E0E0E0;
     display: flex;
+    flex-direction: column;
     gap: 4em;
-    align-items: flex-start;
-    padding: 2em 20em 0 10em;
-    font-weight: 600;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
-.curso .imagen-curso {
+.curso-container .imagen-curso {
     width: 20em; 
     height: 20em; 
     border-radius: 4px;
 }
 
 .info-curso{
-    display: flex;
-    flex-direction: column;
     gap: 2em;
+    justify-content: center;
+    align-items: center;
 }
 
-.curso .info-curso #boton-inscribirse{
+
+#descripcion {
+
+padding: 2rem;
+
+
+}
+
+#valor {
+
+    color: #e6691c;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-weight: bold;
+
+
+
+}
+
+#contenido-curso {
+
+    padding-bottom: 2rem;
+    font-size: 2rem;
+
+
+}
+
+#tiempo-de-curso {
+
+ 
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+.curso-container .info-curso #boton-inscribirse{
+
     width: 12em;
     height: 3em;
     border-radius: 1em;
@@ -208,86 +83,156 @@ input {
     font-size: 0.9em;
 }
 
-.curso .info-curso #boton-inscribirse:hover{
+.curso-container a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+
+}
+
+.curso-container .info-curso #boton-inscribirse:hover{
     background-color: #e6691c;
     cursor: pointer;
 }
 
 #titulo-curso{
+    display: flex;
     color: #E0E0E0;
-    font-size: 2.2em;
+    font-size: 3rem;
     font-weight: 600;
-    text-transform: uppercase;
+    justify-content: center;
+    padding-bottom: 3rem;
+   
 }
+
+#requisito {
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding-bottom: 2rem;
+
+
+}
+
+
+
 
 .contenido{
-    color: #E0E0E0;
-    background-color: #2E3A59;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 3em 20em 2em 34em; 
- 
+    justify-content: center;
+    align-items: center;
+    color:#E0E0E0;
+    padding: 3em;
+    gap: 1em;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+    color: #E0E0E0;
+    
 }
 
-#contenido-curso{
-    padding-bottom: 1em;
+
+details {
+
+    color: #E0E0E0;
+    width: 100%;
+    padding: 1em;
+    
+
+
 }
-.contenido summary {
-    background-color: #2E3A59;
-    padding: 0.7em;
-    width: 35em;
-    height: 3em;
-    justify-items: center;
+
+summary {
+
+    list-style: none;
+    font-weight: bold;
+    color: #e6691c;
+
+
+}
+
+summary::before {
+
+    content: '+';
+    padding-right: 1rem;
+    font-size: 1.5rem;
+
+
+}
+
+details[open] summary::before {
+
+
+    content: '-';
+
+}
+
+
+.unidades {
+
     cursor: pointer;
-    font-size: 0.9em;
-    border: #e6691c solid;
+
+
 }
-.content{
+
+.unidades ul {
+
+   padding-top: 2rem;
+   gap: 2rem;
+   
+   
+
+}
+
+.unidades ul li {
+
+  padding-bottom: 1rem;
+  
+
+}
+
+
+.docente{
+    background-color:#E0E0E0;
+    padding-top: 3em;
     display: flex;
     flex-direction: column;
-    background-color: #ADC4CE;
-    color: #0F111A;
-    padding-left: 1.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    justify-content: space-between;
-    gap: 1em;
-}
-.docente{
-    background-color: #2E3A59;
+    justify-content: center;
+    align-items: center;
 }
 .docente h2{
-    background-color: #2E3A59;
-    color: #E0E0E0;
+    color:#2E3A59;
     font-size: 2.2em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-left: 5em;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .docente #info-profesor {
-    padding: 1em;
     display: flex;
-    background-color: #ADC4CE;
-    align-items: flex-start;
     gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 .docente #info-profesor #profesor-foto{
     height: 10em;
     width: 10em;
     border-radius: 50%;
-    margin-left: 4em;
-    margin-right: 2em;
-    flex-shrink: 0;
+    border: 4px solid rgba(255,255,255,0.8);
+
 }
 
 .docente #info-profesor .detalle-profesor{
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     padding-top: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 #nombre-profesor{
@@ -298,18 +243,16 @@ input {
 }
 
 #profesor-bio{
-    font-size: 0.95em;
     line-height: 2;
-    margin-top: 0.8em;
-    width: 80%;
+    margin-top: 2em;
+    width: 100%;
 }
 
 .rating {
     --percent: 100%; /* Valor predeterminado */
     display: inline-block;
     font-size: 0; /* Elimina espacios entre elementos inline */
-    position: relative;
-    width: 100px; /* 5 estrellas * 20px por estrella = 100px */
+    position: relative; /* 5 estrellas * 20px por estrella = 100px */
     height: 20px;
 }
 
@@ -334,357 +277,299 @@ input {
     width: var(--percent); /* Controlado por el valor 'percent' del HTML */
 }
 
-.tarjetas-curso{
-    background-color: #1E1E2E;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.tarjetas-curso h2{
-    color: #E0E0E0;
-    font-size: 2.2em;
-    margin-bottom: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.contenedor-cursos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.contenedor-curso{
-    background-color: #2E3A59;
-    border-radius: 8px;
-    overflow: hidden;
-    color: #E0E0E0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 380px;
-}
-
-.contenedor-curso:hover{
-    transform: translateY(-5px);
-}
-
-.img-container{
-    position: relative;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.img-container img{
-    max-width: 90%;  
-    max-height: 90%;
-    object-fit: contain;
-    display: block;
-}
-
-.precio-curso{
-    position: absolute;
-    top: 15px;
-    right: 0;
-    background-color: red;
-    color: #E0E0E0;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    font-size: 0.9em;
-    z-index: 10;
-}
-
-.contenedor-info{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.horas{
-    font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.7); 
-    margin: 0 0 5px 0;
-}
-
-.contenedor.nombre{
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 5px 0 20px 0;
-    text-transform: uppercase;
-}
-
-.contenedor-comprar{
-    background-color:#4CC9F0; 
-    color:#E0E0E0;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.2s; 
-    margin-top: auto;
-}
-
-.contenedor-comprar:hover{
-    background-color: #e6691c;
-}
 
 
-.footer {
+@media (min-width: 768px) {   
 
-    background: #0F111A;
-    color: #E0E0E0;
-    padding: 40px 20px;
+    .menu-principal-container ul {
 
-}
-
-.footer-container {
-
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-
-}
-
-.footer-col h3 {
-
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-
-}
-
-.footer-col ul {
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-.footer-col ul li {
-
-    margin-bottom: 8px;
-
-}
-
-.footer-col a {
-
-    color: #E0E0E0;
-    text-decoration: none;
-
-
-}
-
-.footer-col a:hover {
-
-    text-decoration: underline;
-
-
-}
-
-#boton-inscribirse a {
-    text-decoration: none;
-    color: #E0E0E0;
-}
-
-@media (max-width: 1024px) {
-
-   
-    .barra-superior {
-        padding: 10px 15px;
-    }
-
-    input {
-        width: 300px; 
-    }
-
-    .menu-principal {
-        padding: 10px 15px 20px;
-    }
-
-    
-    .curso {
-        padding: 2em 3%;
-        gap: 2em;
-    }
-
-    .curso .imagen-curso {
-        width: 200px;
-        height: 200px;
-    }
-
-    
-    .contenido {
-        padding: 3em 3%;
-    }
-
- 
-    .docente h2, .docente #info-profesor {
-        margin-left: 3%;
-    }
-    .contenedor-cursos {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .barra-superior {
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
-        padding: 10px 15px;
+        gap: 0;
     }
+
+    .pasos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .curso-container {
+
+        padding-left: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+
+       
+    }
+
+    .curso-container .contenido {
+
+        margin-right: 18em;
+
+
+    }
+
+     .curso-container .imagen-curso {
+
+            margin-right: 20rem;
+            margin-bottom: 3rem;
+
+
+        }
+
+    .contenido {
+
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    .contenido .contenido-curso {
+
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    #titulo-curso {
+
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    #tiempo-de-curso {
+
+        padding-left: 0rem;
+
+
+    }
+
+    #descripcion {
+
+        padding-left: 0rem;
+
+    }
+
+    #requisito {
+
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0rem;
+
+
+    }
+
+    #valor {
+
+       display: flex;
+        justify-content: flex-start;
+        padding-left: 0rem; 
+
+
+    }
+
+    #contenido-curso {
+
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    .unidades {
+
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    .curso-container a {
+
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:baseline;
+
+
+    }
+
+  
+
+    .docente #info-profesor {
+
+        display: flex;
+        flex-direction: row;
+        
+
+
+
+    }
+
+    .docente {
+
+       display: flex;
+       justify-content: flex-start;
+       align-items:baseline;
+       padding: 3rem;
+
+
+
+    }
+
+    #nombre-profesor {
+
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+
+
+    .docente #info-profesor .detalle-profesor {
+        
+    text-align:left;
+
+}
+
+
+
+        .grid-cursos .curso {
+        width: 20em;
+        transition: transform 0.2s;
+    }
+
+        .cursos {
+        place-items: center;
+        width: 100%;
+    }
+
+    .barra-superior {
+
+        display: flex;
+        justify-content: space-between  ;
+        align-items: center;
+        padding: 1em 3em;
+        gap: 1em;
+
+
+    }
+
 
     .logo-contenedor {
-        order: 1; 
+
+        order: 1;
+        flex-shrink: 0;
+        margin-right: 3em;
+
+    }
+
+    .logo {
+
+        width: 10em;
+
     }
 
     .barra-busqueda {
-        order: 3; 
-        width: 100%;
-        margin: 10px 0;
+
+       justify-content: center; 
+       display: flex;
+       order: 2;
+       position: relative; 
+       left: -1em;
+        
+
+
+    }
+
+    .usuario-iniciado a {
+
+    display: flex;
+    align-items:center;    
+    text-decoration: none;
+    color: #E0E0E0;
+    gap: 1em;
+    white-space: nowrap;
+    
+
+}
+
+    .usuario-iniciado {
+
+        display: flex;
+        align-items: center;
+        order: 3;
+        padding-right: 2em;
+
+    }
+    .carrito {
+
+        position: relative;
+        margin: 0;
+        margin-right: 2em;
+        order: 4;
+
+
     }
 
     input {
-        width: 100%;
-        padding: 0.8em;
+        width: 40em;
     }
 
-    .lupa {
-        padding: 0.8em;
-    }
-
-    .carrito a {
-        order: 2;
-        margin-right: 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        order: 2;
-        margin: 0 10px;
-    }
+  
 
     .menu-principal {
-        width: 100%;
-        padding: 0;
-        padding-bottom: 0; 
+        padding-left: 20em;
+        padding-right: 20em;
+        
     }
 
     .menu-principal-container ul {
-        flex-direction: column; 
+
+        gap: 10em;
+
+    }
+
+
+    .medios-pago {
+
+        display: flex;
+        justify-content: center;
         align-items: center;
-        width: 100%;
+
     }
 
-    .menu-principal-container li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .menu-principal-container li:last-child {
-        border-bottom: none;
+
+    .footer {
+
+        position: relative;
+
     }
 
-    .curso {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .curso .imagen-curso {
-        width: 80%; 
-        height: auto;
-        max-width: 300px;
-    }
 
-    .info-curso {
-        align-items: center; 
-    }
-    
-    #descripcion, #requisito {
-        text-align: left;
-        padding: 0 5%;
-    }
 
-    .contenido {
-        align-items: center;
-        padding: 3em 2%;
-    }
 
-    .contenido summary {
-        width: 90vw; 
-        max-width: 400px;
-    }
-    
-    .content {
-        width: 90vw;
-        max-width: 400px;
-    }
-
-    .docente h2 {
-        text-align: center;
-        margin: 0 0 1em 0;
-    }
-
-    .docente #info-profesor {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 2em 15px;
-    }
-
-    .docente #info-profesor #profesor-foto {
-        margin: 0 0 1em 0;
-    }
-    
-    .docente #info-profesor .detalle-profesor {
-        text-align: center;
-    }
-    
-    #profesor-bio {
-        width: 100%;
-        text-align: center;
-    }
-
-    .contenedor-cursos {
-        grid-template-columns: 1fr;
-    }
-    .tarjetas-curso h2 {
-        font-size: 1.8em;
-    }
+  
 }
 
 
-
-@media (max-width: 480px) {
-    .barra-busqueda {
-        margin-left: -50px; 
-    }
-
-    .logo-link {
-        width: 60px;
-    }
-
-    .contenedor-curso{
-        height: auto; 
-    }
-}
