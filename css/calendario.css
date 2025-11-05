@@ -1,68 +1,92 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+main {
+
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+
+
 }
 
 
+
+/* Header */
+
+body {
+
+    width: 100%;
+
+}
+
+.buscador button {
+    background: var(--celeste);
+    cursor: pointer;
+}
+
+/* Calendario */
 main {
-    padding: 1rem; 
-    background: white;
+    padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    color: #E0E0E0;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    padding-top: 2rem;
 }
 
 /* Grid del calendario */
 .calendario {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 5px;
-    background: #96B6C5;
-    padding: 0.5rem;
-    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr)); /* columnas flexibles */
+    gap: 0.5rem; /* menos espacio entre celdas */
+    width: 100%; /* ocupa el ancho disponible */
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.calendario::-webkit-scrollbar {
+  height: 8px;
+}
+
+.calendario::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
 }
 
 
 .dia {
     font-weight: bold;
     text-align: center;
-    background: #ff6d00;
-    padding: 0.3rem;
+    padding: 0.5rem;
     border-radius: 5px;
-    color: white;
-    font-size: 0.9rem;
+    color: #E0E0E0;
 }
 
 
 .celda {
-    height: 60px;
-    background: white;
+    height: 80px;
+    
     border-radius: 5px;
     padding: 5px;
     text-align: left;
-    font-size: 0.8rem;
+    color: #E0E0E0;
+    text-align: center;
 }
 
-
-.curso {
-    background: #96B6C5;
-    color: white;
-}
+/* Cursos destacados en el calendario */
 
 .curso a {
-    color: white;
+    color: #ff6d00;
     text-decoration: none;
     font-weight: bold;
 }
 
 
 .hoy {
-    background: #EEE0C9;
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -70,40 +94,29 @@ h1 {
     font-weight: bold;
 }
 
+@media (min-width: 768px) {   
 
-@media (min-width: 481px) and (max-width: 768px) {
-    .calendario {
-        grid-template-columns: repeat(4, 1fr); /* Tablets: 4 columnas */
-        gap: 5px;
-        padding: 1rem;
-    }
-
-    .celda {
-        height: 70px;
-        font-size: 0.9rem;
-    }
-
-    .dia {
-        font-size: 1rem;
-        padding: 0.4rem;
-    }
+    
 }
 
-/* Desktop */
-@media (min-width: 769px) {
-    .calendario {
-        grid-template-columns: repeat(7, 1fr); /* Desktop: 7 columnas */
-        gap: 5px;
-        padding: 1rem;
-    }
+@media (min-width: 1024px) {
 
-    .celda {
-        height: 80px;
-        font-size: 1rem;
-    }
-
-    .dia {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
+    
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* columnas flexibles */
+    gap: 0.5rem; /* menos espacio entre celdas */
+    width: 100%; /* ocupa el ancho disponible */
+    box-sizing: border-box;
+    padding: 10rem;
 }
+
+h1 {
+
+    padding-top: 7rem;
+    font-size: 3rem;
+}
+
+  
+}
+
