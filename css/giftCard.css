@@ -1,26 +1,18 @@
 * {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-/*main*/
-
-.container{
- display: flex;
-  justify-content: center;    
-  align-items: flex-start;    
-  gap: 5rem;                   
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
   padding: 5rem;
-  flex-wrap: wrap; 
-   background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
-
-  
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
 }
 
 .formulario-gift-card {
@@ -47,19 +39,19 @@
 .formulario-gift-card {
   flex: 1;
   min-width: 25em;
-  max-width: 35em;            
+  max-width: 35em;
   padding: 2em;
   background-color: rgba(255,255,255,0.1);
   border-radius: 0.5em;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
-  margin: 0;  
+  margin: 0;
   color: #E0E0E0;
 }
 
 .formulario-gift-card form input,
 .formulario-gift-card form select,
 .formulario-gift-card form textarea {
-  width: 80%;     
+  width: 80%;
   max-width: 25em;
   padding: 0.6em;
   margin-bottom: 1em;
@@ -69,18 +61,13 @@
 }
 
 #color-tarjeta {
-
   appearance: none;
   border: none;
   background: none;
   height: 2rem;
   border-radius: 2.5rem;
   padding: 0;
-
-
-
 }
-
 
 .preview {
   flex: 1;
@@ -89,20 +76,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .preview h2 {
   margin-bottom: 1em;
-  color:  #ff6d00;
+  color: #ff6d00;
 }
-
-
 
 .tamanio-texto {
   display: inline-flex;
   align-items: center;
-  gap: 0.3em; 
+  gap: 0.3em;
 }
 
 .boton-continuar {
@@ -122,12 +106,10 @@
   background-color: #96B6C5;
 }
 
-
-
 .gift-card {
-  width: 360px;
-  height: 200px;
-  border-radius: 15px;
+  width: 430px;
+  height: 270px;
+  border-radius: 20px;
   background-color: rgba(255,255,255,0.1);
   display: flex;
   flex-direction: column;
@@ -136,29 +118,38 @@
   color: #E0E0E0;
   font-weight: bold;
   margin-top: 1em;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   position: relative;
+  gap: 1em;
 }
 
 .gift-card .logo-tarjeta {
-  width: 150px;
+  width: 180px;
   height: auto;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 .gift-card .destinatario {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 0;
 }
 
 .gift-card .monto {
-  
+  position: absolute;
+  top: 15px;
+  right: 20px;
   font-size: 1.5em;
-  margin: 0;
+  font-weight: bold;
+}
+
+.preview .gift-card {
+  width: 100%;
+  max-width: 430px;
+  height: 270px;
 }
 
 .monto {
-   position: absolute;
+  position: absolute;
   top: 10px;
   right: 15px;
   font-size: 1.2em;
@@ -167,8 +158,8 @@
 
 .ubicacion {
   display: flex;
-  justify-content: center; 
-  gap: 1.5em;              
+  justify-content: center;
+  gap: 1.5em;
 }
 
 .ubicacion label {
@@ -182,10 +173,37 @@
 }
 
 .ubicacion .opcion-ubicacion {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.monto.arriba-izquierda {
+  top: 10px;
+  left: 15px;
+  right: auto;
+  bottom: auto;
+}
+
+.monto.arriba-derecha {
+  top: 10px;
+  right: 15px;
+  left: auto;
+  bottom: auto;
+}
+
+.monto.abajo-izquierda {
+  bottom: 10px;
+  left: 15px;
+  top: auto;
+  right: auto;
+}
+
+.monto.abajo-derecha {
+  bottom: 10px;
+  right: 15px;
+  top: auto;
+  left: auto;
 }
 
 .ubicacion img {
@@ -193,7 +211,22 @@
   height: 40px;
   margin-top: 0.3em;
   filter: invert(90%) brightness(200%);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border 0.2s, transform 0.2s, filter 0.2s;
 }
+
+.ubicacion input:checked ~ img {
+  border: 2px solid #ff6600;
+  filter: invert(100%) brightness(250%);
+}
+
+.ubicacion input:checked ~ span {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+
 
 
 
@@ -214,10 +247,24 @@
   .gift-card {
     width: 70%;
     height: 20rem;
-   
   }
-
-
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+  }
 
+  .formulario-gift-card,
+  .preview {
+    max-width: 100%;
+  }
+
+  .gift-card {
+    width: 90%;
+    height: 15rem;
+  }
+}
