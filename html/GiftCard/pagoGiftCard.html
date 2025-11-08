@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>MentorApp</title>
-    <link rel="icon" href="../../Imagenes/Logos/logo6.png">
-    <link rel="stylesheet" href="../TPIntegradorPW1/css/global-css.css">
-    <link rel="stylesheet" href="../TPIntegradorPW1/css/Estilos Index/index.css">
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gift card - Pago</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/global-css.css">
+  <link rel="stylesheet" href="../../css/gift-card-pago/pago-Giftcard.css">
 </head>
 <body>
-    <header >
+
+
+
+  <header >
 
             
             <nav class="barra-superior">
 
                 <div class="usuario-iniciado">
 
-                    <a href="./html/Login/login.html">
+                    <a href="../../html/Login/login.html">
                         
                         <i class="fa-regular fa-user"></i>
                         <span>Acceder</span>
@@ -32,13 +32,13 @@
                 </div>
 
                 <div class="logo-contenedor">
-                    <a href="../TPIntegradorPW1/index.html" class="logo-link">
-                    <img src="../TPIntegradorPW1/Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+                    <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/Logos/logo5.png" alt="Logo" class="logo">
                     </a>
                 </div>
 
                 
-                <a class="carrito" href="./carrito.html">
+                <a class="carrito" href="../../carrito.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span class="contador">0</span>
                 </a>
@@ -67,11 +67,11 @@
 
                 <div class="menu-principal-container">
                    <ul>
-                        <li><a class="inicio" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                         <li><a href="#cursos-destacados">Cursos Destacados</a></li>
-                        <li><a href="calendario.html">Calendario De Cursos</a></li>
-                        <li><a href="../TPIntegradorPW1/html/GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="../../calendario.html">Calendario De Cursos</a></li>
+                        <li><a href="../../html/GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
+                        <li><a href="../../contacto.html">Contacto</a></li>
                    </ul>
 
                    
@@ -84,85 +84,55 @@
        
     </header>
 
-    <section class="slide">
 
+  <main class="container-pago">
+    <section class="formulario-pago">
+      <h2>Finalizar la compra de la gift Card</h2>
+      <form action="../../html/GiftCard/pagoRealizado.html" method="get">
+        <label for="gmail-destinatario">Gmail del destinatario:</label>
+        <input type="email" id="gmail-destinatario" name="gmail-destinatario" placeholder="ej. user222@gmail.com" required>
 
-    <div class="slide-text">
-        <h1>Bienvenido a MentorApp</h1>
-        <p>Aprendé desde casa con nuestros cursos online</p>
-    </div>
+        <h3>Elegí tu método de pago</h3>
+        <div class="metodos-pago">
+          <label>
+            <input type="radio" name="metodo-pago" value="MercadoPago" required>
+            <img src="../../Imagenes/Logos/mercadopago.png" alt="Tarjeta de mercado pago">
+          </label>
+          <label>
+            <input type="radio" name="metodo-pago" value="mastercard">
+            <img src="../../Imagenes/Logos/mastercard.png" alt="MasterCard">
+          </label>
+          <label>
+            <input type="radio" name="metodo-pago" value="visa">
+            <img src="../../Imagenes/Logos/visa.png" alt="Visa">
+          </label>
+        </div>
 
-    <div class="flechas">
-        <button class="flecha-izq">
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <button class="flecha-der">
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-    </div>
+        <label for="numero-tarjeta">Número de tarjeta:</label>
+        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"  pattern="[0-9]{16}" maxlength="16" required>
 
+        <label for="fecha-expiracion">Fecha de vencimiento:</label>
+        <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
+
+       <button type="submit" class="boton-comprar">Comprar</button>
+
+      </form>
     </section>
 
-
-
-    <section class="pasos-section">
-
-        <div class="pasos-section-titulo">
-
-            <h2>CONSEGUÍ TU CURSO</h2>
-
-        </div>
-
-        
-
-        <div class="pasos">
-
-            <div class="paso-1">
-
-            <h2>Registro o inicio de sesión</h2> 
-
-            <p>
-
-                Crear una cuenta en la plataforma o ingresar si ya se tiene una cuenta existente. Completar datos personales básicos (nombre, correo, teléfono, etc.).
-
-            </p>
-
-        </div>
-
-        <div class="paso-2">
-
-            <h2>Selección del curso y forma de pago</h2> 
-
-            <p>
-
-                Elegir el curso deseado de la lista de disponibles. Revisar horarios, modalidad (presencial o online) y precios. Seleccionar método de pago y abonar la inscripción.
-
-            </p>
-
-        </div>
-
-        <div class="paso-3">
-
-            <h2>Confirmación y acceso al curso</h2> 
-
-            <p>
-
-                Recibir comprobante de inscripción por correo o en la plataforma. Acceder al material del curso, plataforma de clases, o esperar instrucciones para el inicio.
-
-            </p>
-
-        </div>
-
-        </div>
-
-        
+    <section class="preview-giftcard">
+      <h3>Vista Previa de la Gift Card</h3>
+      <div class="giftcard">
+        <div class="giftcard-monto">$20000</div>
+        <img src="../../Imagenes/Logos/logo5.png" alt="Logo Gift" class="giftcard-logo">
+        <div class="giftcard-nombre">Juan Pérez</div>
+      </div>
     </section>
+  </main>
 
-
-
-
-
-    <section class="cursos" id="cursos-destacados">
+  <section class="cursos" id="cursos-destacados">
 
             
 
@@ -177,9 +147,9 @@
                 <article class="curso">
 
                     <div class="img-container">
-                        <a href="detalleCursoHtml.html">
+                        <a href="../../detalleCursoHtml.html">
 
-                            <img src="../TPIntegradorPW1/Imagenes/Cursos/html.png" alt="HTML">
+                            <img src="../../Imagenes/Cursos/html.png" alt="HTML">
 
                         </a>
                         
@@ -192,7 +162,7 @@
                         <p class="horas"> 20 hs</p>
                         <h3 class="nombre"> HTML </h3>
 
-                        <a href="detalleCursoHtml.html">
+                        <a href="../../detalleCursoHtml.html">
                             <button class="comprar"> Comprar </button>
 
                         </a>
@@ -208,9 +178,9 @@
 
                     <div class="img-container">
 
-                        <a href="detalleCursoCSS.html">
+                        <a href="../../detalleCursoCSS.html">
 
-                            <img src="../TPIntegradorPW1/Imagenes/cursos/css.png" alt="CSS">
+                            <img src="../../Imagenes/Cursos/css.png" alt="CSS">
 
                         </a>
                         
@@ -225,7 +195,7 @@
                     <h3 class="nombre"> CSS </h3>
 
 
-                    <a href="detalleCursoCSS.html">
+                    <a href="../../detalleCursoCSS.html">
 
                             <button class="comprar"> Comprar </button>
 
@@ -240,9 +210,9 @@
                 <article class="curso">
 
                     <div class="img-container">
-                        <a href="detalleCursoJS.html">
+                        <a href="../../detalleCursoJS.html">
 
-                            <img src="../TPIntegradorPW1/Imagenes/cursos/javascript.png" alt="Javascript">
+                            <img src="../../Imagenes/Cursos/javascript.png" alt="Javascript">
 
                         </a>
                         
@@ -255,7 +225,7 @@
                     <p class="horas"> 30 hs</p>
                     <h3 class="nombre"> JavaScript </h3>
 
-                    <a href="detalleCursoJS.html">
+                    <a href="../../detalleCursoJS.html">
 
                         <button class="comprar"> Comprar </button>
 
@@ -271,9 +241,9 @@
                 <article class="curso">
 
                     <div class="img-container">
-                        <a href="detalleCursoJava.html">
+                        <a href="../../detalleCursoJava.html">
 
-                            <img src="../TPIntegradorPW1/Imagenes/cursos/java.png" alt="Java">
+                            <img src="../../Imagenes/Cursos/java.png" alt="Java">
 
                         </a>
                         
@@ -286,7 +256,7 @@
                     <p class="horas"> 30 hs</p>
                     <h3 class="nombre"> Java </h3>
 
-                    <a href="detalleCursoJava.html">
+                    <a href="../../detalleCursoJava.html">
 
                         <button class="comprar"> Comprar </button>
 
@@ -302,9 +272,9 @@
                 <article class="curso">
 
                     <div class="img-container">
-                        <a href="detalleCursoSQL.html">
+                        <a href="../../detalleCursoSQL.html">
 
-                            <img src="../TPIntegradorPW1/Imagenes/cursos/sql.png" alt="SQL">
+                            <img src="../../Imagenes/Cursos/sql.png" alt="SQL">
 
                         </a>
                         
@@ -317,7 +287,7 @@
                     <p class="horas"> 35 hs</p>
                     <h3 class="nombre"> SQL </h3>
 
-                    <a href="detalleCursoSQL.html">
+                    <a href="../../detalleCursoSQL.html">
 
                         <button class="comprar"> Comprar </button>
 
@@ -334,9 +304,9 @@
 
                     <div class="img-container">
 
-                        <a href="detalleCursoUx.html">
+                        <a href="../../detalleCursoUx.html">
 
-                            <img src="../TPIntegradorPW1/Imagenes/cursos/ui.png" alt="UX-UI">
+                            <img src="../../Imagenes/Cursos/ui.png" alt="UX-UI">
 
                         </a>
                         
@@ -349,7 +319,7 @@
                     <p class="horas"> 70 hs</p>
                     <h3 class="nombre"> Curso UX/UI </h3>
 
-                    <a href="detalleCursoUx.html">
+                    <a href="../../detalleCursoUx.html">
 
                         <button class="comprar"> Comprar </button>
 
@@ -375,29 +345,7 @@
 
     </section>
 
-    <section class="medios-pago">
-
-        <h2>Medios de pago</h2>
-
-      
-
-        <div class="logos">
-
-            <div class="logo-item"><img src="../TPIntegradorPW1/Imagenes/logos/mastercard.png" alt="Mastercard"></div>
-            <div class="logo-item"><img src="../TPIntegradorPW1/Imagenes/logos/visa.png" alt="Visa"></div>
-            <div class="logo-item"><img src="../TPIntegradorPW1/Imagenes/logos/mercadopago.png" alt="Mercadopago"></div>
-
-        </div>
-
-         
-
-             
-
-        
-
-    </section>
-
-    <footer class="footer">
+  <footer class="footer">
         <div class="footer-container">
 
 
@@ -417,7 +365,7 @@
                 <ul>
                     <li><a href="../TPIntegradorPW1/index.html">Inicio</a></li>
                     <li><a href="#cursos-destacados">Cursos Destacados</a></li>
-                    <li><a href="../TPIntegradorPW1/html/contacto.html">Contacto</a></li>
+                    <li><a href="../../contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
@@ -425,9 +373,9 @@
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../TPIntegradorPW1/Imagenes/icono-redes/facebook.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../TPIntegradorPW1/Imagenes/icono-redes/instagram.png"></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../TPIntegradorPW1/Imagenes/icono-redes/youtube.png"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/Icono-redes/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/Icono-redes/instagram.png"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/Icono-redes/youtube.png"></a>
                 </div>
             </div>
 

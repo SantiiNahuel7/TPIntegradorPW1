@@ -13,12 +13,12 @@ main {
 }
 
 .form__info {
-    margin: 2% auto;
+    margin: 1% auto;
 }
 
 .fields {
     display: grid;
-    grid-template-columns: repeat(3, 3fr) 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     margin: 1% auto;
     height: 3em;
@@ -41,39 +41,17 @@ main {
     text-align: center;
     padding: 1% 0;
     border-bottom: #adc4ce solid 0.1em;
-    padding-top: 5%;
 }
 
 button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
+    background-color: #ff6d00;
     border: none;
+    border-radius: 0.5em;
+    color: #fff;
     cursor: pointer;
-    font-size: inherit;
-    color: inherit;
-}
-
-
-.fields button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: #ff6d00;
-    font-size: 2em;
-}
-
-.add__button span {
-   background-color: #ff6d00;
-   border-radius: 50%;
-   font-size: 1.5em;
-
-}
-
-.add__button {
-    margin-top: 2%;
+    font-size: 1em;
+    margin: 1% 0.5% 0 0;
+    padding: 0.5em 1em;
 }
 
 #price {
@@ -87,21 +65,11 @@ button {
     justify-content: flex-start;
     align-items: center;
     gap: 1em;
-    margin-top: 2%;
+    margin-top: 5%;
     padding-bottom: 5%;
 }
 
-.resume__button {
-    background-color: #ff6d00;
-    border: none;
-    border-radius: 0.5em;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1em;
-    padding: 0.5em 1em;
-}
-
-.barra-busqueda button {
+.barra-busqueda button{
     height: 100%;
     margin: 0;
 }
@@ -113,19 +81,8 @@ button {
 
 @media (max-width: 768px) {
     .fields {
-        grid-template-columns: 2.5fr 0.5fr;
+        grid-template-columns: 1fr;
         gap: 0.8em;
         height: auto;
-        margin: 5% auto;
-    }
-
-    .fields input {
-        grid-column: 1/2;
-    }
-
-    .fields button {
-        font-size: 1em;
-        grid-column: 2/3;
-        grid-row: 1/2;
     }
 }
