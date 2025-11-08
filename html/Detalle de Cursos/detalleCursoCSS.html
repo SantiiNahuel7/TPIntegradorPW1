@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+    <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
+    <title>MentorApp</title>
+</head>
+<header>
+    <div class="container">
+        <nav class="barra-superior">
+            <div class="logo-contenedor">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/logos/logo5.png" class="logo">
+                </a>
+            </div>
+
+            <form action="../../index.html#cursos-destacados" method="get" class="barra-busqueda">
+                <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                <datalist id="cursos">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Java"></option>
+                    <option value="SQL"></option>
+                    <option value="UX/UI"></option>
+                </datalist>
+                <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <a href="../carrito.html">
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"> </i>
+                    <span class="contador">0</span>
+                </button>
+            </a>
+        </nav>
+        <nav class="menu-principal">
+            <div class="menu-principal-container">
+                <ul>
+                    <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#destacados-cursos">Cursos</a></li>
+                    <li><a href="../calendario.html">Calendario De Cursos</a></li>
+                    <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section class="curso">
+        <img src="../../Imagenes/Detalle de Curso/css.png" alt="CSS" class="imagen-curso">
+        <div class="info-curso">
+            <h2 id="titulo-curso">Curso de CSS</h2>
+            <p id="valor">Valor: $25.000</p>
+            <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
+            <p id="descripcion">El curso de CSS (Cascading Style Sheets) enseña a dar estilo y diseño a páginas web.
+                Comienza con lo básico: cómo aplicar reglas CSS a elementos HTML, trabajar con colores, tipografías,
+                márgenes y bordes. Luego avanza hacia temas más complejos como posicionamiento, modelos de caja, uso de
+                flexbox y grid para crear diseños responsivos y modernos.</p>
+            <p id="requisito">Requisitos Previos: HTML</p>
+            <a href="../formularios/formCursoCss.html">
+                <button id="boton-inscribirse">Inscribirse</button>
+            </a>
+        </div>
+    </section>
+    <section class="contenido">
+        <h2 id="contenido-curso">CONTENIDO POR CLASE</h2>
+        <details>
+            <summary>INTRODUCCION</summary>
+            <ul class="content">
+                <li>¿Qué es CSS y para qué sirve?</li>
+                <li>Diferencia entre HTML y CSS</li>
+                <li>Formas de aplicar CSS: inline, interno y externo</li>
+                <li>Estructura básica de una regla CSS</li>
+            </ul>
+        </details>
+        <details>
+            <summary>UNIDAD 1</summary>
+            <ul class="content">
+                <li>Selectores básicos (elementos, clases, IDs)</li>
+                <li>Propiedades de texto y tipografía</li>
+                <li>Colores, fondos y bordes</li>
+                <li>El modelo de caja (box model)</li>
+                <li>Márgenes, padding y dimensiones</li>
+            </ul>
+        </details>
+        <details>
+            <summary>UNIDAD 2</summary>
+            <ul class="content">
+                <li>Posicionamiento (static, relative, absolute, fixed, sticky)</li>
+                <li>Flexbox: diseño flexible y alineación</li>
+                <li>CSS Grid: creación de layouts avanzados</li>
+                <li>Media Queries y diseño responsivo</li>
+            </ul>
+        </details>
+    </section>
+    <section class="docente">
+        <h2>DOCENTE</h2>
+        <div id="info-profesor">
+            <img src="../../Imagenes/Detalle de Curso/profesorCSS.jpg" alt="profesor" id="profesor-foto">
+            <div class="detalle-profesor">
+                <p id="nombre-profesor">Martín Fernández</p>
+                <div class="rating" style="--percent:80%;"></div>
+                <p id="profesor-bio">Martín es diseñador web y front-end developer con más de 8 años de experiencia
+                    creando sitios y aplicaciones responsivas. Se especializa en CSS, animaciones y frameworks modernos,
+                    ayudando a sus alumnos a dominar desde lo básico hasta las técnicas más avanzadas de maquetación.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="tarjetas-curso" id="destacados-cursos">
+        <h2>CURSOS DESTACADOS</h2>
+        <div class="contenedor-cursos">
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/html.png" alt="Imagen HTML">
+                    <span class="precio-curso">$20.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">20 hs</p>
+                    <h3 class="contenedor-nombre">HTML</h3>
+                    <a href="../Detalle de Cursos/detalleCursoHtml.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/java.png" alt="Imagen Java">
+                    <span class="precio-curso">$30.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">Java</h3>
+                    <a href="../Detalle de Cursos/detalleCursoJava.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/javascript.png" alt="Imagen JS">
+                    <span class="precio-curso">$30.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">Java Script</h3>
+                    <a href="../Detalle de Cursos/detalleCursoJS.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/sql.png" alt="Imagen SQL">
+                    <span class="precio-curso">$40.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">35 hs</p>
+                    <h3 class="contenedor-nombre">SQL</h3>
+                    <a href="../Detalle de Cursos/detalleCursoSQL.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Datos Del Grupo</h3>
+            <ul>
+                <li>Alan Leonel Ibañez</li>
+                <li>Santiago Orellana</li>
+                <li>Yamila Santillan</li>
+                <li>Adrian Amarilla</li>
+                <li>Jennifer Caceres</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

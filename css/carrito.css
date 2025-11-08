@@ -1,19 +1,9 @@
-/* colores q hay que cambiar */
-:root {
-  --azul: #96B6C5;
-  --celeste: #ADC4CE;
-  --beige: #EEE0C9;
-  --blanco: #F1F0E8;
-  --texto: #333;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: var(--blanco);
-  color: var(--texto);
+  background: #2E3A59; 
+  color: #E0E0E0;
 }
-
 
 .carrito-vacio {
   display: flex;
@@ -25,7 +15,7 @@ body {
 
 .mensaje-de-carrito-vacio {
   text-align: center;
-  background: var(--beige);
+  background: #1E1E2E; 
   padding: 2rem;
   border-radius: 10px;
   max-width: 500px;
@@ -33,18 +23,16 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-
 .icono {
   font-size: 3rem;
-  color: var(--azul);
+  color: #96B6C5;
   margin-bottom: 1rem;
 }
-
 
 h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--azul);
+  color: #96B6C5; 
   margin-bottom: 1rem;
 }
 
@@ -54,22 +42,24 @@ p {
 }
 
 p a {
-  color: var(--azul);
+  color: #96B6C5;
   font-weight: bold;
   text-decoration: none;
 }
 
-
 .boton-volver {
-  background: var(--azul);
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background-color: #96B6C5; 
   color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
+  text-decoration: none;
   border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
 }
 
 .boton-volver:hover {
-  background: var(--celeste);
+  background-color: #4C7A8B; 
 }
+

@@ -1,9 +1,3 @@
-:root {
-    --azul: #96B6C5;
-    --celeste: #ADC4CE;
-    --beige: #EEE0C9;
-    --blanco: #F1F0E8;
-}
 
 * {
     margin: 0;
@@ -33,6 +27,7 @@ main h1 {
     padding-bottom: 3rem;
 }
 
+
 .contacto {
     display: flex;
     gap: 5rem;
@@ -56,6 +51,8 @@ main h1 {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #F1F0E8;
+    color: #333;
 }
 
 .form-contacto button[type="submit"] {

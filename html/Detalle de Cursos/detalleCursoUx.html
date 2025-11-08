@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+    <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
+    <title>MentorApp</title>
+</head>
+<header>
+    <div class="container">
+        <nav class="barra-superior">
+            <div class="logo-contenedor">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/logos/logo5.png" class="logo">
+                </a>
+            </div>
+
+            <form action="../../index.html#cursos-destacados" method="get" class="barra-busqueda">
+                <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                <datalist id="cursos">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Java"></option>
+                    <option value="SQL"></option>
+                    <option value="UX/UI"></option>
+                </datalist>
+                <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <a href="../carrito.html">
+                <button class="carrito">
+                    <i class="fa-solid fa-cart-shopping"> </i>
+                    <span class="contador">0</span>
+                </button>
+            </a>
+        </nav>
+        <nav class="menu-principal">
+            <div class="menu-principal-container">
+                <ul>
+                    <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#destacados-cursos">Cursos</a></li>
+                    <li><a href="../calendario.html">Calendario De Cursos</a></li>
+                    <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section class="curso">
+        <img src="../../Imagenes/Detalle de Curso/ui.png" alt="Java" class="imagen-curso">
+        <div class="info-curso">
+            <h2 id="titulo-curso">Curso de UX/UI</h2>
+            <p id="valor">Valor: $60.000</p>
+            <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 70hs</p>
+            <p id="descripcion">Este curso ofrece una introducción al diseño de experiencias de usuario (UX) y a la
+                interfaz de usuario (UI). Los estudiantes aprenderán a crear productos digitales centrados en las
+                necesidades del usuario, combinando investigación, usabilidad y diseño visual. A través de ejemplos y
+                prácticas, se abordarán herramientas y metodologías para desarrollar interfaces atractivas, intuitivas y
+                funcionales.</p>
+            <p id="requisito">Requisitos Previos: Ninguno</p>
+            <a href="../formularios/formCursoUxUi.html">
+                <button id="boton-inscribirse">Inscribirse</button>
+            </a>
+        </div>
+    </section>
+    <section class="contenido">
+        <h2 id="contenido-curso">CONTENIDO POR CLASE</h2>
+        <details>
+            <summary>INTRODUCCION</summary>
+            <ul class="content">
+                <li>¿Qué son UX y UI? Diferencias y relación entre ambos.</li>
+                <li>Importancia del diseño centrado en el usuario.</li>
+                <li>Principales herramientas utilizadas en UX/UI (Figma, Adobe XD, Sketch).</li>
+            </ul>
+        </details>
+        <details>
+            <summary>UNIDAD 1</summary>
+            <ul class="content">
+                <li>Principios de usabilidad y accesibilidad.</li>
+                <li>Investigación de usuarios: encuestas, entrevistas y mapas de empatía.</li>
+                <li>Arquitectura de la información y creación de wireframes.</li>
+                <li>Prototipado básico y pruebas de usabilidad.</li>
+            </ul>
+        </details>
+        <details>
+            <summary>UNIDAD 2</summary>
+            <ul class="content">
+                <li>Principios del diseño visual: tipografía, color, iconografía y composición.</li>
+                <li>Creación de interfaces coherentes y atractivas.</li>
+                <li>Diseño de componentes y patrones de interacción.</li>
+                <li>Prototipos de alta fidelidad y presentación de proyectos.</li>
+            </ul>
+        </details>
+    </section>
+    <section class="docente">
+        <h2>DOCENTE</h2>
+        <div id="info-profesor">
+            <img src="../../Imagenes/Detalle de Curso/profeux.jpg" alt="profesor" id="profesor-foto">
+            <div class="detalle-profesor">
+                <p id="nombre-profesor">Valentina Ríos</p>
+                <div class="rating" style="--percent:80%;"></div>
+                <p id="profesor-bio">Diseñadora digital con más de 7 años de experiencia en UX/UI para aplicaciones web
+                    y móviles. Ha trabajado en startups y empresas tecnológicas, enfocándose en crear productos
+                    intuitivos y visualmente atractivos. Su estilo de enseñanza combina teoría, práctica y el uso de
+                    herramientas modernas para que los estudiantes desarrollen proyectos aplicables al mercado actual.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="tarjetas-curso" id="destacados-cursos">
+        <h2>CURSOS DESTACADOS</h2>
+        <div class="contenedor-cursos">
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/css.png" alt="Imagen CSS">
+                    <span class="precio-curso">$25.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">CSS</h3>
+                    <a href="../Detalle de Cursos/detalleCursoCSS.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/html.png" alt="Imagen HTML">
+                    <span class="precio-curso">$20.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">20 hs</p>
+                    <h3 class="contenedor-nombre">HTML</h3>
+                    <a href="../Detalle de Cursos/detalleCursoHtml.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/javascript.png" alt="Imagen JS">
+                    <span class="precio-curso">$30.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="contenedor-nombre">Java Script</h3>
+                    <a href="../Detalle de Cursos/detalleCursoJS.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contenedor-curso">
+                <div class="img-container">
+                    <img src="../../Imagenes/Detalle de Curso/sql.png" alt="Imagen SQL">
+                    <span class="precio-curso">$40.000</span>
+                </div>
+                <div class="contenedor-info">
+                    <p class="horas">35 hs</p>
+                    <h3 class="contenedor-nombre">SQL</h3>
+                    <a href="../Detalle de Cursos/detalleCursoSQL.html">
+                        <button class="contenedor-comprar">Comprar</button>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Datos Del Grupo</h3>
+            <ul>
+                <li>Alan Leonel Ibañez</li>
+                <li>Santiago Orellana</li>
+                <li>Yamila Santillan</li>
+                <li>Adrian Amarilla</li>
+                <li>Jennifer Caceres</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>
