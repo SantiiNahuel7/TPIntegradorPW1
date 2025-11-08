@@ -84,26 +84,7 @@ main {
     border-radius: 0.3em;
 }
 
-button {
-    padding: 0.5em;
-    background-color: #ff6d00;
-    border: none;
-    border-radius: 0.3em;
-    cursor: pointer;
-    font-weight: bold;
-    width: 40%;
-}
 
-.barra-busqueda button{
-    height: 100%;
-    margin: 0;
-    text-align: end;
-}
-
-.carrito a {
-    text-decoration: none;
-    color: inherit;
-}
 
 
 @media (max-width: 768px) {
