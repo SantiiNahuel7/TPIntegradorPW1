@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+    <link rel="stylesheet" href="../TPIntegradorPW1/css/Detalle de Cursos/detalleCurso.css">
+    <link rel="stylesheet" href="../TPIntegradorPW1/css/global-css.css">
+    <title>MentorApp</title>
+
+</head>
+
+
+<header >
+
+            
+            <nav class="barra-superior">
+
+                <div class="usuario-iniciado">
+
+                    <a href="./html/Login/login.html">
+                        
+                        <i class="fa-regular fa-user"></i>
+                        <span>Acceder</span>
+                    
+                    </a>
+                    
+                </div>
+
+                <div class="logo-contenedor">
+                    <a href="../TPIntegradorPW1/index.html" class="logo-link">
+                    <img src="../TPIntegradorPW1/Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+
+                
+                <a class="carrito" href="../TPIntegradorPW1/carrito.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="contador">0</span>
+                </a>
+
+                <form action="./html/Detalle de Cursos/detalleCursoHtml.html" method="get" class="barra-busqueda">
+                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                    <datalist id="cursos">
+                        <option value="HTML"></option>
+                        <option value="CSS"></option>
+                        <option value="JavaScript"></option>
+                        <option value="Java"></option>
+                        <option value="SQL"></option>
+                        <option value="UX/UI"></option>
+                    </datalist>
+                    <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                
+                
+                
+
+            </nav>
+
+            <nav class="menu-principal">
+
+                <div class="menu-principal-container">
+                  <ul>
+                        <li><a class="inicio" href="../TPIntegradorPW1/index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="#cursos-destacados">Cursos Destacados</a></li>
+                        <li><a href="../TPIntegradorPW1/calendario.html">Calendario De Cursos</a></li>
+                        <li><a href="../TPIntegradorPW1/html/GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
+                        <li><a href="../TPIntegradorPW1/contacto.html">Contacto</a></li>
+                   </ul>
+
+                   
+
+                </div>
+
+            </nav>
+            
+
+       
+    </header>
+
+
+
+<body>
+    <section class="curso-container">
+
+
+        <img class="imagen-curso" src="../TPIntegradorPW1/Imagenes/Cursos/sql.png">
+        <div class="info-curso">
+
+            <h2 id="titulo-curso">Curso de SQL</h2>
+            
+            <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 35hs</p>
+            <p id="descripcion">Este curso enseña los fundamentos del lenguaje SQL, utilizado para la gestión y consulta de bases de datos relacionales. Los estudiantes aprenderán a crear, modificar y consultar tablas, además de realizar operaciones básicas y avanzadas para trabajar con información de manera eficiente.</p>
+            <p id="requisito">Requisitos Previos: Excel (Basico)</p>
+            <p id="valor">$40.000</p>
+            <a href="../TPIntegradorPW1/html/Formularios/formCursoSql.html">
+                <button id="boton-inscribirse">Inscribirse</button>
+            </a>
+        </div> 
+
+        <div class="contenido">
+        <h2 id="contenido-curso">Contenidos Por Clase</h2>
+
+        <div class="unidades">
+
+
+                
+
+                <details>
+
+
+                    <summary>INTRODUCCIÓN</summary>
+                    
+                    
+
+                    <div>
+
+                        <ul class="content">
+                            <li>¿Qué es SQL y para qué sirve?</li>
+                <li>Bases de datos relacionales: conceptos básicos.</li>
+                <li>Instalación y uso de un gestor de bases de datos (MySQL / PostgreSQL).</li>
+                        </ul>
+
+
+                    </div>
+                        
+                    
+
+                </details>
+
+        
+               
+
+
+                 <details>
+
+                    
+                    <summary>UNIDAD 1</summary>
+
+                    <div>
+
+                          <ul class="content">
+                           <li>Creación y gestión de bases de datos.</li>
+                <li>Tablas: creación, modificación y eliminación.</li>
+                <li>Tipos de datos en SQL.</li>
+                <li>Consultas básicas con SELECT y filtros con WHERE.</li>
+                        </ul>
+
+
+                    </div>
+
+                      
+                </details>
+
+
+
+            
+
+               
+
+                          <details>
+                    <summary>UNIDAD 2</summary>
+
+                    <div>
+
+                          <ul class="content">
+                            <li>Operadores y funciones en SQL (agregación y matemáticas).</li>
+                <li>Ordenar y agrupar resultados (ORDER BY, GROUP BY, HAVING).</li>
+                <li>Relaciones entre tablas: claves primarias y foráneas.</li>
+                <li>Joins: INNER, LEFT, RIGHT y FULL JOIN.</li>
+                        </ul>
+
+
+                    </div>
+                      
+
+                </details>
+
+
+
+          
+
+
+        </div>
+     
+
+    </div>
+
+
+
+    </section>
+
+
+
+    
+
+
+
+    <section class="docente">
+        <h2>DOCENTE</h2>
+        <div id="info-profesor">
+            <img src="../TPIntegradorPW1/Imagenes/Detalle de Curso/profesorasql.jpg" alt="profesor" id="profesor-foto">
+            <div class="detalle-profesor">
+                <p id="nombre-profesor">Andrea Morales</p>
+                <div class="rating" style="--percent:80%;"></div>
+                <p id="profesor-bio">Analista de datos con más de 9 años de experiencia en gestión y optimización de bases de datos. Especialista en SQL y sistemas relacionales, ha trabajado en proyectos de business intelligence y administración de grandes volúmenes de información. Su enfoque práctico ayuda a los estudiantes a aplicar SQL de manera efectiva en entornos reales.</p>
+            </div>   
+        </div>  
+    </section>
+
+
+
+
+    <section class="cursos" id="cursos-destacados">
+
+            
+
+            <h2> CURSOS DESTACADOS </h2>
+
+            
+
+           <div class="grid-cursos">
+
+
+
+                <article class="curso">
+
+                    <div class="img-container">
+                        <a href="detalleCursoHtml.html">
+
+                            <img src="../TPIntegradorPW1/Imagenes/Cursos/html.png" alt="HTML">
+
+                        </a>
+                        
+                        <span class="precio">$20.000</span>
+                    
+                    </div>
+
+                    <div class="info">
+
+                        <p class="horas"> 20 hs</p>
+                        <h3 class="nombre"> HTML </h3>
+
+                        <a href="detalleCursoHtml.html">
+                            <button class="comprar"> Comprar </button>
+
+                        </a>
+                        
+
+                     </div>
+
+                </article>
+
+
+
+                <article class="curso">
+
+                    <div class="img-container">
+
+                        <a href="detalleCursoCSS.html">
+
+                            <img src="../TPIntegradorPW1/Imagenes/cursos/css.png" alt="CSS">
+
+                        </a>
+                        
+
+                        <span class="precio">$25.000</span>
+                    
+                    </div>
+
+                <div class="info">
+
+                    <p class="horas"> 30 hs</p>
+                    <h3 class="nombre"> CSS </h3>
+
+
+                    <a href="detalleCursoCSS.html">
+
+                            <button class="comprar"> Comprar </button>
+
+                    </a>
+
+                </div>
+
+                </article>
+
+
+
+                <article class="curso">
+
+                    <div class="img-container">
+                        <a href="detalleCursoJS.html">
+
+                            <img src="../TPIntegradorPW1/Imagenes/cursos/javascript.png" alt="Javascript">
+
+                        </a>
+                        
+                        <span class="precio">$30.000</span>
+                    
+                    </div>
+
+                <div class="info">
+
+                    <p class="horas"> 30 hs</p>
+                    <h3 class="nombre"> JavaScript </h3>
+
+                    <a href="detalleCursoJS.html">
+
+                        <button class="comprar"> Comprar </button>
+
+                    </a>
+                    
+
+                </div>
+
+                </article>
+
+
+
+                <article class="curso">
+
+                    <div class="img-container">
+                        <a href="detalleCursoJava.html">
+
+                            <img src="../TPIntegradorPW1/Imagenes/cursos/java.png" alt="Java">
+
+                        </a>
+                        
+                        <span class="precio">$30.000</span>
+                    
+                    </div>
+
+                <div class="info">
+
+                    <p class="horas"> 30 hs</p>
+                    <h3 class="nombre"> Java </h3>
+
+                    <a href="detalleCursoJava.html">
+
+                        <button class="comprar"> Comprar </button>
+
+                    </a>
+                    
+
+                </div>
+
+                </article>
+
+
+
+                <article class="curso">
+
+                    <div class="img-container">
+                        <a href="detalleCursoSQL.html">
+
+                            <img src="../TPIntegradorPW1/Imagenes/cursos/sql.png" alt="SQL">
+
+                        </a>
+                        
+                        <span class="precio">$40.000</span>
+                    
+                    </div>
+
+                <div class="info">
+
+                    <p class="horas"> 35 hs</p>
+                    <h3 class="nombre"> SQL </h3>
+
+                    <a href="detalleCursoSQL.html">
+
+                        <button class="comprar"> Comprar </button>
+
+                    </a>
+                    
+
+                </div>
+
+                </article>
+
+
+
+                <article class="curso">
+
+                    <div class="img-container">
+
+                        <a href="detalleCursoUx.html">
+
+                            <img src="../TPIntegradorPW1/Imagenes/cursos/ui.png" alt="UX-UI">
+
+                        </a>
+                        
+                        <span class="precio">$60.000</span>
+                    
+                    </div>
+
+                <div class="info">
+
+                    <p class="horas"> 70 hs</p>
+                    <h3 class="nombre"> Curso UX/UI </h3>
+
+                    <a href="detalleCursoUx.html">
+
+                        <button class="comprar"> Comprar </button>
+
+                    </a>
+                    
+
+                </div>
+
+                </article>
+
+           </div>
+
+    
+
+
+            
+
+            
+
+        
+
+        
+
+    </section>
+    </body>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Inferior</h3>
+                <ul>
+                    <li><a href="../TPIntegradorPW1/index.html">Inicio</a></li>
+                    <li><a href="#cursos-destacados">Cursos Destacados</a></li>
+                    <li><a href="../TPIntegradorPW1/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../TPIntegradorPW1/Imagenes/icono-redes/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../TPIntegradorPW1/Imagenes/icono-redes/instagram.png"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../TPIntegradorPW1/Imagenes/icono-redes/youtube.png"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+</html>
