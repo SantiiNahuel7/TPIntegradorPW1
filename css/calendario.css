@@ -1,14 +1,12 @@
 
+* {
 
-main {
-
-    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 
 }
-
-
-
 /* Header */
 
 body {
@@ -17,16 +15,13 @@ body {
 
 }
 
-.buscador button {
-    background: var(--celeste);
-    cursor: pointer;
-}
 
 /* Calendario */
 main {
     padding: 1rem;
     max-width: 100%;
     overflow-x: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
 }
 
 h1 {

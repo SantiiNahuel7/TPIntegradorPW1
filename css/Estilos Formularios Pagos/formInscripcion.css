@@ -8,7 +8,7 @@
 main {
     padding: 0 5%;
     margin: 0 auto;
-    background-color: #2E3A59;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('/TPIntegradorPW1/Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
     color: #fff
 }
 
@@ -28,18 +28,18 @@ main {
     border-radius: 0.5em;
     border: #96b6c5 solid 0.1em;
     width: 100%;
-    background-color: #4A5A7A;
-    color: #fff;
+    padding-left: 1rem;
 }
 
 .fields input::placeholder {
-    color: #d1d8e0;
+   
     opacity: 1;
+    
 }
 
 .main__title {
     text-align: center;
-    padding: 1% 0;
+    padding: 4% 0;
     border-bottom: #adc4ce solid 0.1em;
 }
 

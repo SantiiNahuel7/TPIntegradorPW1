@@ -7,19 +7,18 @@
 
 body {
     font-size: 0.9em;
-    background-color: #1E1E2E;
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('/TPIntegradorPW1/Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
     color: #fff;
     text-align: center;
 }
 
 main {
-    background-color: #2E3A59;
-    border: #000 solid 0.1em;
-    border-radius: 1em;
-    max-width: 80%;
+    
+
+    
     margin: 0 auto;
-    padding: 2% 5%;
-    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.4);
+    padding: 8%;
+  
 }
 
 h1 {
@@ -32,7 +31,7 @@ a {
     color: inherit
 }
 
-button {
+.aviso-button {
     background-color: #ff6d00;
     border: none;
     border-radius: 0.5em;
@@ -41,13 +40,24 @@ button {
     font-size: 1em;
     margin: 1% 0.5% 0 0;
     padding: 0.5em 1em;
+    margin-top: 3rem;
 }
 
-.barra-busqueda button{
-    height: 100%;
-    margin: 0;
-    text-align: end;
+p {
+
+    font-size: 1.3rem;
+    
+
+
 }
+
+h3 {
+
+    font-size: 1.5rem;
+
+}
+
+
 
 
 @media (max-width: 768px) {
