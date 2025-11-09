@@ -18,7 +18,6 @@
 
 <body>
     <header>
-
         <div class="container">
 
             <nav class="barra-superior">
@@ -35,8 +34,8 @@
                 </div>
 
                 <button class="carrito"><a href="../../html/carrito.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="contador">0</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="contador">0</span>
                     </a>
                 </button>
 
@@ -46,14 +45,9 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
-
-
-
-
             </nav>
 
             <nav class="menu-principal">
-
                 <div class="menu-principal-container">
                     <ul>
                         <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
@@ -62,56 +56,69 @@
                         <li><a href="../GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
                         <li><a href="../contacto.html">Contacto</a></li>
                     </ul>
-
-
-
                 </div>
-
             </nav>
-
-
         </div>
     </header>
+
     <main>
         <section class="main__title">
             <h2>Formulario de Inscripción</h2>
         </section>
         <section class="main__form">
-            <div class="form__info">
-                <h3>Curso elegido: HTML</h3>
-                <p>Ingrese los datos de las personas a las que desea inscribir al curso:</p>
-            </div>
+            <h3>Curso elegido: HTML</h3>
+
             <form action="../Sitios De Pagos/pagosCursoHtml.html" method="get" autocomplete="off"
                 id="company-register-form">
-                <h4>Inscripto Nº1:</h4>
-                <div class="fields">
-                    <input type="text" name="firstName1" id="firstName1" placeholder="Nombre" required
-                        title="Debe ingresar el nombre de la persona">
-                    <input type="text" name="lastName1" id="lastName1" placeholder="Apellido" required
-                        title="Debe ingresar el apellido de la persona">
-                    <input type="number" name="dni1" id="dni1" placeholder="DNI (sin puntos ni espacios)" required
-                        title="Debe ingresar el DNI de la persona (sin puntos ni espacios)">
+                <div class="form__info">
+                    <h3>¿Qué tipo de inscripción va a realizar?</h3>
+                    <input type="radio" id="individual" name="inscriptionType" value="individual" class="radio-oculto">
+                    <label for="individual" class="tipo-inscripcion-btn">
+                        Personal
+                    </label>
+                    <input type="radio" id="empresarial" name="inscriptionType" value="empresarial"
+                        class="radio-oculto">
+                    <label for="empresarial" class="tipo-inscripcion-btn">
+                        Empresarial
+                    </label>
                 </div>
-                <h4>Inscripto Nº2:</h4>
-                <div class="fields">
-                    <input type="text" name="firstName2" id="firstName2" placeholder="Nombre">
-                    <input type="text" name="lastName2" id="lastName2" placeholder="Apellido">
-                    <input type="number" name="dni2" id="dni2" placeholder="DNI (sin puntos ni espacios)">
+                <div class="container-personal">
+                    <h4>Ingrese sus datos de contacto:</h4>
+                    <div class="fields">
+                        <input type="text" name="email" id="email" placeholder="Email" required
+                            title="Debe ingresar el email de la persona">
+                        <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required
+                            title="Debe ingresar el teléfono de la persona">
+                        <button><i class="fa-solid fa-circle-minus"></i></button>
+                    </div>
                 </div>
-                <h4>Inscripto Nº3:</h4>
-                <div class="fields">
-                    <input type="text" name="firstName3" id="firstName3" placeholder="Nombre">
-                    <input type="text" name="lastName3" id="lastName3" placeholder="Apellido">
-                    <input type="number" name="dni3" id="dni3" placeholder="DNI (sin puntos ni espacios)">
+
+                <div class="container-empresarial">
+                    <p>Ingrese los datos de las personas a las que desea inscribir al curso:</p>
+                    <div class="fields">
+                        <input type="text" name="firstName1" id="firstName1" placeholder="Nombre" required
+                            title="Debe ingresar el nombre de la persona">
+                        <input type="text" name="lastName1" id="lastName1" placeholder="Apellido" required
+                            title="Debe ingresar el apellido de la persona">
+                        <input type="number" name="dni1" id="dni1" placeholder="DNI (sin puntos ni espacios)" required
+                            title="Debe ingresar el DNI de la persona (sin puntos ni espacios)">
+                        <input type="text" name="email" id="email" placeholder="Email" required
+                            title="Debe ingresar el email de la persona">
+                        <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required
+                            title="Debe ingresar el teléfono de la persona">
+                        <button><i class="fa-solid fa-circle-minus"></i></button>
+                    </div>
+                    <button class="form-button">Agregar Persona</button>
                 </div>
-                <button class="form-button" >Agregar Persona</button>
+
                 <div class="resume">
                     <span id="price">$20.000.-</span> <button class="form-button" type="submit">Inscribirse</button>
                 </div>
             </form>
         </section>
     </main>
-     <footer class="footer">
+
+    <footer class="footer">
         <div class="footer-container">
 
 
@@ -135,13 +142,16 @@
                 </ul>
             </div>
 
-            
+
             <div class="footer-col">
                 <h3>Redes Sociales</h3>
                 <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/icono-redes/facebook.png"></img></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/icono-redes/instagram.png"></img></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/icono-redes/youtube.png"></img></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="../../Imagenes/icono-redes/facebook.png"></img></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="../../Imagenes/icono-redes/instagram.png"></img></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="../../Imagenes/icono-redes/youtube.png"></img></a>
                 </div>
             </div>
 
@@ -152,5 +162,6 @@
 
     </footer>
 </body>
+<script src="../../js/formulario.js"></script>
 
 </html>
