@@ -43,7 +43,7 @@ main {
     border-bottom: #adc4ce solid 0.1em;
 }
 
-button {
+.form-button {
     background-color: #ff6d00;
     border: none;
     border-radius: 0.5em;
