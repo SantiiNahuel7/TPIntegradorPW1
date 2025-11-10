@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputColor = document.getElementById("color-tarjeta");
   const inputTamanio = document.querySelector(".tamanio-texto input[type='number']");
   const selectMonto = document.getElementById("amount");
-  const radiosUbicacion = document.querySelectorAll("input[name='ubicacion']");
+  const radiosUbicacion = document.querySelectorAll("input[name='ubicacion-monto']");
 
   const tarjetaPreview = document.getElementById("tarjeta-preview");
   const previewNombre = document.getElementById("preview-nombre");

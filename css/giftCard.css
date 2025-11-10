@@ -85,12 +85,12 @@
 .preview {
   flex: 1;
   min-width: 25em;
-  max-width: 35em;
+  max-width: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
+
 
 .preview h2 {
   margin-bottom: 1em;
@@ -122,40 +122,40 @@
   background-color: #96B6C5;
 }
 
-
-
 .gift-card {
-  width: 360px;
-  height: 200px;
-  border-radius: 15px;
-  background-color: rgba(255,255,255,0.1);
+  width: 25em!important;
+  height: 15rem!important;
+  background-color: #0C2531;
+  color: #ffffff;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #E0E0E0;
   font-weight: bold;
   margin-top: 1em;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   position: relative;
+  gap: 1em;
 }
 
 .gift-card .logo-tarjeta {
-  width: 150px;
-  height: auto;
+  width: 100px;
   margin-bottom: 0.5em;
 }
 
 .gift-card .destinatario {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 0;
+}
+.gift-card .monto {
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
-.gift-card .monto {
-  
-  font-size: 1.5em;
-  margin: 0;
-}
 
 .monto {
    position: absolute;
@@ -197,6 +197,71 @@
   margin-top: 0.3em;
   filter: invert(90%) brightness(200%);
 }
+
+.ubicacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 10px;
+}
+.ubicacion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.opcion-ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.opcion-ubicacion img {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s;
+}
+
+.opcion-ubicacion input {
+  display: none;
+}
+
+.opcion-ubicacion input:checked + span + img {
+  filter: drop-shadow(0 0 6px orange);
+}
+
+
+.arriba-izquierda {
+  top: 10px;
+  left: 15px;
+  right: auto;
+  bottom: auto;
+}
+
+.arriba-derecha {
+  top: 10px;
+  right: 15px;
+  left: auto;
+  bottom: auto;
+}
+
+.abajo-izquierda {
+  bottom: 10px;
+  left: 15px;
+  top: auto;
+  right: auto;
+}
+
+.abajo-derecha {
+  bottom: 10px;
+  right: 15px;
+  top: auto;
+  left: auto;
+}
+
 
 
 
