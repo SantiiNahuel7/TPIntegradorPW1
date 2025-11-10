@@ -10,6 +10,7 @@ main {
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
     color: #fff;
+    min-height: 100vh;
 }
 
 .form__info {
