@@ -172,7 +172,7 @@ body {
 
     padding-bottom: 4em;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../TPIntegradorPW1/Imagenes/Imagen-de-fondo/fondo.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url("../Imagenes/Imagen-de-fondo/fondo.jpg");
  
 }
 
