@@ -1,4 +1,6 @@
 
+import { personaInscripta } from './personaInscripta.js';
+
 const tipoDeFomulario = document.querySelector('.form__info');
 const containerEmpresarial = document.querySelector('.container-empresarial');
 const containerPersonal = document.querySelector('.container-personal');
@@ -12,6 +14,10 @@ const botonlimpiarCampos = document.querySelectorAll('.vaciar-campos');
 
 let contadorId = 1;
 
+const dialog = document.querySelector('.modal');
+const botonFormulario = document.getElementById('enviar-form');
+
+let listadoPersonas = [];
 
 function mostrarFormularioElegido() {
     tipoDeFomulario.addEventListener('change', (e) => {
@@ -35,12 +41,11 @@ function agregarPersona() {
     botonAgregarPersona.addEventListener('click', (e) => {
         e.preventDefault();
         contadorId++;
-
         inputAdicional.innerHTML += `
                     <div class="fields">
-                        <input type="text" name="firstName${contadorId}" id="firstName${contadorId}" placeholder="Nombre" required
+                        <input type="text" class="nombrePersona" name="firstName${contadorId}" id="firstName${contadorId}" placeholder="Nombre" required
                             title="Debe ingresar el nombre de la persona">
-                        <input type="text" name="lastName${contadorId}" id="lastName${contadorId}" placeholder="Apellido" required
+                        <input type="text" class="apellido" name="lastName${contadorId}" id="lastName${contadorId}" placeholder="Apellido" required
                             title="Debe ingresar el apellido de la persona">
                         <input type="number" name="dni${contadorId}" id="dni${contadorId}" placeholder="DNI (sin puntos ni espacios)" required
                             title="Debe ingresar el DNI de la persona (sin puntos ni espacios)">
@@ -53,7 +58,7 @@ function agregarPersona() {
                         </div>
                         <button class="eliminar-persona"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>`;
-      
+
     });
 }
 
@@ -96,6 +101,42 @@ function enviarFormulario() {
     });
 };
 
+
+
+function guardarPersona() {
+    listadoPersonas = []; 
+    const todasLasFilas = containerEmpresarial.querySelectorAll('.fields'); 
+    
+    todasLasFilas.forEach(filaCampos => {
+        const nombreInput = filaCampos.querySelector('.nombrePersona');
+        const apellidoInput = filaCampos.querySelector('.apellido');
+
+        if (nombreInput && nombreInput.value.trim() !== '') {
+            const nombreValor = nombreInput.value;
+            const apellidoValor = apellidoInput.value;
+            const nuevaPersona = new personaInscripta(nombreValor, apellidoValor); 
+            listadoPersonas.push(nuevaPersona);
+        }
+    });
+};
+
+function generarListadoPersonas() {
+    const listadoContenedor = dialog.querySelector('.listado-personas');  
+        listadoPersonas.forEach((nuevaPersona) => {
+            const nombre = nuevaPersona.nombre; 
+            const apellido = nuevaPersona.apellido;
+    
+            listadoContenedor.innerHTML += `<li>${nombre} ${apellido}</li>`;
+        });
+    }
+
+botonFormulario.addEventListener('click', (e) => {
+    e.preventDefault();
+    guardarPersona();
+    generarListadoPersonas();
+    dialog.showModal();
+
+});
 
 
 mostrarFormularioElegido();
