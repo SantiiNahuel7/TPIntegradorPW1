@@ -101,7 +101,7 @@ main {
     font-size: 2em;
 }
 
-#price {
+.price {
     border: #96b6c5 solid 0.1em;
     padding: 1%;
     background-color: #1E1E2E;

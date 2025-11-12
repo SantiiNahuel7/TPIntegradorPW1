@@ -44,7 +44,7 @@ function agregarPersona() {
                         <input type="number" name="telefonoEmpresarial${contadorId}" id="telefonoEmpresarial${contadorId}" placeholder="Teléfono" required
                             title="Debe ingresar el teléfono de la persona">
                         <div class="resume">
-                            <span id="price${contadorId}">$10000</span>
+                            <span class="price">$10000</span>
                         </div>
                         <button class="eliminar-persona"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>`;
