@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const previewMonto = document.getElementById("preview-monto");
   const botonContinuar = document.getElementById("btn-continuar");
 
-  console.log("giftCard.js cargado");
-  console.log("Botón:", botonContinuar);
-
   inputNombre.addEventListener("input", () => {
     previewNombre.textContent =
       inputNombre.value.trim() !== "" ? inputNombre.value : "Nombre del destinatario";
@@ -24,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   inputTamanio.addEventListener("input", () => {
     let size = parseInt(inputTamanio.value);
     if (isNaN(size)) return;
-    if (size < 20) size = 20;
-    if (size > 50) size = 50;
+    if (size < 10) size = 10;
+    if (size > 40) size = 40;
     inputTamanio.value = size;
     previewNombre.style.fontSize = size + "px";
   });
@@ -47,16 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   botonContinuar.addEventListener("click", (e) => {
-    console.log("Click detectado");
     e.preventDefault();
+
+    const ubicacionSeleccionada = Array.from(radiosUbicacion).find(r => r.checked)?.value;
+    console.log("Ubicación seleccionada:", ubicacionSeleccionada);
+
     const datosTarjeta = {
       nombre: inputNombre.value.trim(),
       color: inputColor.value,
       tamanio: parseInt(inputTamanio.value),
       monto: selectMonto.value,
-      ubicacion: document.querySelector("input[name='ubicacion-monto']:checked")?.value,
+      ubicacion: ubicacionSeleccionada
     };
+
+    console.log("Guardando en localStorage:", datosTarjeta);
     localStorage.setItem("giftCardDatos", JSON.stringify(datosTarjeta));
+
     window.location.href = "../../html/GiftCard/pagoGiftCard.html";
   });
 });

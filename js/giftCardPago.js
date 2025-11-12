@@ -21,11 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "abajo-izquierda",
     "abajo-derecha"
   );
+
   if (datos.ubicacion) {
     monto.classList.add(datos.ubicacion);
+    console.log("Ubicación aplicada:", datos.ubicacion);
+  } else {
+    console.log("No hay ubicación guardada");
   }
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const fechaInput = document.getElementById("fecha-expiracion");
@@ -59,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const inputTarjeta = document.querySelector("#numero-tarjeta");
-
 inputTarjeta.addEventListener("input", (e) => {
   let valor = e.target.value.replace(/\D/g, "");
   valor = valor.substring(0, 16);

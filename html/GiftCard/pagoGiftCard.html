@@ -109,7 +109,8 @@
         </div>
 
         <label for="numero-tarjeta">Número de tarjeta:</label>
-        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"  pattern="[0-9]{16}" maxlength="19" required>
+        <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" maxlength="19" required>
+
 
         <label for="fecha-expiracion">Fecha de vencimiento:</label>
         <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
