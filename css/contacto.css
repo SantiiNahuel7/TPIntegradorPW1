@@ -21,7 +21,7 @@ body {
 /* Contacto */
 main {
     padding: 2rem;
-    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../TPIntegradorPW1/Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo.jpg');
     padding-bottom: 5rem;
 }
 
