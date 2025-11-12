@@ -93,14 +93,14 @@
    
       <form action="../../html/GiftCard/pagoGiftCard.html" method="get">
   <label for="nombre-destinatario">Nombre completo del destinatario:</label>
-  <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" required>
+  <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" maxlength="25" required>
   
   <label for="color-tarjeta">Color de la tarjeta:</label>
   <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
   
   <label>Tamaño de texto:</label>
   <div class="tamanio-texto">
-    <input type="number" min="20" max="60" value="20">
+    <input type="number" min="20" max="50" value="20">
     <span>px</span> 
   </div>
   
@@ -143,7 +143,7 @@
 </div>
 
 
-  <button type="submit" class="boton-continuar">Continuar</button>
+  <button  id="btn-continuar" type="button" class="boton-continuar">Continuar</button>
 </form>
     </section>
         

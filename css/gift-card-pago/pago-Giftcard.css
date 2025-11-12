@@ -135,19 +135,20 @@
 
 .giftcard {
   
-   width: 360px;
-  height: 200px;
-  border-radius: 15px;
-  background-color: rgba(255,255,255,0.1);
+  width: 25em!important;
+  height: 15rem!important;
+  background-color: #0C2531;
+  color: #ffffff;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #E0E0E0;
   font-weight: bold;
   margin-top: 1em;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   position: relative;
+  gap: 1em;
 
 }
 
