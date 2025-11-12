@@ -1,3 +1,4 @@
+
 const tipoDeFomulario = document.querySelector('.form__info');
 const containerEmpresarial = document.querySelector('.container-empresarial');
 const containerPersonal = document.querySelector('.container-personal');
@@ -8,29 +9,33 @@ const inputAdicional = document.getElementById('input-adicional');
 const formulario = document.querySelector('form');
 
 const botonlimpiarCampos = document.querySelectorAll('.vaciar-campos');
-const botonEliminarPersona = document.querySelectorAll('.eliminar-persona');
 
-let contadorId = 2;
-
-
+let contadorId = 1;
 
 
 function mostrarFormularioElegido() {
     tipoDeFomulario.addEventListener('change', (e) => {
+        const inputsPersonal = containerPersonal.querySelectorAll('input');
+        const inputsEmpresarial = containerEmpresarial.querySelectorAll('input');
         if (e.target.value === 'empresarial') {
             containerEmpresarial.style.display = 'block'
             containerPersonal.style.display = 'none'
+            inputsPersonal.forEach(input => input.disabled = true);
+            inputsEmpresarial.forEach(input => input.disabled = false);
         } else {
             containerEmpresarial.style.display = 'none'
             containerPersonal.style.display = 'block'
+            inputsEmpresarial.forEach(input => input.disabled = true);
+            inputsPersonal.forEach(input => input.disabled = false);
         }
     });
 }
 
 function agregarPersona() {
     botonAgregarPersona.addEventListener('click', (e) => {
-        e.preventDefault(); // Evita que el formulario se envíe y recargue la página 
+        e.preventDefault();
         contadorId++;
+
         inputAdicional.innerHTML += `
                     <div class="fields">
                         <input type="text" name="firstName${contadorId}" id="firstName${contadorId}" placeholder="Nombre" required
@@ -48,6 +53,7 @@ function agregarPersona() {
                         </div>
                         <button class="eliminar-persona"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>`;
+      
     });
 }
 
@@ -71,13 +77,30 @@ function eliminarPersona() {
             e.preventDefault();
             const camposAEliminar = botonEliminar.closest('.fields');
             if (camposAEliminar) {
-                camposAEliminar.remove(); 
+                camposAEliminar.remove();
             }
         }
     });
 }
 
+
+function enviarFormulario() {
+    formulario.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
+        if (formSeleccionado.value === 'empresarial') {
+            e.target.submit();
+        } else if (formSeleccionado.value === 'individual') {
+            e.target.submit();
+        }
+    });
+};
+
+
+
 mostrarFormularioElegido();
 limpiarCampos();
 agregarPersona();
 eliminarPersona();
+enviarFormulario();
+
