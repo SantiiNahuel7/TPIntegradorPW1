@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     padding-top: 0.5em;
-    color: #E0E0E0;
+    color: white;
 }
 
 
@@ -172,7 +172,7 @@
 
 .paso-1 p, .paso-2 p, .paso-3 p {
 
-    color: #E0E0E0;
+    color: white;
     margin-top: 2em;
 
 
