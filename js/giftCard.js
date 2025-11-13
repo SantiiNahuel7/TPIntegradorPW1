@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Botón:", botonContinuar);
 
   inputNombre.addEventListener("input", () => {
-    previewNombre.textContent =
-      inputNombre.value.trim() !== "" ? inputNombre.value : "Nombre del destinatario";
+    previewNombre.textContent =  inputNombre.value.trim() !== "" ? inputNombre.value : "Nombre del destinatario";
   });
 
   inputColor.addEventListener("input", () => {
