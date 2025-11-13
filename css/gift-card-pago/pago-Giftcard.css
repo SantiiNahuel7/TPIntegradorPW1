@@ -173,6 +173,35 @@
   margin: 0;
 }
 
+
+.arriba-izquierda {
+  top: 10px;
+  left: 15px;
+  right: auto;
+  bottom: auto;
+}
+
+.arriba-derecha {
+  top: 10px;
+  right: 15px;
+  left: auto;
+  bottom: auto;
+}
+
+.abajo-izquierda {
+  bottom: 10px;
+  left: 15px;
+  top: auto;
+  right: auto;
+}
+
+.abajo-derecha {
+  bottom: 10px;
+  right: 15px;
+  top: auto;
+  left: auto;
+}
+
 @media (min-width: 1024px) {
 
 
