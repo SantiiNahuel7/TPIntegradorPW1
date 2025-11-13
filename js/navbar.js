@@ -7,7 +7,7 @@ export class Navbar {
     const template = `
       <nav class="barra-superior">
         <div class="usuario-iniciado">
-          <a href="./html/Login/login.html">
+          <a href="/TPIntegradorPW1/html/Login/login.html">
             <i class="fa-regular fa-user"></i>
             <span>Acceder</span>
           </a>
@@ -15,29 +15,28 @@ export class Navbar {
 
         <div class="logo-contenedor">
           <a href="index.html" class="logo-link">
-            <img src="./Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+            <img src="/TPIntegradorPW1/Imagenes/Logos/logo5.png" alt="Logo" class="logo">
           </a>
         </div>
 
-        <a class="carrito" href="./html/carrito.html">
+        <a class="carrito" href="/TPIntegradorPW1/html/carrito.html">
           <i class="fa-solid fa-cart-shopping"></i>
           <span class="contador">0</span>
         </a>
 
-        <form action="./html/Detalle de Cursos/detalleCursoHtml.html" method="get" class="barra-busqueda">
-          <input list="cursos" name="curso" type="text" placeholder="Buscar...">
-          <datalist id="cursos">
-            <option value="HTML"></option>
-            <option value="CSS"></option>
-            <option value="JavaScript"></option>
-            <option value="Java"></option>
-            <option value="SQL"></option>
-            <option value="UX/UI"></option>
-          </datalist>
-          <button class="lupa" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
+    <form class="barra-busqueda">
+  <div class="barra-boton">
+    <div class="input-wrapper">
+      <input type="text" id="search-input" placeholder="Buscar...">
+      <div id="autocomplete-list"></div>
+    </div>
+    <button class="lupa" id="search-button" type="button">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+
+  <div id="search-results"></div>
+</form>
       </nav>
 
       <nav class="menu-principal">
