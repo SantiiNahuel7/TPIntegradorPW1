@@ -1,10 +1,13 @@
 export class Navbar {
-  constructor() {}
+  constructor() {
+    // Detecta si estamos en index.html (raíz) o dentro de /html/ (1 nivel abajo)
+    const depth = window.location.pathname.includes("/html/") ? "../" : "./";
+    this.base = depth; 
+  }
 
   render() {
     const navbarContainer = document.querySelector(".js-navbar");
 
-    // 🔹 Traemos el usuario activo desde el localStorage
     const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
 
     const template = `
@@ -14,19 +17,15 @@ export class Navbar {
             usuarioActivo
               ? `
                 <div class="usuario-logueado">
-
-                <div class="usuario-icono"> 
-                
-                  <i class="fa-regular fa-user"></i>
-                  <span>Hola, ${usuarioActivo.nombre}</span>
-
-                </div>
-                  
+                  <div class="usuario-icono">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Hola, ${usuarioActivo.nombre}</span>
+                  </div>
                   <button id="logout" class="btn-logout">Cerrar sesión</button>
                 </div>
               `
               : `
-                <a href="/TPIntegradorPW1/html/Login/login.html">
+                <a href="${this.base}html/Login/login.html">
                   <i class="fa-regular fa-user"></i>
                   <span class="acceder">Acceder</span>
                 </a>
@@ -35,12 +34,12 @@ export class Navbar {
         </div>
 
         <div class="logo-contenedor">
-          <a href="/TPIntegradorPW1/index.html" class="logo-link">
-            <img src="/TPIntegradorPW1/Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+          <a href="${this.base}index.html" class="logo-link">
+            <img src="${this.base}Imagenes/Logos/logo5.png" alt="Logo" class="logo">
           </a>
         </div>
 
-        <a class="carrito" href="/TPIntegradorPW1/html/carrito.html">
+        <a class="carrito" href="${this.base}html/carrito.html">
           <i class="fa-solid fa-cart-shopping"></i>
           <span class="contador">0</span>
         </a>
@@ -68,12 +67,11 @@ export class Navbar {
 
     navbarContainer.innerHTML = template;
 
-    // 🔹 Si existe el botón de logout, le damos funcionalidad
     const logoutBtn = document.getElementById("logout");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
         localStorage.removeItem("usuarioActivo");
-        window.location.reload(); // recarga para actualizar navbar
+        window.location.reload();
       });
     }
   }
@@ -83,7 +81,7 @@ export class Navbar {
     if (!listContainer) return;
 
     items.forEach((item) => {
-      listContainer.innerHTML += `<li><a href="${item.link}">${item.text}</a></li>`;
+      listContainer.innerHTML += `<li><a href="${this.base}${item.link}">${item.text}</a></li>`;
     });
   }
 }

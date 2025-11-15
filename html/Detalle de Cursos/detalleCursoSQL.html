@@ -7,134 +7,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONO -->
     <link rel="icon" href="../../Imagenes/logos/logo6.png">
+
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <link rel="stylesheet" href="../../css/global-css.css">
+
     <title>MentorApp</title>
-
 </head>
-
 
 <header class="js-navbar"></header>
 
-
-
 <body>
+
     <section class="curso-container">
 
-
         <img class="imagen-curso" src="../../Imagenes/Cursos/sql.png">
-        <div class="info-curso">
 
+        <div class="info-curso">
             <h2 id="titulo-curso">Curso de SQL</h2>
-            
             <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 35hs</p>
             <p id="descripcion">Este curso enseña los fundamentos del lenguaje SQL, utilizado para la gestión y consulta de bases de datos relacionales. Los estudiantes aprenderán a crear, modificar y consultar tablas, además de realizar operaciones básicas y avanzadas para trabajar con información de manera eficiente.</p>
             <p id="requisito">Requisitos Previos: Excel (Basico)</p>
             <p id="valor">$40.000</p>
+
             <a href="../Formularios/formCursoSql.html">
                 <button id="boton-inscribirse">Inscribirse</button>
             </a>
-        </div> 
+        </div>
 
         <div class="contenido">
-        <h2 id="contenido-curso">Contenidos Por Clase</h2>
+            <h2 id="contenido-curso">Contenidos Por Clase</h2>
 
-        <div class="unidades">
-
-
-                
+            <div class="unidades">
 
                 <details>
-
-
                     <summary>INTRODUCCIÓN</summary>
-                    
-                    
-
                     <div>
-
                         <ul class="content">
                             <li>¿Qué es SQL y para qué sirve?</li>
-                <li>Bases de datos relacionales: conceptos básicos.</li>
-                <li>Instalación y uso de un gestor de bases de datos (MySQL / PostgreSQL).</li>
+                            <li>Bases de datos relacionales: conceptos básicos.</li>
+                            <li>Instalación y uso de un gestor de bases de datos (MySQL / PostgreSQL).</li>
                         </ul>
-
-
                     </div>
-                        
-                    
-
                 </details>
 
-        
-               
-
-
-                 <details>
-
-                    
+                <details>
                     <summary>UNIDAD 1</summary>
-
                     <div>
-
-                          <ul class="content">
-                           <li>Creación y gestión de bases de datos.</li>
-                <li>Tablas: creación, modificación y eliminación.</li>
-                <li>Tipos de datos en SQL.</li>
-                <li>Consultas básicas con SELECT y filtros con WHERE.</li>
+                        <ul class="content">
+                            <li>Creación y gestión de bases de datos.</li>
+                            <li>Tablas: creación, modificación y eliminación.</li>
+                            <li>Tipos de datos en SQL.</li>
+                            <li>Consultas básicas con SELECT y filtros con WHERE.</li>
                         </ul>
-
-
                     </div>
-
-                      
                 </details>
 
-
-
-            
-
-               
-
-                          <details>
+                <details>
                     <summary>UNIDAD 2</summary>
-
                     <div>
-
-                          <ul class="content">
+                        <ul class="content">
                             <li>Operadores y funciones en SQL (agregación y matemáticas).</li>
-                <li>Ordenar y agrupar resultados (ORDER BY, GROUP BY, HAVING).</li>
-                <li>Relaciones entre tablas: claves primarias y foráneas.</li>
-                <li>Joins: INNER, LEFT, RIGHT y FULL JOIN.</li>
+                            <li>Ordenar y agrupar resultados (ORDER BY, GROUP BY, HAVING).</li>
+                            <li>Relaciones entre tablas: claves primarias y foráneas.</li>
+                            <li>Joins: INNER, LEFT, RIGHT y FULL JOIN.</li>
                         </ul>
-
-
                     </div>
-                      
-
                 </details>
 
-
-
-          
-
-
+            </div>
         </div>
-     
-
-    </div>
-
-
 
     </section>
 
-
-
-    
-
-
-
+    <!-- DOCENTE -->
     <section class="docente">
         <h2>DOCENTE</h2>
         <div id="info-profesor">
@@ -143,144 +92,77 @@
                 <p id="nombre-profesor">Andrea Morales</p>
                 <div class="rating" style="--percent:80%;"></div>
                 <p id="profesor-bio">Analista de datos con más de 9 años de experiencia en gestión y optimización de bases de datos. Especialista en SQL y sistemas relacionales, ha trabajado en proyectos de business intelligence y administración de grandes volúmenes de información. Su enfoque práctico ayuda a los estudiantes a aplicar SQL de manera efectiva en entornos reales.</p>
-            </div>   
-        </div>  
+            </div>
+        </div>
     </section>
 
-
-
-
+    <!-- CURSOS DESTACADOS -->
     <section class="cursos" id="cursos-destacados">
 
-            
+        <h2> CURSOS DESTACADOS </h2>
 
-            <h2> CURSOS DESTACADOS </h2>
+        <div class="grid-cursos">
 
-            
-
-           <div class="grid-cursos">
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoHtml.html">
-
-                            <img src="../../Imagenes/Cursos/html.png" alt="HTML">
-
-                        </a>
-                        
-                        <span class="precio">$20.000</span>
-                    
-                    </div>
-
-                    <div class="info">
-
-                        <p class="horas"> 20 hs</p>
-                        <h3 class="nombre"> HTML </h3>
-
-                        <a href="detalleCursoHtml.html">
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                        </a>
-                        
-
-                     </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-
-                        <a href="detalleCursoCSS.html">
-
-                            <img src="../../Imagenes/cursos/css.png" alt="CSS">
-
-                        </a>
-                        
-
-                        <span class="precio">$25.000</span>
-                    
-                    </div>
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalleCursoHtml.html">
+                        <img src="../../Imagenes/Cursos/html.png" alt="HTML">
+                    </a>
+                    <span class="precio">$20.000</span>
+                </div>
 
                 <div class="info">
+                    <p class="horas">20 hs</p>
+                    <h3 class="nombre">HTML</h3>
+                    <a href="detalleCursoHtml.html">
+                        <button class="comprar">Detalles Del Curso</button>
+                    </a>
+                </div>
+            </article>
 
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> CSS </h3>
-
-
+            <article class="curso">
+                <div class="img-container">
                     <a href="detalleCursoCSS.html">
-
-                            <button class="comprar"> Detalles Del Curso </button>
-
+                        <img src="../../Imagenes/Cursos/css.png" alt="CSS">
                     </a>
-
+                    <span class="precio">$25.000</span>
                 </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoJS.html">
-
-                            <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
-
-                        </a>
-                        
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
 
                 <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> JavaScript </h3>
-
-                    <a href="detalleCursoJS.html">
-
-                        <button class="comprar"> Detalles Del Curso </button>
-
+                    <p class="horas">30 hs</p>
+                    <h3 class="nombre">CSS</h3>
+                    <a href="detalleCursoCSS.html">
+                        <button class="comprar">Detalles Del Curso</button>
                     </a>
-                    
+                </div>
+            </article>
 
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalleCursoJS.html">
+                        <img src="../../Imagenes/Cursos/javascript.png" alt="Javascript">
+                    </a>
+                    <span class="precio">$30.000</span>
                 </div>
 
-               
+                <div class="info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="nombre">JavaScript</h3>
+                    <a href="detalleCursoJS.html">
+                        <button class="comprar">Detalles Del Curso</button>
+                    </a>
+                </div>
+            </article>
 
-
-
-           </div>
-
-    
-
-
-            
-
-            
-
-        
-
-        
-
+        </div>
     </section>
 
-     <footer class="footer" >
-        
+    <footer class="footer">
         <div class="js-footer"></div>
-
-
     </footer>
 
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    </body>
+    <!-- JS -->
+    <script type="module" src="../../js/main.js"></script>
 
-
-     
+</body>
 </html>

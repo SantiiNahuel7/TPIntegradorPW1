@@ -7,291 +7,162 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONO Y CSS CON RUTAS RELATIVAS CORRECTAS -->
     <link rel="icon" href="../../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <link rel="stylesheet" href="../../css/global-css.css">
-    <title>MentorApp</title>
 
+    <title>MentorApp</title>
 </head>
 
-
- <header class="js-navbar"></header>
-
-
-
 <body>
-    <section class="curso-container">
 
+<header class="js-navbar"></header>
 
-        <img class="imagen-curso" src="../../Imagenes/Detalle de Curso/html.png">
-        <div class="info-curso">
+<section class="curso-container">
 
-            <h2 id="titulo-curso">Curso de HTML</h2>
-            
-            <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 20hs</p>
-            <p id="descripcion">Curso práctico para aprender los fundamentos de HTML, el lenguaje base de la web. Incluye estructura de páginas, etiquetas principales, enlaces, imágenes, tablas y formularios, preparando al alumno para crear sitios web desde cero o avanzar hacia CSS y JavaScript.</p>
-            <p id="requisito">Requisitos Previos: Ninguno</p>
-            <p id="valor">$20.000</p>
-            <a href="../formularios/formCursoHtml.html">
-                <button id="boton-inscribirse">Inscribirse</button>
-            </a>
-        </div> 
+    <img class="imagen-curso" src="../../Imagenes/Detalle de Curso/html.png">
+    
+    <div class="info-curso">
+        <h2 id="titulo-curso">Curso de HTML</h2>
 
-        <div class="contenido">
+        <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 20hs</p>
+        <p id="descripcion">Curso práctico para aprender los fundamentos de HTML, el lenguaje base de la web. Incluye estructura de páginas, etiquetas principales, enlaces, imágenes, tablas y formularios, preparando al alumno para crear sitios web desde cero o avanzar hacia CSS y JavaScript.</p>
+        <p id="requisito">Requisitos Previos: Ninguno</p>
+        <p id="valor">$20.000</p>
+
+        <!-- FORMULARIO RELATIVO -->
+        <a href="../formularios/formCursoHtml.html">
+            <button id="boton-inscribirse">Inscribirse</button>
+        </a>
+    </div>
+
+    <div class="contenido">
         <h2 id="contenido-curso">Contenidos Por Clase</h2>
 
         <div class="unidades">
 
+            <details>
+                <summary>INTRODUCCIÓN</summary>
+                <div>
+                    <ul class="content">
+                        <li>Qué es HTML y su papel en la construcción de páginas web.</li>
+                        <li>Estructura básica de un documento HTML.</li>
+                        <li>Herramientas necesarias: editor de código y navegador.</li>
+                        <li>Buenas prácticas de organización de archivos y carpetas.</li>
+                    </ul>
+                </div>
+            </details>
 
-                
+            <details>
+                <summary>UNIDAD 1</summary>
+                <div>
+                    <ul class="content">
+                        <li>Etiquetas esenciales.</li>
+                        <li>Encabezados, párrafos y texto enriquecido.</li>
+                        <li>Enlaces y rutas: absolutas y relativas.</li>
+                        <li>Listas ordenadas y desordenadas.</li>
+                        <li>Imágenes y atributos principales.</li>
+                    </ul>
+                </div>
+            </details>
 
-                <details>
-
-
-                    <summary>INTRODUCCIÓN</summary>
-                    
-                    
-
-                    <div>
-
-                        <ul class="content">
-                           <li>Qué es HTML y su papel en la construcción de páginas web.</li>
-                <li>Estructura básica de un documento HTML.</li>
-                <li>Herramientas necesarias: editor de código y navegador.</li>
-                <li>Buenas prácticas de organización de archivos y carpetas.</li>
-                        </ul>
-
-
-                    </div>
-                        
-                    
-
-                </details>
-
-        
-               
-
-
-                 <details>
-
-                    
-                    <summary>UNIDAD 1</summary>
-
-                    <div>
-
-                          <ul class="content">
-                            <li>Etiquetas esenciales.</li>
-                <li>Encabezados, párrafos y texto enriquecido.</li>
-                <li>Enlaces y rutas: absolutas y relativas.</li>
-                <li>Listas ordenadas y desordenadas.</li>
-                <li>Imágenes y atributos principales .</li>
-                        </ul>
-
-
-                    </div>
-
-                      
-                </details>
-
-
-
-            
-
-               
-
-                          <details>
-                    <summary>UNIDAD 2</summary>
-
-                    <div>
-
-                          <ul class="content">
-                            <li>Tablas: creación y atributos.</li>
-                <li>Formularios: campos de texto, botones, selectores, validación básica.</li>
-                <li>Elementos semánticos de HTML5.</li>
-                <li>Buenas prácticas de accesibilidad.</li>
-                        </ul>
-
-
-                    </div>
-                      
-
-                </details>
-
-
-
-          
-
+            <details>
+                <summary>UNIDAD 2</summary>
+                <div>
+                    <ul class="content">
+                        <li>Tablas: creación y atributos.</li>
+                        <li>Formularios: campos de texto, botones, selectores, validación básica.</li>
+                        <li>Elementos semánticos de HTML5.</li>
+                        <li>Buenas prácticas de accesibilidad.</li>
+                    </ul>
+                </div>
+            </details>
 
         </div>
-     
-
     </div>
 
-
-
-    </section>
-
-
-
-    
-
-
-
-    <section class="docente">
-        <h2>DOCENTE</h2>
-        <div id="info-profesor">
-            <img src="../../Imagenes/Detalle de Curso/profesor.jpg" alt="profesor" id="profesor-foto">
-            <div class="detalle-profesor">
-                <p id="nombre-profesor">Juan Martín López</p>
-                <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Juan Martín López es desarrollador web con más de 8 años de experiencia en diseño y programación de sitios web. Especializado en HTML, CSS y JavaScript, ha trabajado en proyectos para empresas locales y startups, combinando creatividad y buenas prácticas de desarrollo. Apasionado por la enseñanza, busca que sus estudiantes comprendan los fundamentos del desarrollo web de manera práctica y aplicada.</p>
-            </div>   
-        </div>  
-    </section>
-
-
-
-
-    <section class="cursos" id="cursos-destacados">
-
-            
-
-            <h2> CURSOS DESTACADOS </h2>
-
-            
-
-           <div class="grid-cursos">
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoHtml.html">
-
-                            <img src="../../Imagenes/Cursos/html.png" alt="HTML">
-
-                        </a>
-                        
-                        <span class="precio">$20.000</span>
-                    
-                    </div>
-
-                    <div class="info">
-
-                        <p class="horas"> 20 hs</p>
-                        <h3 class="nombre"> HTML </h3>
-
-                        <a href="detalleCursoHtml.html">
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                        </a>
-                        
-
-                     </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-
-                        <a href="detalleCursoCSS.html">
-
-                            <img src="../../Imagenes/cursos/css.png" alt="CSS">
-
-                        </a>
-                        
-
-                        <span class="precio">$25.000</span>
-                    
-                    </div>
-
-                <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> CSS </h3>
-
-
-                    <a href="detalleCursoCSS.html">
-
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                    </a>
-
-                </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoJS.html">
-
-                            <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
-
-                        </a>
-                        
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
-
-                <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> JavaScript </h3>
-
-                    <a href="detalleCursoJS.html">
-
-                        <button class="comprar"> Detalles Del Curso </button>
-
-                    </a>
-                    
-
-                </div>
-
-                </article>
-
-
-
-
-
-
-
-
-
-
-               
-
-           </div>
-
-    
-
-
-            
-
-            
-
-        
-
-        
-
-    </section>
-
-     <footer class="footer" >
-        
-        <div class="js-footer"></div>
-
-
-    </footer>
-
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    </body>
-
-
-
+</section>
+
+<section class="docente">
+    <h2>DOCENTE</h2>
+    <div id="info-profesor">
+        <img src="../../Imagenes/Detalle de Curso/profesor.jpg" alt="profesor" id="profesor-foto">
+        <div class="detalle-profesor">
+            <p id="nombre-profesor">Juan Martín López</p>
+            <div class="rating" style="--percent:80%;"></div>
+            <p id="profesor-bio">Juan Martín López es desarrollador web con más de 8 años de experiencia en diseño y programación de sitios web. Especializado en HTML, CSS y JavaScript, ha trabajado en proyectos para empresas locales y startups, combinando creatividad y buenas prácticas de desarrollo. Apasionado por la enseñanza, busca que sus estudiantes comprendan los fundamentos del desarrollo web de manera práctica y aplicada.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cursos" id="cursos-destacados">
+
+    <h2> CURSOS DESTACADOS </h2>
+
+    <div class="grid-cursos">
+
+        <article class="curso">
+            <div class="img-container">
+                <a href="detalleCursoHtml.html">
+                    <img src="../../Imagenes/Cursos/html.png" alt="HTML">
+                </a>
+                <span class="precio">$20.000</span>
+            </div>
+
+            <div class="info">
+                <p class="horas">20 hs</p>
+                <h3 class="nombre">HTML</h3>
+                <a href="detalleCursoHtml.html">
+                    <button class="comprar">Detalles Del Curso</button>
+                </a>
+            </div>
+        </article>
+
+        <article class="curso">
+            <div class="img-container">
+                <a href="detalleCursoCSS.html">
+                    <img src="../../Imagenes/cursos/css.png" alt="CSS">
+                </a>
+                <span class="precio">$25.000</span>
+            </div>
+
+            <div class="info">
+                <p class="horas">30 hs</p>
+                <h3 class="nombre">CSS</h3>
+                <a href="detalleCursoCSS.html">
+                    <button class="comprar">Detalles Del Curso</button>
+                </a>
+            </div>
+        </article>
+
+        <article class="curso">
+            <div class="img-container">
+                <a href="detalleCursoJS.html">
+                    <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
+                </a>
+                <span class="precio">$30.000</span>
+            </div>
+
+            <div class="info">
+                <p class="horas">30 hs</p>
+                <h3 class="nombre">JavaScript</h3>
+                <a href="detalleCursoJS.html">
+                    <button class="comprar">Detalles Del Curso</button>
+                </a>
+            </div>
+        </article>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="js-footer"></div>
+</footer>
+
+<!-- RUTA RELATIVA A main.js -->
+<script type="module" src="../../js/main.js"></script>
+
+</body>
 </html>
