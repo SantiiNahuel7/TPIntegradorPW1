@@ -17,74 +17,7 @@
     <link rel="stylesheet" href="../../css/global-css.css">
     <title>MentorApp</title>
 </head>
-<header >
-
-            
-            <nav class="barra-superior">
-
-                <div class="usuario-iniciado">
-
-                    <a href="../Login/login.html">
-                        
-                        <i class="fa-regular fa-user"></i>
-                        <span>Acceder</span>
-                    
-                    </a>
-                    
-                </div>
-
-                <div class="logo-contenedor">
-                    <a href="../../index.html" class="logo-link">
-                    <img src="../../Imagenes/logos/logo5.png" alt="Logo" class="logo">
-                    </a>
-                </div>
-
-                
-                <a class="carrito" href="../carrito.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="contador">0</span>
-                </a>
-
-                <form action="./html/Detalle de Cursos/detalleCursoHtml.html" method="get" class="barra-busqueda">
-                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
-                    <datalist id="cursos">
-                        <option value="HTML"></option>
-                        <option value="CSS"></option>
-                        <option value="JavaScript"></option>
-                        <option value="Java"></option>
-                        <option value="SQL"></option>
-                        <option value="UX/UI"></option>
-                    </datalist>
-                    <button class="lupa" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                
-                
-                
-
-            </nav>
-
-            <nav class="menu-principal">
-
-                <div class="menu-principal-container">
-                   <ul>
-                        <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="../../index.html#cursos-destacados">Cursos Destacados</a></li>
-                        <li><a href="../calendario.html">Calendario De Cursos</a></li>
-                        <li><a href="../GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="../contacto.html">Contacto</a></li>
-                   </ul>
-
-                   
-
-                </div>
-
-            </nav>
-            
-
-       
-    </header>
+<header class="js-navbar"></header>
 <body>
     <main>
         <h1 class="main__title">Proceso de Compra</h1>
@@ -147,43 +80,10 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-container">
-
-
-            <div class="footer-col">
-                <h3>Datos Del Grupo</h3>
-                <ul>
-                    <li>Alan Ibañez</li>
-                    <li>Yamila Santillan</li>
-                    <li>Santiago Orellana</li>
-                    <li>Adrián Amarilla</li>
-                    <li>Jennifer Caceres</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Menu Inferior</h3>
-                <ul>
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
-                    <li><a href="../contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-col">
-                <h3>Redes Sociales</h3>
-                <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img
-                            src="../../Imagenes/icono-redes/facebook.png"></img></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img
-                            src="../../Imagenes/icono-redes/instagram.png"></img></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img
-                            src="../../Imagenes/icono-redes/youtube.png"></img></a>
-                </div>
-            </div>
-        </div>
+        <div class="js-footer"></div>
     </footer>
+
+    <script type="module" src="../../js/main.js"></script>
 </body>
 
 </html>

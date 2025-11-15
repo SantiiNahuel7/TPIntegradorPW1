@@ -3,115 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>MentorApp</title>
-    <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONO -->
+    <link rel="icon" href="../../Imagenes/Logos/logo6.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../../css/global-css.css">
     <link rel="stylesheet" href="../../css/giftCard.css">
-    
-    
+
+    <title>MentorApp</title>
 </head>
+
 <body>
-  
- <header >
 
-            
-            <header class="js-navbar"></header>
-            
+<header class="js-navbar"></header>
 
-       
-    </header>
+<main class="container">
 
-
-
-  <main class="container">
     <section class="formulario-gift-card">
-      <h2>Personaliza tu Gift Card</h2>
-   
-      <form action="../../html/GiftCard/pagoGiftCard.html" method="get">
-  <label for="nombre-destinatario">Nombre completo del destinatario:</label>
-  <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" maxlength="23" required>
-  
-  <label for="color-tarjeta">Color de la tarjeta:</label>
-  <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
-  
-  <label>Tamaño de texto:</label>
-  <div class="tamanio-texto">
-    <input type="number" min="10" max="40" value="20">
-    <span>px</span> 
-  </div>
-  
-  <label for="amount">Valor de la Gift Card:</label>
-  <select id="amount" name="amount" required>
-    <option value="20000">$20000</option>
-    <option value="25000">$25000</option>
-    <option value="30000">$30000</option>
-    <option value="40000">$40000</option>
-    <option value="60000">$60000</option>
-  </select>
-  
-<label>Ubicación del monto:</label>
-   <div class="ubicacion">
+        <h2>Personaliza tu Gift Card</h2>
 
-  <label class="opcion-ubicacion">
-    <input type="radio" name="ubicacion-monto" value="arriba-izquierda">
-    <span>Arriba Izquierda</span>
-    <img src="../../Imagenes/Imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
-  </label>
+        <form action="./pagoGiftCard.html" method="get">
+            <label for="nombre-destinatario">Nombre completo del destinatario:</label>
+            <input type="text" id="nombre-destinatario" name="nombre-destinatario"
+                   placeholder="ej. Juan Pérez" maxlength="23" required>
 
-  <label class="opcion-ubicacion">
-    <input type="radio" name="ubicacion-monto" value="arriba-derecha">
-    <span>Arriba Derecha</span>
-    <img src="../../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
-  </label>
+            <label for="color-tarjeta">Color de la tarjeta:</label>
+            <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
 
-  <label class="opcion-ubicacion">
-    <input type="radio" name="ubicacion-monto" value="abajo-izquierda">
-    <span>Abajo Izquierda</span>
-    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
-  </label>
+            <label>Tamaño de texto:</label>
+            <div class="tamanio-texto">
+                <input type="number" min="10" max="40" value="20">
+                <span>px</span>
+            </div>
 
-  <label class="opcion-ubicacion">
-    <input type="radio" name="ubicacion-monto" value="abajo-derecha">
-    <span>Abajo Derecha</span>
-    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
-  </label>
+            <label for="amount">Valor de la Gift Card:</label>
+            <select id="amount" name="amount" required>
+                <option value="20000">$20000</option>
+                <option value="25000">$25000</option>
+                <option value="30000">$30000</option>
+                <option value="40000">$40000</option>
+                <option value="60000">$60000</option>
+            </select>
 
-</div>
+            <label>Ubicación del monto:</label>
+            <div class="ubicacion">
 
+                <label class="opcion-ubicacion">
+                    <input type="radio" name="ubicacion-monto" value="arriba-izquierda">
+                    <span>Arriba Izquierda</span>
+                    <img src="../../Imagenes/Imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
+                </label>
 
-  <button  id="btn-continuar" type="button" class="boton-continuar">Continuar</button>
-</form>
+                <label class="opcion-ubicacion">
+                    <input type="radio" name="ubicacion-monto" value="arriba-derecha">
+                    <span>Arriba Derecha</span>
+                    <img src="../../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
+                </label>
+
+                <label class="opcion-ubicacion">
+                    <input type="radio" name="ubicacion-monto" value="abajo-izquierda">
+                    <span>Abajo Izquierda</span>
+                    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
+                </label>
+
+                <label class="opcion-ubicacion">
+                    <input type="radio" name="ubicacion-monto" value="abajo-derecha">
+                    <span>Abajo Derecha</span>
+                    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
+                </label>
+
+            </div>
+
+            <button id="btn-continuar" type="button" class="boton-continuar">Continuar</button>
+        </form>
     </section>
-        
+
     <section class="preview">
-      <h2>Vista Previa de la Gift Card</h2>
-      <div class="gift-card" id="tarjeta-preview">
-        <img src="../../Imagenes/Logos/logo5.png" alt="logo de MentorApp" class="logo-tarjeta">
-        <p class="destinatario" id="preview-nombre">Juan Pérez</p>
-        <p class="monto" id="preview-monto">$20000</p>
-      </div>
-      
+        <h2>Vista Previa de la Gift Card</h2>
+        <div class="gift-card" id="tarjeta-preview">
+            <img src="../../Imagenes/Logos/logo5.png" alt="logo de MentorApp" class="logo-tarjeta">
+            <p class="destinatario" id="preview-nombre">Juan Pérez</p>
+            <p class="monto" id="preview-monto">$20000</p>
+        </div>
     </section>
 
+</main>
 
+<footer class="footer">
+    <div class="js-footer"></div>
+</footer>
 
-    
-  </main>
+<!-- JS -->
+<script src="../../js/giftCard.js"></script>
+<script type="module" src="../../js/main.js"></script>
 
- 
-  
- <footer class="footer">
-       
-  <div class="js-footer"></div>
-
-
-    </footer>
-
-    <script src="../../js/giftCard.js"></script>
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
 </body>
 </html>

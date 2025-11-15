@@ -7,50 +7,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+    <!-- ICONO -->
+    <link rel="icon" href="../../Imagenes/Logos/logo6.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../../css/Estilos Formularios Pagos/formInscripcion.css">
     <link rel="stylesheet" href="../../css/global-css.css">
+
     <title>MentorApp</title>
 </head>
 
 <body>
-   <header class="js-navbar"></header>
-   <main>
+
+    <header class="js-navbar"></header>
+
+    <main>
         <section class="main__title">
             <h2>Formulario de Inscripción</h2>
         </section>
+
         <section class="main__form">
             <h3>Curso elegido: UX/UI</h3>
 
+            <!-- RUTA RELATIVA CORRECTA -->
             <form action="../Sitios De Pagos/pagosCursoHtml.html" method="get" autocomplete="off"
                 id="company-register-form">
 
                 <div class="form__info">
                     <h3>¿Qué tipo de inscripción va a realizar?</h3>
+
                     <input type="radio" id="individual" name="inscriptionType" value="individual" class="radio-oculto">
-                    <label for="individual" class="tipo-inscripcion-btn">
-                        Personal
-                    </label>
+                    <label for="individual" class="tipo-inscripcion-btn">Personal</label>
+
                     <input type="radio" id="empresarial" name="inscriptionType" value="empresarial"
                         class="radio-oculto">
-                    <label for="empresarial" class="tipo-inscripcion-btn">
-                        Empresarial
-                    </label>
+                    <label for="empresarial" class="tipo-inscripcion-btn">Empresarial</label>
                 </div>
 
                 <div class="container-personal">
                     <h4>Ingrese sus datos de contacto:</h4>
 
                     <div class="fields primera-persona">
-                        <input type="text" name="emailPersona" id="emailPersona" placeholder="Email" required
-                            title="Debe ingresar el email de la persona">
-                        <input type="number" name="telefonoPersona" id="telefonoPersona" placeholder="Teléfono" required
-                            title="Debe ingresar el teléfono de la persona">
+                        <input type="text" name="emailPersona" id="emailPersona" placeholder="Email" required>
+                        <input type="number" name="telefonoPersona" id="telefonoPersona" placeholder="Teléfono" required>
                         <button class="vaciar-campos"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>
                 </div>
@@ -59,50 +64,49 @@
                     <p>Ingrese los datos de las personas a las que desea inscribir al curso:</p>
 
                     <div class="fields primera-persona">
-                        <input type="text" class="nombrePersona" name="firstName1" id="firstName1" placeholder="Nombre" required
-                            title="Debe ingresar el nombre de la persona">
-                        <input type="text" class="apellido" name="lastName1" id="lastName1" placeholder="Apellido" required
-                            title="Debe ingresar el apellido de la persona">
-                        <input type="number" name="dni1" id="dni1" placeholder="DNI (sin puntos ni espacios)" required
-                            title="Debe ingresar el DNI de la persona (sin puntos ni espacios)">
-                        <input type="text" name="emailEmpresarial" id="emailEmpresarial" placeholder="Email" required
-                            title="Debe ingresar el email de la persona">
-                        <input type="number" name="telefonoEmpresarial" id="telefonoEmpresarial" placeholder="Teléfono"
-                            required title="Debe ingresar el teléfono de la persona">
+                        <input type="text" class="nombrePersona" name="firstName1" id="firstName1" placeholder="Nombre" required>
+                        <input type="text" class="apellido" name="lastName1" id="lastName1" placeholder="Apellido" required>
+                        <input type="number" name="dni1" id="dni1" placeholder="DNI (sin puntos ni espacios)" required>
+                        <input type="text" name="emailEmpresarial" id="emailEmpresarial" placeholder="Email" required>
+                        <input type="number" name="telefonoEmpresarial" id="telefonoEmpresarial" placeholder="Teléfono" required>
+
                         <div class="resume">
                             <span class="price">$10000</span>
                         </div>
+
                         <button class="vaciar-campos"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>
 
-                    <div id="input-adicional">
-                    </div>
+                    <div id="input-adicional"></div>
+
                     <button class="form-button" id="agregar-persona">Agregar Persona</button>
                 </div>
-                 <dialog class="modal">
+
+                <dialog class="modal">
                     <div class="dialog-content">
                         <h3>¡Formulario Completado!</h3>
                         <p>Resumen de personas inscriptas: <ul class="listado-personas"></ul></p>
-                        <p>Presione la tecla ESC para cancelar y volver al formulario o click en el boton para continuar al pago</p>
+                        <p>Presione ESC para cancelar o click para continuar</p>
                         <button class="form-button" id="close-dialog">Continuar al pago</button>
                     </div>
                 </dialog>
+
                 <div class="resume">
-                    <span class="price">$60.000.-</span> <button class="form-button" id="enviar-form"  type="submit">Inscribirse</button>
+                    <span class="price">$60.000.-</span>
+                    <button class="form-button" id="enviar-form" type="submit">Inscribirse</button>
                 </div>
+
             </form>
         </section>
     </main>
 
-     <footer class="footer" >
-        
+    <footer class="footer">
         <div class="js-footer"></div>
-
-
     </footer>
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    <script src="../../js/formulario.js" type="module"></script>
+
+    <!-- JS (RUTAS RELATIVAS CORRECTAS) -->
+    <script type="module" src="../../js/main.js"></script>
+    <script type="module" src="../../js/formulario.js"></script>
+
 </body>
-
-
 </html>

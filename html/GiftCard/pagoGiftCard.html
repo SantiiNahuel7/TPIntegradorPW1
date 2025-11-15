@@ -4,47 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MentorApp</title>
+
+  <!-- ICONO -->
+  <link rel="icon" href="../../Imagenes/Logos/logo6.png">
+
+  <!-- GOOGLE FONTS Y FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../../css/global-css.css">
   <link rel="stylesheet" href="../../css/gift-card-pago/pago-Giftcard.css">
+
 </head>
 <body>
 
-
-
- <header class="js-navbar"></header>
-
+  <header class="js-navbar"></header>
 
   <main class="container-pago">
     <section class="formulario-pago">
       <h2>Finalizar la compra de la gift Card</h2>
-      <form action="../../html/GiftCard/pagoRealizado.html" method="get">
+
+      <!-- FORMULARIO -->
+      <form action="../GiftCard/pagoRealizado.html" method="get">
+
         <label for="gmail-destinatario">Gmail del destinatario:</label>
         <input type="email" id="gmail-destinatario" name="gmail-destinatario" placeholder="ej. user222@gmail.com" required>
 
         <h3>Elegí tu método de pago</h3>
+
         <div class="metodos-pago">
+
           <label>
             <input type="radio" name="metodo-pago" value="MercadoPago" required>
-            <img src="../../Imagenes/Logos/mercadopago.png" alt="Tarjeta de mercado pago">
+            <img src="../../Imagenes/Logos/mercadopago.png" alt="MercadoPago">
           </label>
+
           <label>
             <input type="radio" name="metodo-pago" value="mastercard">
             <img src="../../Imagenes/Logos/mastercard.png" alt="MasterCard">
           </label>
+
           <label>
             <input type="radio" name="metodo-pago" value="visa">
             <img src="../../Imagenes/Logos/visa.png" alt="Visa">
           </label>
+
         </div>
 
         <label for="numero-tarjeta">Número de tarjeta:</label>
         <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" maxlength="19" required>
-
 
         <label for="fecha-expiracion">Fecha de vencimiento:</label>
         <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" required>
@@ -52,31 +63,30 @@
         <label for="cvv">CVV:</label>
         <input type="text" id="cvv" name="cvv" placeholder="XXX" pattern="[0-9]{3}" maxlength="3" required>
 
-       <button type="submit" class="boton-comprar">Comprar</button>
+        <button type="submit" class="boton-comprar">Comprar</button>
 
       </form>
     </section>
 
     <section class="preview-giftcard">
       <h3>Vista Previa de la Gift Card</h3>
+
       <div class="giftcard">
         <div class="giftcard-monto">$20000</div>
         <img src="../../Imagenes/Logos/logo5.png" alt="Logo Gift" class="giftcard-logo">
         <div class="giftcard-nombre">Juan Pérez</div>
       </div>
+
     </section>
   </main>
 
- 
+  <footer class="footer">
+    <div class="js-footer"></div>
+  </footer>
 
-     <footer class="footer" >
-        
-        <div class="js-footer"></div>
+  <!-- JS -->
+  <script type="module" src="../../js/main.js"></script>
+  <script src="../../js/giftCardPago.js"></script>
 
-
-    </footer>
-
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    <script src="../../js/giftCardPago.js"></script>
 </body>
 </html>

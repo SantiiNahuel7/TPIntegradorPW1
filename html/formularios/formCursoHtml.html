@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+    <!-- FAVICON RELATIVO -->
+    <link rel="icon" href="../../Imagenes/Logos/logo6.png">
+
+    <!-- CSS RELATIVOS -->
     <link rel="stylesheet" href="../../css/Estilos Formularios Pagos/formInscripcion.css">
     <link rel="stylesheet" href="../../css/global-css.css">
+
     <title>MentorApp</title>
 </head>
 
@@ -28,6 +32,7 @@
         <section class="main__form">
             <h3>Curso elegido: HTML</h3>
 
+            <!-- ACTION con ruta relativa -->
             <form action="../Sitios De Pagos/pagosCursoHtml.html" method="get" autocomplete="off"
                 id="company-register-form">
 
@@ -76,37 +81,36 @@
                         <button class="vaciar-campos"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>
 
-                    <div id="input-adicional">
+                    <div id="input-adicional"></div>
 
-                    </div>
                     <button class="form-button" id="agregar-persona">Agregar Persona</button>
                 </div>
-                 <dialog class="modal">
+
+                <dialog class="modal">
                     <div class="dialog-content">
                         <h3>¡Formulario Completado!</h3>
                         <p>Resumen de personas inscriptas: <ul class="listado-personas"></ul></p>
-                        <p>Presione la tecla ESC para cancelar y volver al formulario o click en el boton para continuar al pago</p>
+                        <p>Presione ESC para cancelar o click para continuar al pago</p>
                         <button class="form-button" id="close-dialog">Continuar al pago</button>
                     </div>
                 </dialog>
+
                 <div class="resume">
-                    <span class="price">$20.000.-</span> <button class="form-button" id="enviar-form"  type="submit">Inscribirse</button>
+                    <span class="price">$20.000.-</span>
+                    <button class="form-button" id="enviar-form" type="submit">Inscribirse</button>
                 </div>
             </form>
         </section>
     </main>
 
-    <footer class="footer" >
-        
+    <footer class="footer">
         <div class="js-footer"></div>
-
-
     </footer>
 
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    <script src="../../js/formulario.js" type="module"></script>
-    
-</body>
+    <!-- JS RELATIVOS -->
+    <script type="module" src="../../js/main.js"></script>
+    <script type="module" src="../../js/formulario.js"></script>
 
+</body>
 
 </html>

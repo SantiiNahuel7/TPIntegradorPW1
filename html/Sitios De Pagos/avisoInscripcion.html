@@ -4,73 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+
+    <!-- Ícono -->
+    <link rel="icon" href="../../Imagenes/Logos/logo6.png">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="../../css/Estilos Formularios Pagos/avisoInscripcion.css">
     <link rel="stylesheet" href="../../css/global-css.css">
+
     <title>MentorApp</title>
 </head>
+
 <header>
+    <div class="container">
 
-        <div class="container">
+        <nav class="barra-superior">
 
-            <nav class="barra-superior">
+            <div class="usuario-iniciado">
+                <a href="../../index.html"><i class="fa-regular fa-user"></i>Hola David</a>
+            </div>
 
-                <div class="usuario-iniciado">
-                    <a href="../../index.html"><i class="fa-regular fa-user"></i>Hola David</a>
+            <div class="logo-contenedor">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+                </a>
+            </div>
 
-                </div>
-
-                <div class="logo-contenedor">
-                    <a href="../../index.html" class="logo-link">
-                        <img src="../../Imagenes/logos/logo5.png" alt="Logo" class="logo">
-                    </a>
-                </div>
-
-                <button class="carrito"><a href="../../html/carrito.html">
+            <button class="carrito">
+                <a href="../carrito.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span class="contador">0</span>
-                    </a>
+                </a>
+            </button>
+
+            <form action="../../index.html#cursos-destacados" method="get" class="barra-busqueda">
+                <input list="cursos" name="curso" type="text" placeholder="Buscar...">
+                <button class="lupa" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+            </form>
 
-                <form action="../../index.html#cursos-destacados" method="get" class="barra-busqueda">
-                    <input list="cursos" name="curso" type="text" placeholder="Buscar...">
-                    <button class="lupa" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
+        </nav>
 
+        <nav class="menu-principal">
+            <div class="menu-principal-container">
+                <ul>
+                    <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
+                    <li><a href="../calendario.html">Calendario De Cursos</a></li>
+                    <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
 
+    </div>
+</header>
 
-
-            </nav>
-
-            <nav class="menu-principal">
-
-                <div class="menu-principal-container">
-                    <ul>
-                       <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
-                        <li><a href="../calendario.html">Calendario De Cursos</a></li>
-                        <li><a href="../giftCard.html">Crea Tu Gift Card</a></li>
-                        <li><a href="../contacto.html">Contacto</a></li>
-                    </ul>
-
-
-
-                </div>
-
-            </nav>
-
-
-        </div>
-    </header>
 <body>
     <main>
         <h1>¡Inscripción completada con éxito!</h1>
@@ -80,43 +78,45 @@
         <p>Si abonaste por Mercado Pago, no olvides enviar el comprobante para confirmar la inscripción.</p>
         <p>Si tienes alguna consulta, no dudes en contactarnos</p>
         <p><strong>¡Te esperamos para comenzar a aprender juntos!</strong></p>
+
         <button class="aviso-button"><a href="../../index.html">Volver al inicio</a></button>
         <button class="aviso-button"><a href="../contacto.html">Contacto</a></button>
     </main>
 </body>
+
 <footer class="footer">
-        <div class="footer-container">
+    <div class="footer-container">
 
+        <div class="footer-col">
+            <h3>Datos Del Grupo</h3>
+            <ul>
+                <li>Alan Ibañez</li>
+                <li>Yamila Santillan</li>
+                <li>Santiago Orellana</li>
+                <li>Adrián Amarilla</li>
+                <li>Jennifer Caceres</li>
+            </ul>
+        </div>
 
-            <div class="footer-col">
-                <h3>Datos Del Grupo</h3>
-                <ul>
-                    <li>Alan Ibañez</li>
-                    <li>Yamila Santillan</li>
-                    <li>Santiago Orellana</li>
-                    <li>Adrián Amarilla</li>
-                    <li>Jennifer Caceres</li>
-                </ul>
-            </div>
+        <div class="footer-col">
+            <h3>Menu Inferior</h3>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </div>
 
-            <div class="footer-col">
-                <h3>Menu Inferior</h3>
-                <ul>
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
-                    <li><a href="../contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-
-            
-            <div class="footer-col">
-                <h3>Redes Sociales</h3>
-                <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/icono-redes/facebook.png"></img></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/icono-redes/instagram.png"></img></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/icono-redes/youtube.png"></img></a>
-                </div>
+        <div class="footer-col">
+            <h3>Redes Sociales</h3>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/icono-redes/facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/icono-redes/instagram.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/icono-redes/youtube.png"></a>
             </div>
         </div>
-    </footer>
+
+    </div>
+</footer>
+
 </html>

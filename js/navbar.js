@@ -1,8 +1,8 @@
 export class Navbar {
   constructor() {
-    // Detecta si estamos en index.html (raíz) o dentro de /html/ (1 nivel abajo)
-    const depth = window.location.pathname.includes("/html/") ? "../" : "./";
-    this.base = depth; 
+    const pathParts = window.location.pathname.split("/").filter(Boolean);
+    const depth = pathParts.length - 2;
+    this.base = "../".repeat(depth);
   }
 
   render() {
