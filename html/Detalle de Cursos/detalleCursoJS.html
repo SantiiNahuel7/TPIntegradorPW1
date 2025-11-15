@@ -7,133 +7,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONO -->
     <link rel="icon" href="../../Imagenes/logos/logo6.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <link rel="stylesheet" href="../../css/global-css.css">
-    <title>MentorApp</title>
 
+    <title>MentorApp</title>
 </head>
 
-
- <header class="js-navbar"></header>
-
-
-
 <body>
+
+    <header class="js-navbar"></header>
+
     <section class="curso-container">
 
+        <img class="imagen-curso" src="../../Imagenes/Cursos/javascript.png" alt="Curso JS">
 
-        <img class="imagen-curso" src="../../Imagenes/Cursos/javascript.png">
         <div class="info-curso">
-
             <h2 id="titulo-curso">Curso de Java Script</h2>
-            
             <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
-            <p id="descripcion">Este curso introduce a los estudiantes en el lenguaje JavaScript, fundamental para el desarrollo web moderno. Se aprenderán los conceptos básicos de programación, manipulación del DOM y creación de interactividad en páginas web, sentando las bases para avanzar hacia proyectos más complejos y dinámicos.</p>
+            <p id="descripcion">Este curso introduce a los estudiantes en el lenguaje JavaScript...</p>
             <p id="requisito">Requisitos Previos: HTML y CSS</p>
             <p id="valor">$30.000</p>
+
             <a href="../formularios/formCursoJavaScript.html">
                 <button id="boton-inscribirse">Inscribirse</button>
             </a>
-        </div> 
+        </div>
 
         <div class="contenido">
-        <h2 id="contenido-curso">Contenidos Por Clase</h2>
+            <h2 id="contenido-curso">Contenidos Por Clase</h2>
 
-        <div class="unidades">
-
-
-                
+            <div class="unidades">
 
                 <details>
-
-
                     <summary>INTRODUCCIÓN</summary>
-                    
-                    
-
                     <div>
-
                         <ul class="content">
-                           <li>¿Qué es JavaScript y para qué se utiliza?</li>
-                <li>Relación de JavaScript con HTML y CSS.</li>
-                <li>Configuración básica del entorno de trabajo (navegador y editor de código).</li>
+                            <li>¿Qué es JavaScript y para qué se utiliza?</li>
+                            <li>Relación de JavaScript con HTML y CSS.</li>
+                            <li>Configuración del entorno de trabajo.</li>
                         </ul>
-
-
                     </div>
-                        
-                    
-
                 </details>
 
-        
-               
-
-
-                 <details>
-
-                    
+                <details>
                     <summary>UNIDAD 1</summary>
-
                     <div>
-
-                          <ul class="content">
-                             <li>Variables y tipos de datos.</li>
-                <li>Operadores y expresiones.</li>
-                <li>Estructuras de control: condicionales y bucles.</li>
-                <li>Funciones y alcance de variables.</li>
+                        <ul class="content">
+                            <li>Variables y tipos de datos.</li>
+                            <li>Operadores y expresiones.</li>
+                            <li>Estructuras de control.</li>
+                            <li>Funciones.</li>
                         </ul>
-
-
                     </div>
-
-                      
                 </details>
 
-
-
-            
-
-               
-
-                          <details>
+                <details>
                     <summary>UNIDAD 2</summary>
-
                     <div>
-
-                          <ul class="content">
-                            <li>Manipulación del DOM (selección y modificación de elementos).</li>
-                <li>Manejo de eventos (click, teclado, mouse).</li>
-                <li>Introducción a objetos y arreglos.</li>
-                <li>Creación de scripts dinámicos y prácticas con mini-proyectos.</li>
+                        <ul class="content">
+                            <li>Manipulación del DOM.</li>
+                            <li>Manejo de eventos.</li>
+                            <li>Objetos y arreglos.</li>
+                            <li>Mini proyectos.</li>
                         </ul>
-
-
                     </div>
-                      
-
                 </details>
 
-
-
-          
-
-
+            </div>
         </div>
-     
-
-    </div>
-
-
 
     </section>
-
-
-
-    
-
-
 
     <section class="docente">
         <h2>DOCENTE</h2>
@@ -142,152 +90,67 @@
             <div class="detalle-profesor">
                 <p id="nombre-profesor">Diego Ramírezz</p>
                 <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Desarrollador web full stack con más de 8 años de experiencia en proyectos de aplicaciones interactivas. Especialista en JavaScript y frameworks modernos, combina teoría y práctica para que los estudiantes aprendan a crear sitios dinámicos y atractivos desde cero.</p>
-            </div>   
-        </div>  
+                <p id="profesor-bio">Desarrollador web full stack con más de 8 años...</p>
+            </div>
+        </div>
     </section>
-
-
-
 
     <section class="cursos" id="cursos-destacados">
+        <h2>CURSOS DESTACADOS</h2>
 
-            
+        <div class="grid-cursos">
 
-            <h2> CURSOS DESTACADOS </h2>
-
-            
-
-           <div class="grid-cursos">
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoHtml.html">
-
-                            <img src="../../Imagenes/Cursos/html.png" alt="HTML">
-
-                        </a>
-                        
-                        <span class="precio">$20.000</span>
-                    
-                    </div>
-
-                    <div class="info">
-
-                        <p class="horas"> 20 hs</p>
-                        <h3 class="nombre"> HTML </h3>
-
-                        <a href="detalleCursoHtml.html">
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                        </a>
-                        
-
-                     </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-
-                        <a href="detalleCursoCSS.html">
-
-                            <img src="../../Imagenes/cursos/css.png" alt="CSS">
-
-                        </a>
-                        
-
-                        <span class="precio">$25.000</span>
-                    
-                    </div>
-
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalleCursoHtml.html">
+                        <img src="../../Imagenes/Cursos/html.png" alt="HTML">
+                    </a>
+                    <span class="precio">$20.000</span>
+                </div>
                 <div class="info">
+                    <p class="horas">20 hs</p>
+                    <h3 class="nombre">HTML</h3>
+                    <a href="detalleCursoHtml.html"><button class="comprar">Detalles Del Curso</button></a>
+                </div>
+            </article>
 
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> CSS </h3>
-
-
+            <article class="curso">
+                <div class="img-container">
                     <a href="detalleCursoCSS.html">
-
-                            <button class="comprar"> Detalles Del Curso </button>
-
+                        <img src="../../Imagenes/cursos/css.png" alt="CSS">
                     </a>
-
+                    <span class="precio">$25.000</span>
                 </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoJS.html">
-
-                            <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
-
-                        </a>
-                        
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
-
                 <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> JavaScript </h3>
-
-                    <a href="detalleCursoJS.html">
-
-                        <button class="comprar"> Detalles Del Curso </button>
-
-                    </a>
-                    
-
+                    <p class="horas">30 hs</p>
+                    <h3 class="nombre">CSS</h3>
+                    <a href="detalleCursoCSS.html"><button class="comprar">Detalles Del Curso</button></a>
                 </div>
+            </article>
 
-                </article>
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalleCursoJS.html">
+                        <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
+                    </a>
+                    <span class="precio">$30.000</span>
+                </div>
+                <div class="info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="nombre">JavaScript</h3>
+                    <a href="detalleCursoJS.html"><button class="comprar">Detalles Del Curso</button></a>
+                </div>
+            </article>
 
-
-
- 
-
-
-
-
-
-             
-
-           </div>
-
-    
-
-
-            
-
-            
-
-        
-
-        
-
+        </div>
     </section>
-      <footer class="footer" >
-        
+
+    <footer class="footer">
         <div class="js-footer"></div>
-
-
     </footer>
 
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    </body>
+    <!-- JS con ruta relativa correcta -->
+    <script type="module" src="../../js/main.js"></script>
 
-
-
+</body>
 </html>

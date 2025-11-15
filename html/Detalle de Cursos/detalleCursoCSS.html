@@ -7,272 +7,165 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+
+    <!-- ICONO -->
+    <link rel="icon" href="../../Imagenes/Logos/logo6.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <link rel="stylesheet" href="../../css/global-css.css">
-    <title>MentorApp</title>
 
+    <title>MentorApp</title>
 </head>
 
+<body>
 
 <header class="js-navbar"></header>
 
+<section class="curso-container">
 
+    <img class="imagen-curso" src="../../Imagenes/Cursos/css.png">
+    <div class="info-curso">
 
-<body>
-    <section class="curso-container">
+        <h2 id="titulo-curso">Curso de CSS</h2>
+        
+        <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
+        <p id="descripcion">El curso de CSS (Cascading Style Sheets) enseña a dar estilo y diseño a páginas web. Comienza con lo básico: cómo aplicar reglas CSS a elementos HTML, trabajar con colores, tipografías, márgenes y bordes. Luego avanza hacia temas más complejos como posicionamiento, modelos de caja, uso de flexbox y grid para crear diseños responsivos y modernos.</p>
+        <p id="requisito">Requisitos Previos: HTML</p>
+        <p id="valor">$25.000</p>
 
+        <a href="../Formularios/formCursoCss.html">
+            <button id="boton-inscribirse">Inscribirse</button>
+        </a>
+    </div> 
 
-        <img class="imagen-curso" src="../../Imagenes/Cursos/css.png">
-        <div class="info-curso">
-
-            <h2 id="titulo-curso">Curso de CSS</h2>
-            
-            <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
-            <p id="descripcion">El curso de CSS (Cascading Style Sheets) enseña a dar estilo y diseño a páginas web. Comienza con lo básico: cómo aplicar reglas CSS a elementos HTML, trabajar con colores, tipografías, márgenes y bordes. Luego avanza hacia temas más complejos como posicionamiento, modelos de caja, uso de flexbox y grid para crear diseños responsivos y modernos.</p>
-            <p id="requisito">Requisitos Previos: HTML</p>
-            <p id="valor">$25.000</p>
-            <a href="../../html/Formularios/formCursoCss.html">
-                <button id="boton-inscribirse">Inscribirse</button>
-            </a>
-        </div> 
-
-        <div class="contenido">
+    <div class="contenido">
         <h2 id="contenido-curso">Contenidos Por Clase</h2>
 
         <div class="unidades">
 
+            <details>
+                <summary>INTRODUCCIÓN</summary>
+                <div>
+                    <ul class="content">
+                        <li>¿Qué es CSS y para qué sirve?</li>
+                        <li>Diferencia entre HTML y CSS</li>
+                        <li>Formas de aplicar CSS: inline, interno y externo</li>
+                        <li>Estructura básica de una regla CSS</li>
+                    </ul>
+                </div>
+            </details>
 
-                
+            <details>
+                <summary>UNIDAD 1</summary>
+                <div>
+                    <ul class="content">
+                        <li>Selectores básicos (elementos, clases, IDs)</li>
+                        <li>Propiedades de texto y tipografía</li>
+                        <li>Colores, fondos y bordes</li>
+                        <li>El modelo de caja (box model)</li>
+                        <li>Márgenes, padding y dimensiones</li>
+                    </ul>
+                </div>
+            </details>
 
-                <details>
-
-
-                    <summary>INTRODUCCIÓN</summary>
-                    
-                    
-
-                    <div>
-
-                        <ul class="content">
-                            <li>¿Qué es CSS y para qué sirve?</li>
-                            <li>Diferencia entre HTML y CSS</li>
-                            <li>Formas de aplicar CSS: inline, interno y externo</li>
-                            <li>Estructura básica de una regla CSS</li>
-                        </ul>
-
-
-                    </div>
-                        
-                    
-
-                </details>
-
-        
-               
-
-
-                 <details>
-
-                    
-                    <summary>UNIDAD 1</summary>
-
-                    <div>
-
-                          <ul class="content">
-                            <li>Selectores básicos (elementos, clases, IDs)</li>
-                            <li>Propiedades de texto y tipografía</li>
-                            <li>Colores, fondos y bordes</li>
-                            <li>El modelo de caja (box model)</li>
-                            <li>Márgenes, padding y dimensiones</li>
-                        </ul>
-
-
-                    </div>
-
-                      
-                </details>
-
-
-
-            
-
-               
-
-                          <details>
-                    <summary>UNIDAD 2</summary>
-
-                    <div>
-
-                          <ul class="content">
-                            <li>Posicionamiento (static, relative, absolute, fixed, sticky)</li>
-                            <li>Flexbox: diseño flexible y alineación</li>
-                            <li>CSS Grid: creación de layouts avanzados</li>
-                            <li>Media Queries y diseño responsivo</li>
-                        </ul>
-
-
-                    </div>
-                      
-
-                </details>
-
-
-
-          
-
+            <details>
+                <summary>UNIDAD 2</summary>
+                <div>
+                    <ul class="content">
+                        <li>Posicionamiento (static, relative, absolute, fixed, sticky)</li>
+                        <li>Flexbox: diseño flexible y alineación</li>
+                        <li>CSS Grid: creación de layouts avanzados</li>
+                        <li>Media Queries y diseño responsivo</li>
+                    </ul>
+                </div>
+            </details>
 
         </div>
-     
-
     </div>
 
-
-
-    </section>
-
-
-
-    
-
-
-
-    <section class="docente">
-        <h2>DOCENTE</h2>
-        <div id="info-profesor">
-            <img src="../../Imagenes/Detalle de Curso/profesorCSS.jpg" alt="profesor" id="profesor-foto">
-            <div class="detalle-profesor">
-                <p id="nombre-profesor">Martín Fernández</p>
-                <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Martín es diseñador web y front-end developer con más de 8 años de experiencia creando sitios y aplicaciones responsivas. Se especializa en CSS, animaciones y frameworks modernos, ayudando a sus alumnos a dominar desde lo básico hasta las técnicas más avanzadas de maquetación.</p>
-            </div>   
-        </div>  
-    </section>
-
-
-
-
-    <section class="cursos" id="cursos-destacados">
-
-            
-
-            <h2> CURSOS DESTACADOS </h2>
-
-            
-
-           <div class="grid-cursos">
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoHtml.html">
-
-                            <img src="../../Imagenes/Cursos/html.png" alt="HTML">
-
-                        </a>
-                        
-                        <span class="precio">$20.000</span>
-                    
-                    </div>
-
-                    <div class="info">
-
-                        <p class="horas"> 20 hs</p>
-                        <h3 class="nombre"> HTML </h3>
-
-                        <a href="detalleCursoHtml.html">
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                        </a>
-                        
-
-                     </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-
-                        <a href="detalleCursoCSS.html">
-
-                            <img src="../../Imagenes/cursos/css.png" alt="CSS">
-
-                        </a>
-                        
-
-                        <span class="precio">$25.000</span>
-                    
-                    </div>
-
-                <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> CSS </h3>
-
-
-                    <a href="detalleCursoCSS.html">
-
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                    </a>
-
-                </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoJS.html">
-
-                            <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
-
-                        </a>
-                        
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
-
-                <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> JavaScript </h3>
-
-                    <a href="detalleCursoJS.html">
-
-                        <button class="comprar"> Detalles Del Curso </button>
-
-                    </a>
-                    
-
-                </div>
-
-                </article>
-
-
-           </div>
-
-    
-  
-
-    </section>
-     <footer class="footer" >
-        
-        <div class="js-footer"></div>
-
-
-    </footer>
-
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    </body>
-
-
-  
+</section>
+
+<section class="docente">
+    <h2>DOCENTE</h2>
+    <div id="info-profesor">
+        <img src="../../Imagenes/Detalle de Curso/profesorCSS.jpg" alt="profesor" id="profesor-foto">
+        <div class="detalle-profesor">
+            <p id="nombre-profesor">Martín Fernández</p>
+            <div class="rating" style="--percent:80%;"></div>
+            <p id="profesor-bio">Martín es diseñador web y front-end developer con más de 8 años de experiencia creando sitios y aplicaciones responsivas. Se especializa en CSS, animaciones y frameworks modernos, ayudando a sus alumnos a dominar desde lo básico hasta las técnicas más avanzadas de maquetación.</p>
+        </div>   
+    </div>  
+</section>
+
+<section class="cursos" id="cursos-destacados">
+
+    <h2> CURSOS DESTACADOS </h2>
+
+    <div class="grid-cursos">
+
+        <article class="curso">
+            <div class="img-container">
+                <a href="detalleCursoHtml.html">
+                    <img src="../../Imagenes/Cursos/html.png" alt="HTML">
+                </a>
+                <span class="precio">$20.000</span>
+            </div>
+
+            <div class="info">
+                <p class="horas">20 hs</p>
+                <h3 class="nombre">HTML</h3>
+
+                <a href="detalleCursoHtml.html">
+                    <button class="comprar">Detalles Del Curso</button>
+                </a>
+            </div>
+        </article>
+
+        <article class="curso">
+            <div class="img-container">
+                <a href="detalleCursoCSS.html">
+                    <img src="../../Imagenes/Cursos/css.png" alt="CSS">
+                </a>
+                <span class="precio">$25.000</span>
+            </div>
+
+            <div class="info">
+                <p class="horas">30 hs</p>
+                <h3 class="nombre">CSS</h3>
+
+                <a href="detalleCursoCSS.html">
+                    <button class="comprar">Detalles Del Curso</button>
+                </a>
+            </div>
+        </article>
+
+        <article class="curso">
+            <div class="img-container">
+                <a href="detalleCursoJS.html">
+                    <img src="../../Imagenes/Cursos/javascript.png" alt="Javascript">
+                </a>
+                <span class="precio">$30.000</span>
+            </div>
+
+            <div class="info">
+                <p class="horas">30 hs</p>
+                <h3 class="nombre">JavaScript</h3>
+
+                <a href="detalleCursoJS.html">
+                    <button class="comprar">Detalles Del Curso</button>
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="js-footer"></div>
+</footer>
+
+<script type="module" src="../../js/main.js"></script>
+
+</body>
 </html>

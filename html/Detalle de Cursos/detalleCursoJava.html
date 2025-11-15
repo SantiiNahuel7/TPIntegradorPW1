@@ -7,288 +7,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- RUTAS RELATIVAS CORRECTAS -->
     <link rel="icon" href="../../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
     <link rel="stylesheet" href="../../css/global-css.css">
     <title>MentorApp</title>
-
 </head>
 
-
- <header class="js-navbar"></header>
-
-
+<header class="js-navbar"></header>
 
 <body>
     <section class="curso-container">
 
-
         <img class="imagen-curso" src="../../Imagenes/Cursos/java.png">
+        
         <div class="info-curso">
-
             <h2 id="titulo-curso">Curso de Java</h2>
-            
             <p id="tiempo-de-curso">Tiempo de Dedicacion Necesario: 30hs</p>
-            <p id="descripcion">Este curso ofrece una introducción práctica al lenguaje de programación Java, abordando desde los fundamentos de la programación orientada a objetos hasta la creación de aplicaciones básicas. Está diseñado para principiantes y estudiantes que deseen adquirir una base sólida en el desarrollo de software con uno de los lenguajes más utilizados en la industria.</p>
+            <p id="descripcion">Este curso ofrece una introducción práctica al lenguaje de programación Java...</p>
             <p id="requisito">Requisitos Previos: Ninguno</p>
             <p id="valor">$30.000</p>
+
+            <!-- RUTA RELATIVA CORRECTA -->
             <a href="../formularios/formCursoJava.html">
                 <button id="boton-inscribirse">Inscribirse</button>
             </a>
         </div> 
 
         <div class="contenido">
-        <h2 id="contenido-curso">Contenidos Por Clase</h2>
+            <h2 id="contenido-curso">Contenidos Por Clase</h2>
 
-        <div class="unidades">
-
-
-                
+            <div class="unidades">
+                <details>
+                    <summary>INTRODUCCIÓN</summary>
+                    <div>
+                        <ul class="content">
+                            <li>Presentación del lenguaje Java y sus usos.</li>
+                            <li>Instalación y configuración del entorno de desarrollo (JDK y IDE).</li>
+                            <li>Estructura básica de un programa en Java.</li>
+                        </ul>
+                    </div>
+                </details>
 
                 <details>
-
-
-                    <summary>INTRODUCCIÓN</summary>
-                    
-                    
-
-                    <div>
-
-                        <ul class="content">
-                             <li>Presentación del lenguaje Java y sus usos.</li>
-                <li>Instalación y configuración del entorno de desarrollo (JDK y IDE).</li>
-                <li>Primeros pasos: estructura básica de un programa en Java.</li>
-                        </ul>
-
-
-                    </div>
-                        
-                    
-
-                </details>
-
-        
-               
-
-
-                 <details>
-
-                    
                     <summary>UNIDAD 1</summary>
-
                     <div>
-
-                          <ul class="content">
+                        <ul class="content">
                             <li>Variables, tipos de datos y operadores.</li>
-                <li>Sentencias de control (condicionales y bucles).</li>
-                <li>Métodos y funciones.</li>
-                <li>Introducción a arrays.</li>
+                            <li>Condicionales y bucles.</li>
+                            <li>Métodos.</li>
+                            <li>Arrays.</li>
                         </ul>
-
-
                     </div>
-
-                      
                 </details>
 
-
-
-            
-
-               
-
-                          <details>
+                <details>
                     <summary>UNIDAD 2</summary>
-
                     <div>
-
-                          <ul class="content">
+                        <ul class="content">
                             <li>Clases y objetos.</li>
-                <li>Atributos y métodos.</li>
-                <li>Encapsulamiento y constructores.</li>
-                <li>Herencia y polimorfismo.</li>
+                            <li>Atributos y métodos.</li>
+                            <li>Encapsulamiento.</li>
+                            <li>Herencia y polimorfismo.</li>
                         </ul>
-
-
                     </div>
-                      
-
                 </details>
-
-
-
-          
-
-
+            </div>
         </div>
-     
-
-    </div>
-
-
-
     </section>
-
-
-
-    
-
-
 
     <section class="docente">
         <h2>DOCENTE</h2>
         <div id="info-profesor">
             <img src="../../Imagenes/Detalle de Curso/profesorjava.jpg" alt="profesor" id="profesor-foto">
+
             <div class="detalle-profesor">
                 <p id="nombre-profesor">Laura Fernandez</p>
                 <div class="rating" style="--percent:80%;"></div>
-                <p id="profesor-bio">Ingeniera en Sistemas con más de 10 años de experiencia en desarrollo de software. Ha trabajado en proyectos de banca digital y aplicaciones móviles utilizando Java como lenguaje principal. Se destaca por su enfoque práctico y claro a la hora de enseñar, guiando a los estudiantes desde los fundamentos hasta la creación de aplicaciones reales.</p>
+                <p id="profesor-bio">Ingeniera en Sistemas con más de 10 años de experiencia...</p>
             </div>   
         </div>  
     </section>
 
-
-
-
     <section class="cursos" id="cursos-destacados">
+        <h2> CURSOS DESTACADOS </h2>
 
-            
-
-            <h2> CURSOS DESTACADOS </h2>
-
-            
-
-           <div class="grid-cursos">
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoHtml.html">
-
-                            <img src="../../Imagenes/Cursos/html.png" alt="HTML">
-
-                        </a>
-                        
-                        <span class="precio">$20.000</span>
-                    
-                    </div>
-
-                    <div class="info">
-
-                        <p class="horas"> 20 hs</p>
-                        <h3 class="nombre"> HTML </h3>
-
-                        <a href="detalleCursoHtml.html">
-                            <button class="comprar"> Detalles Del Curso </button>
-
-                        </a>
-                        
-
-                     </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-
-                        <a href="detalleCursoCSS.html">
-
-                            <img src="../../Imagenes/cursos/css.png" alt="CSS">
-
-                        </a>
-                        
-
-                        <span class="precio">$25.000</span>
-                    
-                    </div>
-
+        <div class="grid-cursos">
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalleCursoHtml.html">
+                        <img src="../../Imagenes/Cursos/html.png" alt="HTML">
+                    </a>
+                    <span class="precio">$20.000</span>
+                </div>
                 <div class="info">
+                    <p class="horas">20 hs</p>
+                    <h3 class="nombre">HTML</h3>
+                    <a href="detalleCursoHtml.html">
+                        <button class="comprar">Detalles Del Curso</button>
+                    </a>
+                </div>
+            </article>
 
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> CSS </h3>
-
-
+            <article class="curso">
+                <div class="img-container">
                     <a href="detalleCursoCSS.html">
-
-                            <button class="comprar"> Detalles Del Curso </button>
-
+                        <img src="../../Imagenes/cursos/css.png" alt="CSS">
                     </a>
-
+                    <span class="precio">$25.000</span>
                 </div>
-
-                </article>
-
-
-
-                <article class="curso">
-
-                    <div class="img-container">
-                        <a href="detalleCursoJS.html">
-
-                            <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
-
-                        </a>
-                        
-                        <span class="precio">$30.000</span>
-                    
-                    </div>
-
                 <div class="info">
-
-                    <p class="horas"> 30 hs</p>
-                    <h3 class="nombre"> JavaScript </h3>
-
-                    <a href="detalleCursoJS.html">
-
-                        <button class="comprar"> Detalles Del Curso </button>
-
+                    <p class="horas">30 hs</p>
+                    <h3 class="nombre">CSS</h3>
+                    <a href="detalleCursoCSS.html">
+                        <button class="comprar">Detalles Del Curso</button>
                     </a>
-                    
-
                 </div>
+            </article>
 
-                </article>
-
-
-
-            
-
-
-
-       
-
-
-
-
-           </div>
-
-    
-
-
-            
-
-            
-
-        
-
-        
-
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalleCursoJS.html">
+                        <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
+                    </a>
+                    <span class="precio">$30.000</span>
+                </div>
+                <div class="info">
+                    <p class="horas">30 hs</p>
+                    <h3 class="nombre">JavaScript</h3>
+                    <a href="detalleCursoJS.html">
+                        <button class="comprar">Detalles Del Curso</button>
+                    </a>
+                </div>
+            </article>
+        </div>
     </section>
-       <footer class="footer" >
-        
+
+    <footer class="footer">
         <div class="js-footer"></div>
-
-
     </footer>
 
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
-    </body>
+    <!-- RUTA RELATIVA CORRECTA -->
+    <script type="module" src="../../js/main.js"></script>
 
-
-    
+</body>
 </html>
