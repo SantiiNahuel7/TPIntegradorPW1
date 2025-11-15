@@ -11,8 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 .barra-busqueda {
 
     grid-column: 1 / 4;
@@ -168,6 +166,7 @@ body {
     position: relative;
     margin-right: 2em;
     font-size: 0.8em;
+<<<<<<< HEAD
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
@@ -180,6 +179,8 @@ body {
 
     text-decoration: none;
     color: inherit;
+=======
+>>>>>>> parent of 10733a8 (Cambios nombres)
 
 }
 
@@ -203,6 +204,15 @@ body {
 
 }
 
+.carrito {
+
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    color: #E0E0E0;
+    position: relative;
+    
+}
 
 .carrito i {
 
