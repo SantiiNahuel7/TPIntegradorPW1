@@ -1,11 +1,11 @@
 // barraDeBusqueda.js
 export const cursos = [
-  { name: "Html", url: "/TPIntegradorPW1/html/Detalle de Cursos/detalleCursoHtml.html" },
-  { name: "Css", url: "/TPIntegradorPW1/html/Detalle de Cursos/detalleCursoCSS.html" },
-  { name: "JavaScript", url: "/TPIntegradorPW1/html/Detalle de Cursos/detalleCursoJS.html" },
-  { name: "Java", url: "/TPIntegradorPW1/html/Detalle de Cursos/detalleCursoJava.html" },
-  { name: "SQL", url: "/TPIntegradorPW1/html/Detalle de Cursos/detalleCursoSQL.html" },
-  { name: "UX", url: "/TPIntegradorPW1/html/Detalle de Cursos/detalleCursoUx.html" }
+  { name: "Html", url: "/html/Detalle de Cursos/detalleCursoHtml.html" },
+  { name: "Css", url: "/html/Detalle de Cursos/detalleCursoCSS.html" },
+  { name: "JavaScript", url: "/html/Detalle de Cursos/detalleCursoJS.html" },
+  { name: "Java", url: "/html/Detalle de Cursos/detalleCursoJava.html" },
+  { name: "SQL", url: "/html/Detalle de Cursos/detalleCursoSQL.html" },
+  { name: "UX", url: "/html/Detalle de Cursos/detalleCursoUx.html" }
 ];
 
 function performSearch(event) {
