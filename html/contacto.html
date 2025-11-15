@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <title>MentorApp</title>
-    <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+
+    <!-- Ruta relativa del favicon -->
+    <link rel="icon" href="../Imagenes/Logos/logo6.png">
+
+    <!-- CSS relativos -->
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/global-css.css">
-
-
 </head>
 
 <body>
-    <header>
 
+    <header>
         <header class="js-navbar"></header>
     </header>
 
     <main>
         <h1>Contacto</h1>
+
         <section class="contacto">
-            <!-- aca empieza el formulario -->
+
             <form class="form-contacto" action="#" method="get">
                 <label>Nombre y Apellido *</label>
                 <input type="text" name="nombre" required>
@@ -51,28 +57,29 @@
                 <p>📞 Tel: (011) 1234-5678</p>
                 <p>✉️ Email: contacto@plataforma.com</p>
 
-                <iframe
-                    src="https://maps.google.com/maps?q=Obelisco%20Buenos%20Aires&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                <iframe src="https://maps.google.com/maps?q=Obelisco%20Buenos%20Aires&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </div>
+
         </section>
     </main>
 
     <footer class="footer">
-      <div class="js-footer"></div>
+        <div class="js-footer"></div>
     </footer>
 
-    <!-- ventana-->
-<div class="overlay" id="popup" style="display: none;">
-  <div class="modal">
-    <h2>Consulta enviada</h2>
-    <p>Tu mensaje fue enviado correctamente.</p>
-    <button id="aceptarBtn">Aceptar</button>
-  </div>
-</div>
- 
+    <!-- Modal -->
+    <div class="overlay" id="popup" style="display: none;">
+        <div class="modal">
+            <h2>Consulta enviada</h2>
+            <p>Tu mensaje fue enviado correctamente.</p>
+            <button id="aceptarBtn">Aceptar</button>
+        </div>
+    </div>
 
+    <!-- Scripts relativos -->
     <script src="../js/formularioContacto.js"></script>
-    <script type="module" src="/TPIntegradorPW1/js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
 </body>
 
 </html>

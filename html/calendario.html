@@ -13,7 +13,7 @@
 
     <title>MentorApp</title>
     
-    <link rel="icon" href="/TPIntegradorPW1/Imagenes/Logos/logo6.png">
+    <link rel="icon" href="../Imagenes/Logos/logo6.png">
     <link rel="stylesheet" href="../css/calendario.css">
     <link rel="stylesheet" href="../css/global-css.css">
 </head>
@@ -22,25 +22,26 @@
 
    <header class="js-navbar"></header>
 
-
     <main>
         
-  <h1 id="tituloMes">Calendario de próximos cursos</h1>
-  <section class="calendario" id="calendario">
+        <h1 id="tituloMes">Calendario de próximos cursos</h1>
 
-  <div class="calendario-nav">
-    <button id="mesAnterior">&lt; Mes anterior</button>
-    <button id="mesSiguiente">Mes siguiente &gt;</button>
-  </div>
+        <section class="calendario" id="calendario">
 
-    <div class="dia">Lun</div>
-    <div class="dia">Mar</div>
-    <div class="dia">Mié</div>
-    <div class="dia">Jue</div>
-    <div class="dia">Vie</div>
-    <div class="dia">Sáb</div>
-    <div class="dia">Dom</div>
-  </section>
+            <div class="calendario-nav">
+                <button id="mesAnterior">&lt; Mes anterior</button>
+                <button id="mesSiguiente">Mes siguiente &gt;</button>
+            </div>
+
+            <div class="dia">Lun</div>
+            <div class="dia">Mar</div>
+            <div class="dia">Mié</div>
+            <div class="dia">Jue</div>
+            <div class="dia">Vie</div>
+            <div class="dia">Sáb</div>
+            <div class="dia">Dom</div>
+
+        </section>
 
     </main>
 
@@ -48,21 +49,20 @@
         <div class="js-footer"></div>
     </footer>
 
-   
-<!-- ventana que sale cuando toco el curso -->
-<div id="popupCurso" class="popup-curso">
-  <div class="popup-contenido">
-    <!--X de cierre -->
-    <span id="cerrarPopup" class="cerrar">&times;</span>
-    <!--se llenan dinamicamente con js -->
-    <h2 id="tituloCurso"></h2>
-    <p id="resumenCurso"></p>
-    <a id="linkCurso" href="#" class="boton">ver detalle</a>
-  </div>
-</div>
 
-<script src="../js/popup.js"></script>
-<script type="module" src="/TPIntegradorPW1/js/main.js"></script>
+    <!-- Popup de curso -->
+    <div id="popupCurso" class="popup-curso">
+        <div class="popup-contenido">
+            <span id="cerrarPopup" class="cerrar">&times;</span>
+
+            <h2 id="tituloCurso"></h2>
+            <p id="resumenCurso"></p>
+            <a id="linkCurso" href="#" class="boton">ver detalle</a>
+        </div>
+    </div>
+
+    <script src="../js/popup.js"></script>
+    <script type="module" src="../js/main.js"></script>
 </body>
 
 </html>
