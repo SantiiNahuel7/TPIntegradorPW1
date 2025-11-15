@@ -3,81 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MentorApp</title>
-
+  <title>gift card - Pago</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <!-- Favicon relativo -->
-  <link rel="icon" href="../../Imagenes/Logos/logo6.png">
-
-  <!-- CSS global relativo -->
   <link rel="stylesheet" href="../../css/global-css.css">
-
-  <!-- CSS de esta vista -->
   <link rel="stylesheet" href="../../css/Login/estilo.css">
 </head>
 <body>
+   <header >
 
-  <header class="js-navbar"></header>
+            
+            <nav class="barra-superior">
 
-  <main>
-      <section class="contenedor">
-          <div class="seccion-bienvenida">
-              <div class="shape shape-one"></div>
-              <div class="shape shape-two"></div>
-              <div class="shape shape-three"></div>
-              <div class="shape shape-four"></div>
-              <div class="contenido">
-                  <h1>Inicia Sesión o Registrate</h1>
-                  <p>Podes acceder con tu cuenta existente.</p>
-              </div>
-          </div>
 
-          <div class="seccion-login">
-              <h2>Inicia Sesión</h2>
+                <div class="logo-contenedor">
+                    <a href="../../index.html" class="logo-link">
+                    <img src="../../Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+                    </a>
+                </div>
 
-              <!-- Volver al index -->
-              <form action="../../index.html">
-                  <div class="grupo-input">
-                      <input type="text" placeholder="Usuario" name="usuario" id="usuario">
-                  </div>
+                
+            
 
-                  <div class="grupo-input">
-                      <input type="password" placeholder="Contraseña" name="password" id="password">
-                  </div>
+         
+            
 
-                  <div class="opciones">
-                      <label for="forgot">
-                          <input type="checkbox" name="forgot" id="forgot"> Recordame
-                      </label>
+       
+    </header>
 
-                      <!-- Recuperar contraseña -->
-                      <a href="./RecuperarPass.html" id="forgotpass">Olvidaste tu contraseña?</a>
-                  </div>
 
-                  <button type="submit" id="boton-singIn">Loguear</button>
-              </form>
 
-              <div class="singup">
-                  ¿No tienes cuenta?  
-                  <a href="./crearCuenta.html">Crear Cuenta</a>
-              </div>
-          </div>
-      </section>
-  </main>
 
-  <footer class="footer">
-      <div class="js-footer"></div>
-  </footer>
+    <main>
+        <section class="contenedor">
+            <div class="seccion-bienvenida">
+                <div class="shape shape-one"></div>
+                <div class="shape shape-two"></div>
+                <div class="shape shape-three"></div>
+                <div class="shape shape-four"></div>
+                <div class="contenido">
+                    <h1>Bienvenido de Nuevo!</h1>
+                    <p>Podes acceder con tu cuenta existente.</p>
+                </div>
+            </div>
+            <div class="seccion-login">
+                <h2>Sing In</h2>
+                <form action="../../index.html">
+                    <div class="grupo-input">
+                        <input type="text" placeholder="Username o Email" name="usuario" id="usuario">
+                    </div>
+                    <div class="grupo-input">
+                        <input type="password" placeholder="Contraseña" name="password" id="password">
+                    </div>
+                    <div class="opciones">
+                        <label for="forgot">
+                            <input type="checkbox" name="forgot" id="forgot"> Remember me
+                        </label>
+                        <a href="./RecuperarPass.html" id="forgotpass">Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit" id="boton-singIn">Sing In</button>
+                </form>
+                <div class="singup">
+                    ¿No tienes cuenta? <a href="./crearCuenta.html">Crear Cuenta</a>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer class="footer">
+        <div class="footer-container">
 
-  <!-- JS principal -->
-  <script type="module" src="../../js/main.js"></script>
 
-  <!-- JS de esta vista -->
-  <script src="../../js/login.js"></script>
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
 
+            
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/Icono-redes/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/Icono-redes/instagram.png"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/Icono-redes/youtube.png"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
 </body>
 </html>

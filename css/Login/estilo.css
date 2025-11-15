@@ -8,6 +8,14 @@
 }
 
 
+.barra-superior {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
 
 main {
     display: flex;
@@ -34,7 +42,7 @@ main {
     align-items: center;
     position: relative;
     padding: 6em;
-    color: white;
+    color: #E0E0E0;
     text-align: center;
     overflow: hidden;
 }
@@ -110,7 +118,7 @@ main {
 .seccion-login h2{
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: white;
+    color: #E0E0E0;
     font-weight: 600;
 }
 
@@ -144,7 +152,7 @@ main {
     align-items: center;
     margin-bottom: 25px;
     font-size: 0.95em;
-    color: white;
+    color: #E0E0E0;
 }
 
 .opciones label {
@@ -159,7 +167,7 @@ main {
 }
 
 #forgotpass {
-    color: white;
+    color: #E0E0E0;
     text-decoration: none;
     transition: color 0.3s ease;
     padding-left: 1em;
@@ -175,7 +183,7 @@ main {
     background: linear-gradient(to right, #ff9f55, #ff6d00); 
     border: none;
     border-radius: 10px;
-    color: white;
+    color: #E0E0E0;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
@@ -189,11 +197,11 @@ main {
 .singup {
     margin-top: 30px;
     font-size: 0.95em;
-    color: #ff6d00;
+    color: #666;
 }
 
 .singup a{
-    color: white;
+    color: #E0E0E0;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;

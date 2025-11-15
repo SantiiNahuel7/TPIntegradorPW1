@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- ICONO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MentorApp</title>
     <link rel="icon" href="../../Imagenes/Logos/logo6.png">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../../css/global-css.css">
     <link rel="stylesheet" href="../../css/giftCard.css">
-
-    <title>MentorApp</title>
+    
+    
 </head>
-
 <body>
+  
+ <header >
 
-<header class="js-navbar"></header>
+            
+            <nav class="barra-superior">
 
-<main class="container">
+                <div class="usuario-iniciado">
 
-<<<<<<< HEAD
-=======
                     <a href="../../html/Login/login.html">
                         
                         <i class="fa-regular fa-user"></i>
@@ -76,7 +69,7 @@
                 <div class="menu-principal-container">
                    <ul>
                         <li><a class="inicio" href="../../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="#cursos-destacados">Cursos Destacados</a></li>
+                        <li><a href="../cursos.html">Cursos</a></li>
                         <li><a href="../../html/calendario.html">Calendario De Cursos</a></li>
                         <li><a href="../../html/GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
                         <li><a href="../contacto.html">Contacto</a></li>
@@ -95,84 +88,123 @@
 
 
   <main class="container">
->>>>>>> parent of 10733a8 (Cambios nombres)
     <section class="formulario-gift-card">
-        <h2>Personaliza tu Gift Card</h2>
+      <h2>Personaliza tu Gift Card</h2>
+   
+      <form action="../../html/GiftCard/pagoGiftCard.html" method="get">
+  <label for="nombre-destinatario">Nombre completo del destinatario:</label>
+  <input type="text" id="nombre-destinatario" name="nombre-destinatario" placeholder="ej. Juan Pérez" maxlength="23" required>
+  
+  <label for="color-tarjeta">Color de la tarjeta:</label>
+  <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
+  
+  <label>Tamaño de texto:</label>
+  <div class="tamanio-texto">
+    <input type="number" min="10" max="40" value="20">
+    <span>px</span> 
+  </div>
+  
+  <label for="amount">Valor de la Gift Card:</label>
+  <select id="amount" name="amount" required>
+    <option value="20000">$20000</option>
+    <option value="25000">$25000</option>
+    <option value="30000">$30000</option>
+    <option value="40000">$40000</option>
+    <option value="60000">$60000</option>
+  </select>
+  
+<label>Ubicación del monto:</label>
+   <div class="ubicacion">
 
-        <form action="./pagoGiftCard.html" method="get">
-            <label for="nombre-destinatario">Nombre completo del destinatario:</label>
-            <input type="text" id="nombre-destinatario" name="nombre-destinatario"
-                   placeholder="ej. Juan Pérez" maxlength="23" required>
+  <label class="opcion-ubicacion">
+    <input type="radio" name="ubicacion-monto" value="arriba-izquierda">
+    <span>Arriba Izquierda</span>
+    <img src="../../Imagenes/Imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
+  </label>
 
-            <label for="color-tarjeta">Color de la tarjeta:</label>
-            <input type="color" id="color-tarjeta" name="color-tarjeta" value="#96B6C5">
+  <label class="opcion-ubicacion">
+    <input type="radio" name="ubicacion-monto" value="arriba-derecha">
+    <span>Arriba Derecha</span>
+    <img src="../../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
+  </label>
 
-            <label>Tamaño de texto:</label>
-            <div class="tamanio-texto">
-                <input type="number" min="10" max="40" value="20">
-                <span>px</span>
-            </div>
+  <label class="opcion-ubicacion">
+    <input type="radio" name="ubicacion-monto" value="abajo-izquierda">
+    <span>Abajo Izquierda</span>
+    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
+  </label>
 
-            <label for="amount">Valor de la Gift Card:</label>
-            <select id="amount" name="amount" required>
-                <option value="20000">$20000</option>
-                <option value="25000">$25000</option>
-                <option value="30000">$30000</option>
-                <option value="40000">$40000</option>
-                <option value="60000">$60000</option>
-            </select>
+  <label class="opcion-ubicacion">
+    <input type="radio" name="ubicacion-monto" value="abajo-derecha">
+    <span>Abajo Derecha</span>
+    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
+  </label>
 
-            <label>Ubicación del monto:</label>
-            <div class="ubicacion">
+</div>
 
-                <label class="opcion-ubicacion">
-                    <input type="radio" name="ubicacion-monto" value="arriba-izquierda">
-                    <span>Arriba Izquierda</span>
-                    <img src="../../Imagenes/Imagenes-ubicación/arriba-a-la-izquierda.png" alt="Arriba izquierda">
-                </label>
 
-                <label class="opcion-ubicacion">
-                    <input type="radio" name="ubicacion-monto" value="arriba-derecha">
-                    <span>Arriba Derecha</span>
-                    <img src="../../Imagenes/imagenes-ubicación/arriba-a-la-derecha.png" alt="Arriba derecha">
-                </label>
-
-                <label class="opcion-ubicacion">
-                    <input type="radio" name="ubicacion-monto" value="abajo-izquierda">
-                    <span>Abajo Izquierda</span>
-                    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-izquierda.png" alt="Abajo izquierda">
-                </label>
-
-                <label class="opcion-ubicacion">
-                    <input type="radio" name="ubicacion-monto" value="abajo-derecha">
-                    <span>Abajo Derecha</span>
-                    <img src="../../Imagenes/imagenes-ubicación/abajo-a-la-derecha.png" alt="Abajo derecha">
-                </label>
-
-            </div>
-
-            <button id="btn-continuar" type="button" class="boton-continuar">Continuar</button>
-        </form>
+  <button  id="btn-continuar" type="button" class="boton-continuar">Continuar</button>
+</form>
     </section>
-
+        
     <section class="preview">
-        <h2>Vista Previa de la Gift Card</h2>
-        <div class="gift-card" id="tarjeta-preview">
-            <img src="../../Imagenes/Logos/logo5.png" alt="logo de MentorApp" class="logo-tarjeta">
-            <p class="destinatario" id="preview-nombre">Juan Pérez</p>
-            <p class="monto" id="preview-monto">$20000</p>
-        </div>
+      <h2>Vista Previa de la Gift Card</h2>
+      <div class="gift-card" id="tarjeta-preview">
+        <img src="../../Imagenes/Logos/logo5.png" alt="logo de MentorApp" class="logo-tarjeta">
+        <p class="destinatario" id="preview-nombre">Juan Pérez</p>
+        <p class="monto" id="preview-monto">$20000</p>
+      </div>
+      
     </section>
 
-</main>
 
-<footer class="footer">
-    <div class="js-footer"></div>
-</footer>
 
-<!-- JS -->
-<script src="../../js/giftCard.js"></script>
-<script type="module" src="../../js/main.js"></script>
+    
+  </main>
 
+ 
+  
+ <footer class="footer">
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Inferior</h3>
+                <ul>
+                    <li><a href="../TPIntegradorPW1/index.html">Inicio</a></li>
+                    <li><a href="#cursos-destacados">Cursos Destacados</a></li>
+                    <li><a href="../TPIntegradorPW1/html/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/Icono-redes/facebook.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/Icono-redes/instagram.png"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/Icono-redes/youtube.png"></a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="../../js/giftCard.js"></script>
 </body>
 </html>

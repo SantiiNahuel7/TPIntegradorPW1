@@ -11,16 +11,14 @@
     
     <link rel="stylesheet" href="../css/popup.css">
 
-    <title>Calendario de Cursos</title>
+    <title>MentorApp</title>
     
-    <link rel="icon" href="../Imagenes/Logos/logo6.png">
+    <link rel="icon" href="../Imagenes/logos/logo6.png">
     <link rel="stylesheet" href="../css/calendario.css">
     <link rel="stylesheet" href="../css/global-css.css">
 </head>
 
 <body>
-<<<<<<< HEAD
-=======
     <header>
 
         <div class="container">
@@ -68,7 +66,7 @@
                 <div class="menu-principal-container">
                     <ul>
                         <li><a class="inicio" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li><a href="../html/Detalle de Cursos/detalleCursoHtml.html">Cursos</a></li>
+                        <li><a href="../html/cursos.html">Cursos</a></li>
                         <li><a href="../html/calendario.html">Calendario De Cursos</a></li>
                         <li><a href="../html/GiftCard/giftCard.html">Crea Tu Gift Card</a></li>
                         <li><a href="../html/contacto.html">Contacto</a></li>
@@ -83,51 +81,82 @@
 
         </div>
     </header>
->>>>>>> parent of 10733a8 (Cambios nombres)
 
-   <header class="js-navbar"></header>
 
     <main>
         
-        <h1 id="tituloMes">Calendario de próximos cursos</h1>
+  <h1 id="tituloMes">Calendario de próximos cursos</h1>
+  <section class="calendario" id="calendario">
 
-        <section class="calendario" id="calendario">
+  <div class="calendario-nav">
+    <button id="mesAnterior">&lt; Mes anterior</button>
+    <button id="mesSiguiente">Mes siguiente &gt;</button>
+  </div>
 
-            <div class="calendario-nav">
-                <button id="mesAnterior">&lt; Mes anterior</button>
-                <button id="mesSiguiente">Mes siguiente &gt;</button>
-            </div>
-
-            <div class="dia">Lun</div>
-            <div class="dia">Mar</div>
-            <div class="dia">Mié</div>
-            <div class="dia">Jue</div>
-            <div class="dia">Vie</div>
-            <div class="dia">Sáb</div>
-            <div class="dia">Dom</div>
-
-        </section>
+    <div class="dia">Lun</div>
+    <div class="dia">Mar</div>
+    <div class="dia">Mié</div>
+    <div class="dia">Jue</div>
+    <div class="dia">Vie</div>
+    <div class="dia">Sáb</div>
+    <div class="dia">Dom</div>
+  </section>
 
     </main>
 
     <footer class="footer">
-        <div class="js-footer"></div>
+        <div class="footer-container">
+
+
+            <div class="footer-col">
+                <h3>Datos Del Grupo</h3>
+                <ul>
+                    <li>Alan Ibañez</li>
+                    <li>Yamila Santillan</li>
+                    <li>Santiago Orellana</li>
+                    <li>Adrián Amarilla</li>
+                    <li>Jennifer Caceres</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Inferior</h3>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../../index.html#cursos-destacados">Cursos</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>Redes Sociales</h3>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="../Imagenes/icono-redes/facebook.png"></img></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="../Imagenes/icono-redes/instagram.png"></img></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="../Imagenes/icono-redes/youtube.png"></img></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+   
+<!-- ventana que sale cuando toco el curso -->
+<div id="popupCurso" class="popup-curso">
+  <div class="popup-contenido">
+    <!--X de cierre -->
+    <span id="cerrarPopup" class="cerrar">&times;</span>
+    <!--se llenan dinamicamente con js -->
+    <h2 id="tituloCurso"></h2>
+    <p id="resumenCurso"></p>
+    <a id="linkCurso" href="#" class="boton">ver detalle</a>
+  </div>
+</div>
 
-    <!-- Popup de curso -->
-    <div id="popupCurso" class="popup-curso">
-        <div class="popup-contenido">
-            <span id="cerrarPopup" class="cerrar">&times;</span>
-
-            <h2 id="tituloCurso"></h2>
-            <p id="resumenCurso"></p>
-            <a id="linkCurso" href="#" class="boton">ver detalle</a>
-        </div>
-    </div>
-
-    <script src="../js/popup.js"></script>
-    <script type="module" src="../js/main.js"></script>
+<script src="../js/popup.js"></script>
 </body>
 
 </html>

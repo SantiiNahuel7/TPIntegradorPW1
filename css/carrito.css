@@ -7,35 +7,69 @@
   --texto: #333;
 }
 
-.compras-container {
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: var(--blanco);
+  color: var(--texto);
+}
 
 
-  background-image: linear-gradient(rgba(0,0,0,0.7)), url('../Imagenes/Imagen-de-fondo/fondo.jpg');
-  height: 70rem;
+.carrito-vacio {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 5rem;
-
-
+  height: 80vh;
+  padding: 1rem;
 }
 
-.compras-container h1 {
+.mensaje-de-carrito-vacio {
+  text-align: center;
+  background: var(--beige);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-  margin-top: 8rem;
+
+.icono {
+  font-size: 3rem;
+  color: var(--azul);
+  margin-bottom: 1rem;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--azul);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+p a {
+  color: var(--azul);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.boton-volver {
+  background: var(--azul);
   color: white;
-
-
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-
-.compras-hechas {
-
-
-  background-color: #0F111A;
-   height: 70%;
-   width: 80%;
-
-
+.boton-volver:hover {
+  background: var(--celeste);
 }
-
