@@ -45,9 +45,9 @@
                     <h4>Ingrese sus datos de contacto:</h4>
 
                     <div class="fields primera-persona">
-                        <input type="text" name="emailPersona" id="emailPersona" placeholder="Email" required
+                        <input type="text" class="emailPersonal" name="emailPersona" id="emailPersona" placeholder="Email" required
                             title="Debe ingresar el email de la persona">
-                        <input type="number" name="telefonoPersona" id="telefonoPersona" placeholder="Teléfono" required
+                        <input type="number" class="telefonoPersonal" name="telefonoPersona" id="telefonoPersona" placeholder="Teléfono" required
                             title="Debe ingresar el teléfono de la persona">
                         <button class="vaciar-campos"><i class="fa-solid fa-circle-minus"
                                 title="Hacé click aquí para vaciar los campos"></i></button>
@@ -82,7 +82,6 @@
                 </div>
                 <dialog class="modal">
                     <div class="dialog-content">
-                        <h3>Resumen de personas inscriptas:</h3>
                         <p class="listado-personas"></p>
                             <button class="form-button" id="continuar" type="submit">Continuar al pago</button>
                             <button class="form-button" id="close-dialog">Cancelar</button>

@@ -101,32 +101,52 @@ function eliminarPersona() {
 function guardarPersona() {
     listadoPersonas = [];
     const todasLasFilas = containerEmpresarial.querySelectorAll('.fields');
+    const datosPersonal = containerPersonal.querySelectorAll('.fields');
+    const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
 
-    todasLasFilas.forEach(filaCampos => {
-        const nombreInput = filaCampos.querySelector('.nombrePersona');
-        const apellidoInput = filaCampos.querySelector('.apellido');
-        const dniInput = filaCampos.querySelector('.dni');
-        const emailInput = filaCampos.querySelector('.email');
-        const telefonoInput = filaCampos.querySelector('.telefono');
+    if (formSeleccionado.value === 'empresarial') {
+        listadoPersonas = [];
+        todasLasFilas.forEach(filaCampos => {
+            const nombreInput = filaCampos.querySelector('.nombrePersona');
+            const apellidoInput = filaCampos.querySelector('.apellido');
+            const dniInput = filaCampos.querySelector('.dni');
+            const emailInput = filaCampos.querySelector('.email');
+            const telefonoInput = filaCampos.querySelector('.telefono');
 
-        if (nombreInput && nombreInput.value.trim() !== '') {
-            const nombreValor = nombreInput.value;
-            const apellidoValor = apellidoInput.value;
-            const dniValor = dniInput.value;
-            const emailValor = emailInput.value;
-            const telefonoValor = telefonoInput.value;
-            const nuevaPersona = new personaInscripta(nombreValor, apellidoValor, dniValor, emailValor, telefonoValor);
-            listadoPersonas.push(nuevaPersona);
-        }
-    });
+            if (nombreInput && nombreInput.value.trim() !== '') {
+                const nombreValor = nombreInput.value;
+                const apellidoValor = apellidoInput.value;
+                const dniValor = dniInput.value;
+                const emailValor = emailInput.value;
+                const telefonoValor = telefonoInput.value;
+                const nuevaPersona = new personaInscripta(nombreValor, apellidoValor, dniValor, emailValor, telefonoValor);
+                listadoPersonas.push(nuevaPersona);
+            }
+        });
+    } else if (formSeleccionado.value === 'individual') {
+        listadoPersonas = [];
+        datosPersonal.forEach(filaCampos => {
+            const emailInput = filaCampos.querySelector('.emailPersonal');
+            const telefonoInput = filaCampos.querySelector('.telefonoPersonal');
+
+            
+                const emailValor = emailInput.value;
+                const telefonoValor = telefonoInput.value;
+                const nuevaPersona = new personaInscripta('', '', '', emailValor, telefonoValor);
+                listadoPersonas.push(nuevaPersona);
+        })
+    }
 };
 
 function generarListadoPersonas() {
     const listadoContenedor = dialog.querySelector('.listado-personas');
     listadoContenedor.innerHTML = '';
     let contadorPersonas = 0;
+    const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
+
+    if (formSeleccionado.value === 'empresarial') {
     listadoPersonas.forEach((nuevaPersona) => {
-        
+
         const nombre = nuevaPersona.nombre;
         const apellido = nuevaPersona.apellido;
         const dni = nuevaPersona.dni;
@@ -134,18 +154,31 @@ function generarListadoPersonas() {
         const telefono = nuevaPersona.telefono;
         contadorPersonas++;
 
-        listadoContenedor.innerHTML += `${contadorPersonas}. Nombre: ${nombre} ${apellido}<br>
+        listadoContenedor.innerHTML = `<h3>Resumen de inscripción - Tipo Empresarial</h3><br>
+        <p>Confirmá  que los datos estén correctos</p>
+        <h4>Listado de personas inscriptas:</h4>` ;
+        listadoContenedor.innerHTML += `${contadorPersonas}. Nombre y Apellido: ${nombre} ${apellido}<br>
         DNI: ${dni} <br> 
         E-mail: ${email} <br>
         Teléfono: ${telefono} <br>
         <br>`
     });
+} else if (formSeleccionado.value === 'individual') {
+    listadoPersonas.forEach((nuevaPersona) => {
+          const email = nuevaPersona.email;
+        const telefono = nuevaPersona.telefono;
+
+        listadoContenedor.innerHTML = `<h3>Resumen de inscripción -  Tipo Personal</h3> Confirmá  que los datos estén correctos <br>
+        E-mail: ${email} <br>
+        Teléfono: ${telefono} <br>`
+    });
+    };
 }
 
 botonFormulario.addEventListener('click', (e) => {
     e.preventDefault();
     if (!validarCampos()) {
-        return; 
+        return;
     };
     guardarPersona();
     generarListadoPersonas();
@@ -173,18 +206,18 @@ function validarCampos() {
         return false;
     }
     if (formSeleccionado.value === 'empresarial') {
-        contenedorActivo = containerEmpresarial; 
-        
+        contenedorActivo = containerEmpresarial;
+
     } else if (formSeleccionado.value === 'individual') {
         contenedorActivo = containerPersonal;
     }
-    
-   
+
+
     const inputsRequeridos = contenedorActivo.querySelectorAll('input[required]');
     const totalInputs = inputsRequeridos.length;
     for (let i = 0; i < totalInputs; i++) {
         const inputActual = inputsRequeridos[i];
-        
+
         if (inputActual.value.trim() === '' && !inputActual.disabled) {
             alert(`Por favor, completá el campo obligatorio: ${inputActual.placeholder}`);
             inputActual.focus();
@@ -200,13 +233,13 @@ function cargarDatosCurso() {
 
     if (!cursoJSON) {
         console.error("Error, no seleccionó ningún curso.");
-        return; 
+        return;
     }
 
     const cursoData = JSON.parse(cursoJSON);
-    
-    const nombreCurso = cursoData.titulo; 
-    
+
+    const nombreCurso = cursoData.titulo;
+
 
     const tituloFormulario = document.querySelector('.curso-elegido');
     tituloFormulario.innerHTML = `${nombreCurso}`;
@@ -215,11 +248,11 @@ function cargarDatosCurso() {
 function buscarPrecioBase() {
     const cursoJSON = localStorage.getItem('cursoSeleccionado');
     const cursoData = JSON.parse(cursoJSON);
-    const precioString = cursoData.valor; 
-   
+    const precioString = cursoData.valor;
+
     let precioLimpio = precioString.replace(/[^0-9]/g, '');
     let precioNumero = Number(precioLimpio);
-    
+
     return precioNumero;
 };
 
@@ -229,4 +262,12 @@ mostrarFormularioElegido();
 limpiarCampos();
 agregarPersona();
 eliminarPersona();
+
+formulario.addEventListener('submit', (e) => {
+    const elementoCurso = document.querySelector('.curso-elegido');
+    const tituloCurso = elementoCurso.textContent;
+    localStorage.setItem('cursoInscripto', tituloCurso);
+});
+
+
 
