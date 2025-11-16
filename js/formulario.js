@@ -11,13 +11,13 @@ const inputAdicional = document.getElementById('input-adicional');
 const formulario = document.querySelector('form');
 
 const botonlimpiarCampos = document.querySelectorAll('.vaciar-campos');
-const botonEliminarPersona = document.querySelectorAll('.eliminar-persona');
-
-let contadorId = 1;
 
 const dialog = document.querySelector('.modal');
 const botonFormulario = document.getElementById('enviar-form');
 
+const cerrarModal = document.getElementById('close-dialog');
+
+let contadorId = 1;
 let listadoPersonas = [];
 
 function mostrarFormularioElegido() {
@@ -51,11 +51,11 @@ function agregarPersona() {
                             title="Debe ingresar el nombre de la persona">
                         <input type="text" class="apellido" name="lastName${contadorId}" id="lastName${contadorId}" placeholder="Apellido" required
                             title="Debe ingresar el apellido de la persona">
-                        <input type="number" name="dni${contadorId}" id="dni${contadorId}" placeholder="DNI (sin puntos ni espacios)" required
+                        <input type="number" class="dni" name="dni${contadorId}" id="dni${contadorId}" placeholder="DNI (sin puntos ni espacios)" required
                             title="Debe ingresar el DNI de la persona (sin puntos ni espacios)">
-                        <input type="text" name="emailEmpresarial${contadorId}" id="emailEmpresarial${contadorId}" placeholder="Email" required
+                        <input type="text" class="email" name="emailEmpresarial${contadorId}" id="emailEmpresarial${contadorId}" placeholder="Email" required
                             title="Debe ingresar el email de la persona">
-                        <input type="number" name="telefonoEmpresarial${contadorId}" id="telefonoEmpresarial${contadorId}" placeholder="Teléfono" required
+                        <input type="number" class="telefono" name="telefonoEmpresarial${contadorId}" id="telefonoEmpresarial${contadorId}" placeholder="Teléfono" required
                             title="Debe ingresar el teléfono de la persona">
                         <div class="resume">
                             <span class="price costo-fijo">$5000</span>
@@ -98,7 +98,7 @@ function eliminarPersona() {
 }
 
 
-function enviarFormulario() {
+/*function enviarFormulario() {
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
         const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
@@ -108,7 +108,7 @@ function enviarFormulario() {
             e.target.submit();
         }
     });
-};
+};*/
 
 
 
@@ -119,11 +119,17 @@ function guardarPersona() {
     todasLasFilas.forEach(filaCampos => {
         const nombreInput = filaCampos.querySelector('.nombrePersona');
         const apellidoInput = filaCampos.querySelector('.apellido');
+        const dniInput = filaCampos.querySelector('.dni');
+        const emailInput = filaCampos.querySelector('.email');
+        const telefonoInput = filaCampos.querySelector('.telefono');
 
         if (nombreInput && nombreInput.value.trim() !== '') {
             const nombreValor = nombreInput.value;
             const apellidoValor = apellidoInput.value;
-            const nuevaPersona = new personaInscripta(nombreValor, apellidoValor);
+            const dniValor = dniInput.value;
+            const emailValor = emailInput.value;
+            const telefonoValor = telefonoInput.value;
+            const nuevaPersona = new personaInscripta(nombreValor, apellidoValor, dniValor, emailValor, telefonoValor);
             listadoPersonas.push(nuevaPersona);
         }
     });
@@ -131,20 +137,38 @@ function guardarPersona() {
 
 function generarListadoPersonas() {
     const listadoContenedor = dialog.querySelector('.listado-personas');
+    listadoContenedor.innerHTML = '';
+    let contadorPersonas = 0;
     listadoPersonas.forEach((nuevaPersona) => {
+        
         const nombre = nuevaPersona.nombre;
         const apellido = nuevaPersona.apellido;
+        const dni = nuevaPersona.dni;
+        const email = nuevaPersona.email;
+        const telefono = nuevaPersona.telefono;
+        contadorPersonas++;
 
-        listadoContenedor.innerHTML += `<li>${nombre} ${apellido}</li>`;
+        listadoContenedor.innerHTML += `${contadorPersonas}. Nombre: ${nombre} ${apellido}<br>
+        DNI: ${dni} <br> 
+        E-mail: ${email} <br>
+        Teléfono: ${telefono} <br>
+        <br>`
     });
 }
 
 botonFormulario.addEventListener('click', (e) => {
     e.preventDefault();
+    if (!validarCampos()) {
+        return; 
+    };
     guardarPersona();
     generarListadoPersonas();
     dialog.showModal();
+});
 
+cerrarModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    dialog.close();
 });
 
 function recalcularTotal() {
@@ -154,10 +178,40 @@ function recalcularTotal() {
     lugar.innerHTML = `$${20000 + cantidad * 5000}`
 };
 
+function validarCampos() {
+    const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
+    let contenedorActivo;
+
+    if (!formSeleccionado) {
+        alert("Por favor, seleccioná un tipo de inscripción (Personal o Empresarial).");
+        return false;
+    }
+    if (formSeleccionado.value === 'empresarial') {
+        contenedorActivo = containerEmpresarial; 
+        
+    } else if (formSeleccionado.value === 'individual') {
+        contenedorActivo = containerPersonal;
+    }
+    
+   
+    const inputsRequeridos = contenedorActivo.querySelectorAll('input[required]');
+    const totalInputs = inputsRequeridos.length;
+    for (let i = 0; i < totalInputs; i++) {
+        const inputActual = inputsRequeridos[i];
+        
+        if (inputActual.value.trim() === '' && !inputActual.disabled) {
+            alert(`Por favor, completá el campo obligatorio: ${inputActual.placeholder}`);
+            inputActual.focus();
+            return false;
+        }
+    }
+    return true;
+};
+
 mostrarFormularioElegido();
 limpiarCampos();
 agregarPersona();
 eliminarPersona();
-enviarFormulario();
+
 
 
