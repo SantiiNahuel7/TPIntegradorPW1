@@ -7,19 +7,19 @@ export class Navbar {
     const template = `
       <nav class="barra-superior">
         <div class="usuario-iniciado">
-          <a href="./html/Login/login.html">
+          <a href="../html/Login/login.html">
             <i class="fa-regular fa-user"></i>
             <span>Acceder</span>
           </a>
         </div>
 
         <div class="logo-contenedor">
-          <a href="index.html" class="logo-link">
-            <img src="./Imagenes/Logos/logo5.png" alt="Logo" class="logo">
+          <a href="../index.html" class="logo-link">
+            <img src="../Imagenes/Logos/logo5.png" alt="Logo" class="logo">
           </a>
         </div>
 
-        <a class="carrito" href="./html/carrito.html">
+        <a class="carrito" href="../html/carrito.html">
           <i class="fa-solid fa-cart-shopping"></i>
           <span class="contador">0</span>
         </a>

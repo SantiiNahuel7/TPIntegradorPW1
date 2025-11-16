@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+    
+    <link rel="stylesheet" href="../../css/Detalle de Cursos/detalleCurso.css">
+    <link rel="stylesheet" href="../../css/global-css.css">
+    
+    <title>Cargando curso...</title>
+</head>
+
+<header class="js-navbar"></header>
+
+<body>
+    <section class="curso-container" id="detalle-curso-container">
+
+        <img class="imagen-curso" id="imagen-curso" src=""> <div class="info-curso">
+            <h2 id="titulo-curso"></h2> <p id="tiempo-de-curso"></p> <p id="descripcion"></p> <p id="requisito"></p> <p id="valor"></p> <a id="link-inscripcion" href="#"> <button id="boton-inscribirse">Inscribirse</button>
+            </a>
+        </div> 
+
+        <div class="contenido">
+            <h2 id="contenido-curso">Contenidos Por Clase</h2>
+            <div class="unidades" id="unidades-container">
+                </div>
+        </div>
+
+    </section>
+
+    <section class="docente">
+        <h2>DOCENTE</h2>
+        <div id="info-profesor">
+            <img src="" alt="profesor" id="profesor-foto"> <div class="detalle-profesor">
+                <p id="nombre-profesor"></p> <div classs="rating" id="profesor-rating" style="--percent:0%;"></div> <p id="profesor-bio"></p> </div>  
+        </div>  
+    </section>
+
+    <section class="cursos" id="cursos-destacados">
+        <h2> CURSOS DESTACADOS </h2>
+        <div class="grid-cursos">
+
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalle-curso.html?curso=html">
+                        <img src="../../Imagenes/Cursos/html.png" alt="HTML">
+                    </a>
+                    <span class="precio">$20.000</span>
+                </div>
+                <div class="info">
+                    <p class="horas"> 20 hs</p>
+                    <h3 class="nombre"> HTML </h3>
+                    <a href="detalle-curso.html?curso=html">
+                        <button class="comprar"> Detalles Del Curso </button>
+                    </a>
+                </div>
+            </article>
+
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalle-curso.html?curso=css">
+                        <img src="../../Imagenes/cursos/css.png" alt="CSS">
+                    </a>
+                    <span class="precio">$25.000</span>
+                </div>
+                <div class="info">
+                    <p class="horas"> 30 hs</p>
+                    <h3 class="nombre"> CSS </h3>
+                    <a href="detalle-curso.html?curso=css">
+                        <button class="comprar"> Detalles Del Curso </button>
+                    </a>
+                </div>
+            </article>
+
+            <article class="curso">
+                <div class="img-container">
+                    <a href="detalle-curso.html?curso=js">
+                        <img src="../../Imagenes/cursos/javascript.png" alt="Javascript">
+                    </a>
+                    <span class="precio">$30.000</span>
+                </div>
+                <div class="info">
+                    <p class="horas"> 30 hs</p>
+                    <h3 class="nombre"> JavaScript </h3>
+                    <a href="detalle-curso.html?curso=js">
+                        <button class="comprar"> Detalles Del Curso </button>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Datos Del Grupo</h3>
+            <ul>
+                <li>Alan Ibañez</li>
+                <li>Yamila Santillan</li>
+                <li>Santiago Orellana</li>
+                <li>Adrián Amarilla</li>
+                <li>Jennifer Caceres</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Menu Inferior</h3>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="#cursos-destacados">Cursos Destacados</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Redes Sociales</h3>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../../Imagenes/icono-redes/facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../../Imagenes/icono-redes/instagram.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../../Imagenes/icono-redes/youtube.png"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/datosCursos.js"></script>
+<script src="../js/detalle.js"></script>
+<script type="module" src="../js/main.js"></script>
+
+</html>

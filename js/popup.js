@@ -3,13 +3,13 @@
 const cursos = [
   { dia: 4, mes: 10, año: 2025, titulo: "Curso CSS", 
     resumen: "Aprende CSS desde cero y domina el diseño visual de páginas web. Con este curso podrás crear layouts modernos, animaciones, y responsive design para todo tipo de dispositivos.", 
-    link: "../html/Detalle de Cursos/detalleCursoCSS.html" },
+    link: "../html/detalle-curso.html?curso=css" },
   { dia: 10, mes: 10, año: 2025, titulo: "Curso HTML", 
     resumen: "Domina HTML5 y construye la estructura de sitios web profesionales. Aprenderás etiquetas semánticas, formularios, tablas, multimedia y buenas prácticas para un código limpio y accesible.",
-     link: "../html/Detalle de Cursos/detalleCursoHtml.html" },
+     link: "../html/detalle-curso.html?curso=html" },
   { dia: 18, mes: 11, año: 2025, titulo: "Curso JavaScript",
      resumen: "JavaScript completo: aprende a agregar interactividad a tus páginas web. Maneja eventos, DOM, funciones, arrays y objetos para crear aplicaciones dinámicas y experiencias de usuario avanzadas.", 
-     link: "../html/Detalle de Cursos/detalleCursoJS.html" }
+     link: "../html/detalle-curso.html?curso=js" }
 ];
 
 // Referencias
