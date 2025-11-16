@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding: 0 5%;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+    color: #fff;
+    min-height: 100vh;
+}
+
+.form__info {
+    text-align: center;
+    margin: 1% auto;
+    padding: 2%;
+}
+
+.form__info label {
+    display: inline-block;
+    width: 10em;
+    background-color: #1E1E2E;;
+    border: #96b6c5 solid 0.1em;
+    border-radius: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    margin: 2% 3%;
+    padding: 1em 1.5em;
+}
+
+.radio-oculto {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.radio-oculto:checked+.tipo-inscripcion-btn {
+    background-color: #ff6d00;
+    color: #fff;
+    box-shadow: 0 0 5px #ff6d00;
+}
+
+.tipo-inscripcion-btn:hover {
+    border-color: #ff6d00;
+}
+
+
+.container-personal, .container-empresarial {
+    display: none;
+    margin-top: 2%;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 0.3fr 0.3fr;
+    gap: 1em;
+    margin: 1% auto;
+    height: 3em;
+}
+
+.fields input {
+    border-radius: 0.5em;
+    border: #96b6c5 solid 0.1em;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.fields input::placeholder {
+
+    opacity: 1;
+
+}
+
+.main__title {
+    text-align: center;
+    padding: 4% 0;
+    border-bottom: #adc4ce solid 0.1em;
+}
+
+.form-button {
+    background-color: #ff6d00;
+    border: none;
+    border-radius: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 1% 0.5% 0 0;
+    padding: 0.5em 1em;
+}
+
+.fields button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #ff6d00;
+    font-size: 2em;
+}
+
+.price {
+    border: #96b6c5 solid 0.1em;
+    padding: 1%;
+    background-color: #1E1E2E;
+}
+
+.resume {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.barra-busqueda button {
+    height: 100%;
+    margin: 0;
+}
+
+.carrito a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .fields {
+        grid-template-columns: 1fr;
+        gap: 0.8em;
+        height: auto;
+    }
+}

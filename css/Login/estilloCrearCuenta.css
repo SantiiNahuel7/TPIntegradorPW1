@@ -168,17 +168,24 @@ main {
     min-height: 100vh;
     background-color: #2E3A59;
 }
-
-.contenedor-formulario{
+.contenedor-formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 800px;
-    height: 700px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 700px; 
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     background-color: #F1F0E8;
+}
+
+.creacion-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1em;
 }
 
 .contenedor-formulario h2{
@@ -201,13 +208,13 @@ main {
 }
 
 .creacion-input input {
-    width: 100%;
-    padding: 15px 15px 15px 50px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 1em;
-    outline: none;
-    transition: border-color 0.3s ease;
+  width: 100%;
+  padding: 15px 15px 15px 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 .creacion-input input:focus{
     border-color: #0072ff;
@@ -229,6 +236,87 @@ main {
 
 #boton-cuenta:hover{
     opacity: 0.9;
+}
+
+.error-texto {
+  color: #e63946; 
+  font-size: 0.9em;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  top: 100%; 
+  width: 100%;
+  word-wrap: break-word;
+  margin-top: 5px;
+
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 2.5em 3em;
+  width: 90%;
+  max-width: 400px;
+  margin: auto; /* Esto lo centrará vertical y horizontalmente */
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilo para cuando el diálogo está abierto */
+dialog[open] {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Fondo oscuro semi-transparente */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px); /* Efecto difuminado */
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dialog-content .fa-circle-check {
+  font-size: 4em;
+  color: #28a745; /* Verde éxito */
+  margin-bottom: 20px;
+}
+
+.dialog-content h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dialog-content p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Estilo copiado de tu #boton-cuenta */
+#btn-ir-home {
+  width: 100%;
+  padding: 1em;
+  background: linear-gradient(to right, #00c6ff, #0072ff); 
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#btn-ir-home:hover {
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {

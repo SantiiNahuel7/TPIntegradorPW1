@@ -211,7 +211,14 @@ main {
     color: #0056b3;
 }
 
-
+.error-texto {
+  color: #e63946; /* Un rojo claro para errores */
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-top: 5px;
+  /* Damos una altura mínima para evitar que el layout "salte" */
+  min-height: 1.2em; 
+}
 
 
 

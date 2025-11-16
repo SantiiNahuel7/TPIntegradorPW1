@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../Imagenes/logos/logo6.png">
+  <link rel="stylesheet" href="../css/Login/estilloCrearCuenta.css"> 
+  <link rel="stylesheet" href="../../css/global-css.css">
+</head>
+<body>
+    <header class="js-navbar"></header>
+    <main>
+        <section class="contenedor-formulario">
+            <h2 class="titulo-formulario">Crea tu cuenta!</h2>
+            <form action="./cuentaCreada.html" novalidate>
+                <div class="formulario">
+                    
+                    <div class="creacion-input">
+                        <input type="text" placeholder="Nombre *" name="nombre" id="nombre" required>
+                        <p class="error-texto" id="error-nombre"></p>
+                    </div>
+                    <div class="creacion-input">
+                        <input type="text" placeholder="Apellido *" name="apellido" id="apellido" required>
+                        <p class="error-texto" id="error-apellido"></p>
+                    </div>
+                    <div class="creacion-input">
+                        <input type="text" placeholder="Usuario *" name="usuario" id="usuario" required>
+                        <p class="error-texto" id="error-usuario"></p>
+                    </div>
+                    <div class="creacion-input">
+                        <input type="email" placeholder="Email *" name="email" id="email" required>
+                        <p class="error-texto" id="error-email"></p>
+                    </div>
+                    <div class="creacion-input">
+                        <input type="password" placeholder="Contraseña *" name="pass" id="pass" required>
+                        <p class="error-texto" id="error-pass"></p>
+                    </div>
+                    <div class="creacion-input">
+                        <input type="password" placeholder="Repetir Contraseña *    " name="passreply" id="passreply" required>
+                        <p class="error-texto" id="error-passreply"></p>
+                    </div>
+                </div>
+                <button id="boton-cuenta">Crear Cuenta</button>
+            </form>
+        </section>
+    </main>
+     <footer class="footer" >
+        <div class="js-footer"></div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/crearCuenta.js"></script> 
+    
+    <dialog id="success-dialog">
+        <div class="dialog-content">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>¡Cuenta Creada!</h2>
+            <p>Tu cuenta ha sido creada exitosamente.</p>
+            <button id="btn-ir-home">Ir al Inicio</button>
+        </div>
+    </dialog>
+
+</body>
+</html>

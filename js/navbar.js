@@ -4,14 +4,37 @@ export class Navbar {
   render() {
     const navbarContainer = document.querySelector(".js-navbar");
 
-    const template = `
-      <nav class="barra-superior">
+    // 1. Revisa si hay un usuario logueado en localStorage
+    const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
+
+    let usuarioHtml = ''; 
+
+    if (usuarioLogueado) {
+      // --- CAMBIO AQUÍ ---
+      // 2. SI HAY USUARIO: El enlace apunta a la página de perfil
+      usuarioHtml = `
         <div class="usuario-iniciado">
-          <a href="../html/Login/login.html">
+          <a href="../html/perfil.html" title="Ver Perfil"> 
+            <i class="fa-solid fa-user-check"></i>
+            <span>Hola, ${usuarioLogueado.nombre}</span>
+          </a>
+        </div>
+      `;
+    } else {
+      // 3. SI NO HAY USUARIO: Muestra el enlace "Acceder"
+      usuarioHtml = `
+        <div class="usuario-iniciado">
+          <a href="../html/login.html"> 
             <i class="fa-regular fa-user"></i>
             <span>Acceder</span>
           </a>
         </div>
+      `;
+    }
+
+    const template = `
+      <nav class="barra-superior">
+        ${usuarioHtml} 
 
         <div class="logo-contenedor">
           <a href="../index.html" class="logo-link">
@@ -24,15 +47,15 @@ export class Navbar {
           <span class="contador">0</span>
         </a>
 
-        <form action="./html/Detalle de Cursos/detalleCursoHtml.html" method="get" class="barra-busqueda">
+        <form action="../html/Detalle de Curos/detalle-curso.html" method="get" class="barra-busqueda">
           <input list="cursos" name="curso" type="text" placeholder="Buscar...">
           <datalist id="cursos">
-            <option value="HTML"></option>
-            <option value="CSS"></option>
-            <option value="JavaScript"></option>
-            <option value="Java"></option>
-            <option value="SQL"></option>
-            <option value="UX/UI"></option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="sql">SQL</option>
+            <option value="uxui">UX/UI</option>
           </datalist>
           <button class="lupa" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -48,7 +71,12 @@ export class Navbar {
     `;
 
     navbarContainer.innerHTML = template;
-  }
+
+    // --- CAMBIO AQUÍ ---
+    // 5. YA NO AGREGAMOS el evento de "Cerrar Sesión" aquí.
+    // Esa lógica se moverá a 'perfil.js'
+    
+  } // Cierre del método render()
 
   renderMenu(items) {
     const listContainer = document.querySelector(".js-menu-items");

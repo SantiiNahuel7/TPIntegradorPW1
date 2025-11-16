@@ -1,0 +1,74 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.perfil-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Roboto', sans-serif;
+}
+
+.perfil-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.perfil-dato {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.perfil-dato strong {
+  display: inline-block;
+  width: 120px; /* Alinea los datos */
+  color: #000;
+}
+
+.perfil-acciones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.perfil-acciones button {
+  flex-grow: 1; /* Ocupan el espacio disponible */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-cerrar-sesion {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#btn-cerrar-sesion:hover {
+  background-color: #e0e0e0;
+}
+
+#btn-eliminar-cuenta {
+  background-color: #e63946; /* Rojo peligro */
+  color: white;
+}
+
+#btn-eliminar-cuenta:hover {
+  background-color: #c9303d;
+}
+
+/*--- FIN: css/Login/perfil.css ---*/
