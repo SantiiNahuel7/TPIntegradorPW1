@@ -92,7 +92,6 @@ function setupAutocomplete() {
 
     autocompleteList.style.display = 'block';
   });
-  // 👆 Hasta acá
 
   input.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {

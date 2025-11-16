@@ -1,28 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const formulario = document.querySelector('form');
-
-    // 1. Seleccionar TODOS los campos de input
     const inputNombre = document.getElementById('nombre');
     const inputApellido = document.getElementById('apellido');
     const inputUsuario = document.getElementById('usuario');
     const inputEmail = document.getElementById('email');
     const inputPass = document.getElementById('pass');
     const inputPassReply = document.getElementById('passreply');
-
-    // 2. Seleccionar TODOS los elementos de texto para errores
     const errorNombre = document.getElementById('error-nombre');
     const errorApellido = document.getElementById('error-apellido');
     const errorUsuario = document.getElementById('error-usuario');
     const errorEmail = document.getElementById('error-email');
     const errorPass = document.getElementById('error-pass');
     const errorPassReply = document.getElementById('error-passreply');
-
-    // 3. Seleccionar el nuevo Diálogo y su botón
     const successDialog = document.getElementById('success-dialog');
     const btnIrHome = document.getElementById('btn-ir-home');
-
-    // 4. Crear una función para limpiar errores al escribir
     const inputs = [inputNombre, inputApellido, inputUsuario, inputEmail, inputPass, inputPassReply];
     const errores = [errorNombre, errorApellido, errorUsuario, errorEmail, errorPass, errorPassReply];
 
@@ -32,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Escuchador del 'submit' del formulario
     formulario.addEventListener('submit', (evento) => {
         
         evento.preventDefault(); 
@@ -40,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         errores.forEach(error => error.textContent = '');
 
-        // 6. Validaciones (como las tenías)
         if (inputNombre.validity.valueMissing) {
             errorNombre.textContent = 'El nombre es obligatorio.';
             esValido = false;
@@ -83,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // 7. Si NADA falló...
         if (esValido) {
             const nuevoUsuario = {
                 nombre: inputNombre.value,
@@ -97,19 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
             usuarios.push(nuevoUsuario);
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
-            // --- CAMBIO PRINCIPAL AQUÍ ---
-            // En lugar de alert() y redirigir...
-            // Mostramos el diálogo modal.
             successDialog.showModal();
-            // --- FIN DEL CAMBIO ---
         }
     });
 
-    // 8. Añadir evento al botón del diálogo
+
     btnIrHome.addEventListener('click', () => {
-        // Cierra el diálogo (opcional, ya que redirige)
+
         successDialog.close();
-        // Redirige al Home (ajusta la ruta si es necesario)
+      
         window.location.href = '../../index.html';
     });
 });
