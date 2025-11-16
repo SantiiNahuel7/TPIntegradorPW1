@@ -1,49 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-<<<<<<< HEAD
     
-  
-=======
-
     // 1. OBTENER EL ID DEL CURSO DESDE LA URL
     // (ej: de "detalle-curso.html?curso=css", obtiene "css")
->>>>>>> 01a72c0caf72b303a32b57a5b8d317c0932db361
     const urlParams = new URLSearchParams(window.location.search);
-    const cursoId = urlParams.get('curso'); 
+    const cursoId = urlParams.get('curso'); // 'css', 'html', 'js', etc.
 
-
+    // 2. BUSCAR LOS DATOS DEL CURSO en la "base de datos" (cursosDB)
+    // Usamos el ID de la URL para encontrar el objeto correcto
     const cursoData = cursosDB[cursoId];
 
- 
+    // 3. MANEJAR SI EL CURSO NO SE ENCUENTRA
     if (!cursoData) {
-<<<<<<< HEAD
-      
+        // Si no se encuentra el curso (ej. URL errónea), muestra un error
         document.getElementById('detalle-curso-container').innerHTML = 
             '<h1>Curso no encontrado</h1><p>Por favor, regresa al inicio y selecciona un curso válido.</p>';
         
-     
-=======
-        // Si no se encuentra el curso (ej. URL errónea), muestra un error
-        document.getElementById('detalle-curso-container').innerHTML =
-            '<h1>Curso no encontrado</h1><p>Por favor, regresa al inicio y selecciona un curso válido.</p>';
-
         // Ocultar las otras secciones
->>>>>>> 01a72c0caf72b303a32b57a5b8d317c0932db361
         document.querySelector('.docente').style.display = 'none';
         document.querySelector('#cursos-destacados').style.display = 'none';
-        return; 
+        return; // Detiene la ejecución del script
     }
 
-<<<<<<< HEAD
-
-    
-=======
     // 4. RELLENAR LA PLANTILLA CON LOS DATOS
-
+    
     // Cambiar el título de la pestaña del navegador
->>>>>>> 01a72c0caf72b303a32b57a5b8d317c0932db361
     document.title = cursoData.titulo + ' - MentorApp';
 
-   
+    // Rellenar sección principal de información
     document.getElementById('imagen-curso').src = cursoData.imagen;
     document.getElementById('titulo-curso').textContent = cursoData.titulo;
     document.getElementById('tiempo-de-curso').textContent = 'Tiempo de Dedicación Necesario: ' + cursoData.tiempo;
@@ -52,15 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('valor').textContent = cursoData.valor;
     document.getElementById('link-inscripcion').href = cursoData.linkFormulario;
 
-   
+    // Rellenar dinámicamente las unidades del curso
     const unidadesContainer = document.getElementById('unidades-container');
-    unidadesContainer.innerHTML = ''; 
+    unidadesContainer.innerHTML = ''; // Limpiamos el contenedor
 
     cursoData.unidades.forEach(unidad => {
-        
+        // 1. Crear la lista de temas (los <li>)
         const temasHtml = unidad.temas.map(tema => `<li>${tema}</li>`).join('');
 
-    
+        // 2. Crear el bloque <details> completo
         const unidadHtml = `
             <details>
                 <summary>${unidad.titulo}</summary>
@@ -71,32 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </details>
         `;
-<<<<<<< HEAD
         
-=======
-
         // 3. Añadirlo al contenedor
->>>>>>> 01a72c0caf72b303a32b57a5b8d317c0932db361
         unidadesContainer.innerHTML += unidadHtml;
     });
 
+    // Rellenar sección del docente
     document.getElementById('profesor-foto').src = cursoData.docente.foto;
     document.getElementById('nombre-profesor').textContent = cursoData.docente.nombre;
     document.getElementById('profesor-rating').style.setProperty('--percent', cursoData.docente.rating + '%');
     document.getElementById('profesor-bio').textContent = cursoData.docente.bio;
 
-
-   const botonInscribirse = document.getElementById('boton-inscribirse');
-
-    botonInscribirse.addEventListener('click', (e) => {
-        const datosEsenciales = {
-            titulo: cursoData.titulo,
-            valor: cursoData.valor,
-        };
-
-        localStorage.setItem('cursoSeleccionado', JSON.stringify(datosEsenciales));
-    });
-
 });
-
- 
