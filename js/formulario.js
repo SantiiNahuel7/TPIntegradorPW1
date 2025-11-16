@@ -140,6 +140,7 @@ function guardarPersona() {
 
 function generarListadoPersonas() {
     const listadoContenedor = dialog.querySelector('.listado-personas');
+    const tituloModal = dialog.querySelector('.titulo-modal');
     listadoContenedor.innerHTML = '';
     let contadorPersonas = 0;
     const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
@@ -154,7 +155,7 @@ function generarListadoPersonas() {
         const telefono = nuevaPersona.telefono;
         contadorPersonas++;
 
-        listadoContenedor.innerHTML = `<h3>Resumen de inscripción - Tipo Empresarial</h3><br>
+        tituloModal.innerHTML = `<h3>Resumen de Inscripción Empresarial</h3><br>
         <p>Confirmá  que los datos estén correctos</p>
         <h4>Listado de personas inscriptas:</h4>` ;
         listadoContenedor.innerHTML += `${contadorPersonas}. Nombre y Apellido: ${nombre} ${apellido}<br>
@@ -164,16 +165,17 @@ function generarListadoPersonas() {
         <br>`
     });
 } else if (formSeleccionado.value === 'individual') {
+    tituloModal.innerHTML = '';
     listadoPersonas.forEach((nuevaPersona) => {
           const email = nuevaPersona.email;
         const telefono = nuevaPersona.telefono;
 
-        listadoContenedor.innerHTML = `<h3>Resumen de inscripción -  Tipo Personal</h3> Confirmá  que los datos estén correctos <br>
+        listadoContenedor.innerHTML = `<h3>Resumen de Inscripción Personal</h3> Confirmá  que los datos estén correctos <br>
         E-mail: ${email} <br>
         Teléfono: ${telefono} <br>`
     });
     };
-}
+};
 
 botonFormulario.addEventListener('click', (e) => {
     e.preventDefault();
