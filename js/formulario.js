@@ -36,7 +36,7 @@ function mostrarFormularioElegido() {
             inputsEmpresarial.forEach(input => input.disabled = true);
             inputsPersonal.forEach(input => input.disabled = false);
             const lugar = document.querySelector('.total-curso')
-            lugar.innerHTML = `$${20000}`
+            lugar.innerHTML = `$${buscarPrecioBase()}`
         }
     });
 }
@@ -95,21 +95,7 @@ function eliminarPersona() {
             }
         }
     });
-}
-
-
-/*function enviarFormulario() {
-    formulario.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formSeleccionado = document.querySelector('input[name="inscriptionType"]:checked');
-        if (formSeleccionado.value === 'empresarial') {
-            e.target.submit();
-        } else if (formSeleccionado.value === 'individual') {
-            e.target.submit();
-        }
-    });
-};*/
-
+};
 
 
 function guardarPersona() {
@@ -175,7 +161,7 @@ function recalcularTotal() {
     let cantidad = listadoPersonas.length + 1;
 
     const lugar = document.querySelector('.total-curso')
-    lugar.innerHTML = `$${20000 + cantidad * 5000}`
+    lugar.innerHTML = `$${buscarPrecioBase() + cantidad * 5000}`
 };
 
 function validarCampos() {
@@ -208,10 +194,39 @@ function validarCampos() {
     return true;
 };
 
+
+function cargarDatosCurso() {
+    const cursoJSON = localStorage.getItem('cursoSeleccionado');
+
+    if (!cursoJSON) {
+        console.error("Error, no seleccionó ningún curso.");
+        return; 
+    }
+
+    const cursoData = JSON.parse(cursoJSON);
+    
+    const nombreCurso = cursoData.titulo; 
+    
+
+    const tituloFormulario = document.querySelector('.curso-elegido');
+    tituloFormulario.innerHTML = `${nombreCurso}`;
+};
+
+function buscarPrecioBase() {
+    const cursoJSON = localStorage.getItem('cursoSeleccionado');
+    const cursoData = JSON.parse(cursoJSON);
+    const precioString = cursoData.valor; 
+   
+    let precioLimpio = precioString.replace(/[^0-9]/g, '');
+    let precioNumero = Number(precioLimpio);
+    
+    return precioNumero;
+};
+
+
+cargarDatosCurso();
 mostrarFormularioElegido();
 limpiarCampos();
 agregarPersona();
 eliminarPersona();
-
-
 

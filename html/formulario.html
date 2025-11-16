@@ -22,13 +22,14 @@
 
     <main>
         <section class="main__title">
-            <h2>Formulario de Inscripción</h2>
+            <h2>Formulario de Inscripción:</h2>
+            <h2 class="curso-elegido"></h2>
         </section>
         <section class="main__form">
             <form action="./carrito.html" method="get" autocomplete="off" id="company-register-form">
 
                 <div class="form__info">
-                    <h3>Elegí el tipo de inscripción a realizar</h3>
+                    <h3>Elegí el tipo de inscripción a realizar para iniciar:</h3>
                     <input type="radio" id="individual" name="inscriptionType" value="individual" class="radio-oculto">
                     <label for="individual" class="tipo-inscripcion-btn">
                         Personal
@@ -88,7 +89,7 @@
                     </div>
                 </dialog>
                 <div class="resume">
-                    <span class="price total-curso">$20000</span> <button class="form-button" id="enviar-form"
+                    <span class="price total-curso"></span> <button class="form-button" id="enviar-form"
                         type="submit">Inscribirse</button>
                 </div>
             </form>

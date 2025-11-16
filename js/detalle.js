@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // 1. OBTENER EL ID DEL CURSO DESDE LA URL
     // (ej: de "detalle-curso.html?curso=css", obtiene "css")
     const urlParams = new URLSearchParams(window.location.search);
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. MANEJAR SI EL CURSO NO SE ENCUENTRA
     if (!cursoData) {
         // Si no se encuentra el curso (ej. URL errónea), muestra un error
-        document.getElementById('detalle-curso-container').innerHTML = 
+        document.getElementById('detalle-curso-container').innerHTML =
             '<h1>Curso no encontrado</h1><p>Por favor, regresa al inicio y selecciona un curso válido.</p>';
-        
+
         // Ocultar las otras secciones
         document.querySelector('.docente').style.display = 'none';
         document.querySelector('#cursos-destacados').style.display = 'none';
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 4. RELLENAR LA PLANTILLA CON LOS DATOS
-    
+
     // Cambiar el título de la pestaña del navegador
     document.title = cursoData.titulo + ' - MentorApp';
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </details>
         `;
-        
+
         // 3. Añadirlo al contenedor
         unidadesContainer.innerHTML += unidadHtml;
     });
@@ -65,4 +65,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('profesor-rating').style.setProperty('--percent', cursoData.docente.rating + '%');
     document.getElementById('profesor-bio').textContent = cursoData.docente.bio;
 
+
+   const botonInscribirse = document.getElementById('boton-inscribirse');
+
+    botonInscribirse.addEventListener('click', (e) => {
+        const datosEsenciales = {
+            titulo: cursoData.titulo,
+            valor: cursoData.valor,
+        };
+
+        localStorage.setItem('cursoSeleccionado', JSON.stringify(datosEsenciales));
+    });
+
 });
+
+ 

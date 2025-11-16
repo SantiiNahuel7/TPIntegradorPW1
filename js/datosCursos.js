@@ -7,7 +7,7 @@ const cursosDB = {
         requisitos: "HTML",
         valor: "$25.000",
         imagen: "../../Imagenes/Cursos/css.png",
-        linkFormulario: "../../html/Formularios/formCursoCss.html",
+        linkFormulario: "../../html/formulario.html",
         unidades: [
             {
                 titulo: "INTRODUCCIÓN",
@@ -53,7 +53,7 @@ const cursosDB = {
         requisitos: "Ninguno",
         valor: "$20.000",
         imagen: "../../Imagenes/Cursos/html.png",
-        linkFormulario: "../../html/Formularios/formCursoHtml.html",
+        linkFormulario: "../../html/formulario.html",
         unidades: [
             {
                 titulo: "INTRODUCCIÓN",
@@ -95,7 +95,7 @@ const cursosDB = {
         requisitos: "HTML y CSS",
         valor: "$30.000",
         imagen: "../../Imagenes/Cursos/javascript.png",
-        linkFormulario: "../../html/Formularios/formCursoJS.html",
+        linkFormulario: "../../html/formulario.html",
         unidades: [
             {
                 titulo: "FUNDAMENTOS",
@@ -139,8 +139,8 @@ const cursosDB = {
         descripcion: "Domina las bases de datos. Aprende a consultar, manipular y gestionar datos con SQL, el lenguaje estándar para bases de datos relacionales, desde cero.",
         requisitos: "Ninguno",
         valor: "$40.000",
-        imagen: "../../Imagenes/Cursos/sql.png", // Asegúrate de tener esta imagen
-        linkFormulario: "../../html/Formularios/formCursoSql.html", // Asegúrate de tener este archivo
+        imagen: "../../Imagenes/Cursos/sql.png", 
+        linkFormulario: "../../html/formulario.html", 
         unidades: [
             {
                 titulo: "INTRODUCCIÓN A BBDD",
@@ -183,8 +183,8 @@ const cursosDB = {
         descripcion: "Aprende Java, uno de los lenguajes más robustos y demandados. Este curso te llevará desde los fundamentos de la sintaxis hasta la Programación Orientada a Objetos (POO) y el desarrollo de aplicaciones backend.",
         requisitos: "Lógica de programación (deseable)",
         valor: "$30.000",
-        imagen: "../../Imagenes/Cursos/java.png", // Asegúrate de tener esta imagen
-        linkFormulario: "../../html/Formularios/formCursoJava.html", // Asegúrate de tener este archivo
+        imagen: "../../Imagenes/Cursos/java.png", 
+        linkFormulario: "../../html/formulario.html", 
         unidades: [
             {
                 titulo: "FUNDAMENTOS DE JAVA",
@@ -227,8 +227,8 @@ const cursosDB = {
         descripcion: "Aprende a diseñar productos digitales que los usuarios amen. Cubriremos el proceso completo, desde la investigación de usuario (UX) hasta el diseño de interfaces visuales (UI).",
         requisitos: "Ninguno",
         valor: "$60.000",
-        imagen: "../../Imagenes/Cursos/ui.png", // Asegúrate de tener esta imagen
-        linkFormulario: "../../html/Formularios/formCursoUxUi.html", // Asegúrate de tener este archivo
+        imagen: "../../Imagenes/Cursos/ui.png", 
+        linkFormulario: "../../html/formulario.html",
         unidades: [
             {
                 titulo: "FUNDAMENTOS UX (USER EXPERIENCE)",
