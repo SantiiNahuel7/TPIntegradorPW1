@@ -6,6 +6,12 @@ export class Navbar {
 
     const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
 
+    let cartCount = 0;
+
+    if (usuarioLogueado && usuarioLogueado.carrito) {
+      cartCount = usuarioLogueado.carrito.length;
+    }
+
     let usuarioHtml = ''; 
 
     if (usuarioLogueado) {
@@ -41,7 +47,9 @@ export class Navbar {
 
         <a class="carrito" href="../html/carrito.html">
           <i class="fa-solid fa-cart-shopping"></i>
-          <span class="contador">0</span>
+          
+          <span class="contador">${cartCount}</span>
+
         </a>
 
         <form action="../html/Detalle de Curos/detalle-curso.html" method="get" class="barra-busqueda">

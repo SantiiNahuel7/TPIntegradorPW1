@@ -81,7 +81,7 @@ const cursosDB = {
             }
         ],
         docente: {
-            nombre: "Jose",
+            nombre: "Jose Perez",
             foto: "../../Imagenes/Detalle de Curso/profesor.jpg",
             bio: "Jose es un desarrollador Front-End apasionado por la enseñanza. Con 6 años de experiencia, se especializa en crear experiencias de usuario accesibles y bien estructuradas. Su enfoque es construir una base sólida en HTML para todos sus estudiantes.",
             rating: 90

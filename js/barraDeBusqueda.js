@@ -1,4 +1,3 @@
-// barraDeBusqueda.js
 export const cursos = [
   { name: "Html", url: "/html/Detalle de Cursos/detalleCursoHtml.html" },
   { name: "Css", url: "/html/Detalle de Cursos/detalleCursoCSS.html" },
@@ -47,7 +46,6 @@ function setupAutocomplete() {
 
   if (!input || !autocompleteList || !resultsContainer) return;
 
-  // 👇 Bloque modificado: muestra la lista solo cuando hay coincidencias
   input.addEventListener('input', function () {
     const query = this.value.trim().toLowerCase();
     autocompleteList.innerHTML = '';

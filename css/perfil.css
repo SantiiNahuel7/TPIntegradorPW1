@@ -6,6 +6,9 @@
     font-family: "Roboto", sans-serif;
 
 }
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+  }
 
 .perfil-container {
   max-width: 600px;
@@ -71,3 +74,151 @@
   background-color: #c9303d;
 }
 
+.perfil-cursos {
+    margin-top: 3em;
+}
+
+.perfil-cursos h2 {
+    font-size: 1.8rem;
+    color: #333; 
+    margin-bottom: 1em;
+    border-bottom: 2px solid #4CC9F0; 
+    padding-bottom: 0.5em;
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5em;
+}
+
+.cursos-vacios {
+    font-size: 1.1rem;
+    color: #999;
+    padding: 2em;
+    text-align: center;
+    background-color: #2E3A59; 
+    border-radius: 8px;
+    border: 1px dashed #555;
+}
+
+.curso-adquirido-card {
+    background-color: #2E3A59; 
+    border: 1px solid #555;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-card-imagen {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid #555;
+}
+
+.curso-card-info {
+    padding: 1em;
+}
+
+.curso-card-titulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #FFFFFF;
+}
+
+.curso-card-precio {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4CC9F0; 
+    margin-bottom: 1em;
+}
+
+.curso-card-inscrito {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px); 
+}
+
+
+.modal-dialog {
+    margin: auto;
+    background-color: #2E3A59; 
+    color: #E0E0E0;           
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    padding: 0; 
+    width: 90%;
+    max-width: 450px;
+    border: none;
+}
+
+.dialogo-contenido {
+    padding: 2em;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.dialogo-botones {
+    margin-top: 2em;
+}
+
+.dialogo-boton {
+    background-color: #4CC9F0; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1em;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dialogo-boton:hover {
+    background-color: #e6691c; 
+    transform: translateY(-2px);
+}
+
+.dialogo-botones.modal-actions {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+.dialogo-botones .dialogo-boton {
+  flex: 1;
+}
+
+.boton-cancelar {
+  background-color: #5c6370;
+}
+.boton-cancelar:hover {
+  background-color: #4a4f58;
+}
+
+.boton-peligro {
+  background-color: #E06C75; 
+  color: #FFFFFF;
+}
+.boton-peligro:hover {
+  background-color: #be5a63;
+}
+
+#dialog-pago-exitoso .fa-circle-check {
+    font-size: 3.5rem;
+    color: #4CC9F0; 
+    margin-bottom: 1rem;
+}

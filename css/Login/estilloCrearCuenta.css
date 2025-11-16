@@ -258,22 +258,20 @@ dialog {
   padding: 2.5em 3em;
   width: 90%;
   max-width: 400px;
-  margin: auto; /* Esto lo centrará vertical y horizontalmente */
+  margin: auto; 
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Estilo para cuando el diálogo está abierto */
 dialog[open] {
     opacity: 1;
     transform: scale(1);
 }
 
-/* Fondo oscuro semi-transparente */
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px); /* Efecto difuminado */
+  backdrop-filter: blur(3px); 
 }
 
 .dialog-content {
@@ -285,7 +283,7 @@ dialog::backdrop {
 
 .dialog-content .fa-circle-check {
   font-size: 4em;
-  color: #28a745; /* Verde éxito */
+  color: #28a745; 
   margin-bottom: 20px;
 }
 
@@ -301,7 +299,7 @@ dialog::backdrop {
   margin-bottom: 25px;
 }
 
-/* Estilo copiado de tu #boton-cuenta */
+
 #btn-ir-home {
   width: 100%;
   padding: 1em;

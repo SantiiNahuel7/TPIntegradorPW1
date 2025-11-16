@@ -1,0 +1,192 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7)), url('../../Imagenes/Imagen-de-fondo/fondo-cursos.jpg');
+}
+.pago-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3em 1em;
+    color: #E0E0E0; 
+    min-height: 70vh;
+}
+
+.pago-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #2E3A59; 
+    padding: 2.5em;
+    border-radius: 12px;
+    border: 1px solid #555;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pago-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #4CC9F0;
+    padding-bottom: 0.5em;
+}
+
+.total-a-pagar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.total-a-pagar h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+#total-monto {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4CC9F0; 
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-row {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1.5em;
+}
+
+.form-group-half {
+    flex: 1; 
+}
+
+.pago-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #E0E0E0;
+}
+
+.pago-form input[type="text"],
+.pago-form input[type="number"],
+.pago-form select {
+    width: 100%;
+    padding: 0.8em 1em;
+    font-size: 1rem;
+    color: #333; 
+    background-color: #FFF; 
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+}
+
+.pago-form input::placeholder {
+    color: #999;
+}
+
+.pago-botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 2.5em;
+}
+
+.boton-pagar,
+.boton-cancelar {
+    flex: 1;
+    border: none;
+    border-radius: 1em; 
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.boton-pagar {
+    background-color: #4CC9F0; 
+    color: #FFFFFF;
+}
+.boton-pagar:hover {
+    background-color: #e6691c; 
+    transform: translateY(-2px);
+}
+
+.boton-cancelar {
+    background-color: #b33939; 
+    color: #FFFFFF;
+}
+.boton-cancelar:hover {
+    background-color: #8d2c2c;
+    transform: translateY(-2px);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+
+.modal-dialog {
+    background-color: #2E3A59; 
+    color: #E0E0E0;            
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    padding: 0; 
+    margin: auto;
+    width: 90%;
+    max-width: 450px;
+    margin: at;
+    border: none;
+}
+
+.dialogo-contenido {
+    padding: 2em;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.dialogo-botones {
+    margin-top: 2em;
+}
+
+.dialogo-boton {
+   
+    background-color: #4CC9F0; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1em;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dialogo-boton:hover {
+    background-color: #e6691c; 
+    transform: translateY(-2px);
+}
+#dialog-pago-exitoso .fa-circle-check {
+    font-size: 3.5rem;
+    color: #4CC9F0; 
+    margin-bottom: 1rem;
+}
+
+.ocultar {
+    display: none;
+}

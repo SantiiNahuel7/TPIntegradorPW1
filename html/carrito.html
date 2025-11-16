@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/carrito.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" ...>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+    
+    <link rel="stylesheet" href="../../css/global-css.css">
+    <link rel="stylesheet" href="../../css/carrito.css"> <title>Carrito de Compras - MentorApp</title>
 </head>
-<body>
-  <main class="carrito-vacio">
-    <div class="mensaje-de-carrito-vacio">
-      <div class="icono">
-        🛒
-      </div>
-      <h1>¡Tu carrito está vacío!</h1>
-      <p>Aún no agregaste ningún curso.  
-        Podés explorar el <a href="#">catálogo de cursos</a> y elegir el que más te guste.</p>
-      <a href="../index.html" class="boton-volver">Volver al inicio</a>
 
-    </div>
-  </main>
+<body>
+    <header class="js-navbar"></header>
+
+    <main class="carrito-container">
+        <h1>Mi Carrito</h1>
+
+        <section id="carrito-items-container" class="carrito-items">
+            </section>
+
+        <section class="carrito-resumen">
+            <h3 id="total-carrito">Total: $0.00</h3>
+            <button class="boton-pagar" id="boton-pagar">Proceder al Pago</button>
+        </section>
+
+        <dialog id="dialog-login-requerido-cuenta" class="modal-dialog ocultar">
+            <div class="dialogo-contenido modal-content">
+                <h3 class="modal-title">Necesitas iniciar sesión para ver tu carrito.</h3>
+                <div class="dialogo-botones modal-actions">
+                    <button class="dialogo-boton dialogo-aceptar" id="dialogo-cuenta-login">Ir a Iniciar Sesión</button>
+                </div>
+            </div>
+        </dialog>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="js-footer"></div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
 </body>
 </html>
-

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" ...>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../Imagenes/logos/logo6.png">
+    
+    <link rel="stylesheet" href="../../css/global-css.css">
+    <link rel="stylesheet" href="../../css/pago.css"> 
+    
+    <title>Realizar Pago - MentorApp</title>
+</head>
+
+<body>
+    <header class="js-navbar"></header>
+
+    <main class="pago-container">
+        
+        <form class="pago-form" id="pago-form">
+            <h2>Pago con tarjeta</h2>
+            
+            <div class="total-a-pagar">
+                <h3>Total de la compra:</h3>
+                <span id="total-monto">$0.00</span>
+            </div>
+
+            <div class="form-group">
+                <label for="numero-tarjeta">Número de tarjeta:</label>
+                <input type="text" id="numero-tarjeta" placeholder="0000 0000 0000 0000" maxlength="19" required>
+            </div>
+            <label>Seleccione la fecha de vencimiento:</label>
+            <div class="form-row">
+                <div class="form-group-half">
+                    <label for="mes-vencimiento">Mes:</label>
+                    <select id="mes-vencimiento" required><option value="" disabled selected>MM</option></select>
+                </div>
+                <div class="form-group-half">
+                    <label for="anio-vencimiento">Año:</label>
+                    <select id="anio-vencimiento" required><option value="" disabled selected>AAAA</option></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cvc">Ingrese el código de seguridad:</label>
+                <input type="password" id="cvc" placeholder="CVC" maxlength="3" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre-titular">Ingrese el nombre del titular:</label>
+                <input type="text" id="nombre-titular" placeholder="Como figura en la tarjeta" required>
+            </div>
+            <div class="form-group">
+                <label for="dni-titular">Ingrese el DNI:</label>
+                <input type="text" id="dni-titular" placeholder="00000000" maxlength="8" required>
+            </div>
+
+            <div class="pago-botones">
+                <button type="button" class="boton-cancelar" id="btn-cancelar">
+                    <i class="fa-solid fa-times"></i> Cancelar
+                </button>
+                <button type="submit" class="boton-pagar" id="btn-pagar">
+                    <i class="fa-solid fa-check"></i> Pagar
+                </button>
+            </div>
+        </form>
+    </main>
+    
+    <dialog id="dialog-login-requerido-cuenta" class="modal-dialog ocultar">
+        <div class="dialogo-contenido modal-content">
+            <h3 class="modal-title">Necesitas iniciar sesión para realizar un pago.</h3>
+            <div class="dialogo-botones modal-actions">
+                <button class="dialogo-boton dialogo-aceptar" id="dialogo-cuenta-login">Ir a Iniciar Sesión</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="dialog-pago-exitoso" class="modal-dialog ocultar">
+        <div class="dialogo-contenido modal-content">
+            <i class="fa-solid fa-circle-check" style="font-size: 3.5rem; color: #4CC9F0; margin-bottom: 1rem;"></i>
+            
+            <h3 class="modal-title">¡Pago realizado con éxito!</h3>
+            <p style="margin: 1em 0; color: #ccc;">Gracias por tu compra.</p>
+            
+            <div class="dialogo-botones modal-actions">
+                <button class="dialogo-boton dialogo-aceptar" id="btn-ir-inicio">Ir al Inicio</button>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="footer">
+        <div class="js-footer"></div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/pago.js"></script>
+</body>
+</html>

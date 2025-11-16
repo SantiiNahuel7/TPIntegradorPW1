@@ -218,7 +218,9 @@ main {
   margin-top: 5px;
   min-height: 1.2em; 
 }
-
+#error-usuario{
+    color: #e63946;
+}
 
 
 @media (max-width: 768px) {

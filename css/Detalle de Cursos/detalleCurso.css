@@ -276,7 +276,61 @@ details[open] summary::before {
     overflow: hidden; 
     width: var(--percent); 
 }
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px); 
+}
 
+.modal-dialog {
+    background-color: #2E3A59;
+    color: #E0E0E0;       
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    border: none;
+}
+
+
+.dialogo-contenido {
+    padding: 2em;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.dialogo-botones {
+    margin-top: 2em;
+}
+
+.dialogo-boton {
+ 
+    background-color: #4CC9F0; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1em; 
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dialogo-boton:hover {
+    background-color: #e6691c; 
+    transform: translateY(-2px);
+}
+
+.ocultar {
+    display: none;
+}
 
 
 @media (min-width: 768px) {   

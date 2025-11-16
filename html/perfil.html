@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Perfil</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" ...>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="../../Imagenes/logos/logo6.png">
   <link rel="stylesheet" href="../css/perfil.css">
   <link rel="stylesheet" href="../../css/global-css.css">
@@ -39,11 +39,40 @@
         </div>
       </div>
 
+      <div class="perfil-cursos">
+        <h2>Mis Cursos Adquiridos</h2>
+        <div id="cursos-adquiridos-container" class="cursos-grid">
+          </div>
+      </div>
+
       <div class="perfil-acciones">
         <button id="btn-cerrar-sesion">Cerrar Sesión</button>
         <button id="btn-eliminar-cuenta">Eliminar Cuenta</button>
       </div>
     </div>
+
+    <dialog id="dialog-cerrar-sesion" class="modal-dialog ocultar">
+      <div class="dialogo-contenido modal-content">
+          <h3 class="modal-title">¿Cerrar Sesión?</h3>
+          <p style="margin: 1em 0; color: #ccc;">¿Estás seguro de que quieres cerrar tu sesión?</p>
+          <div class="dialogo-botones modal-actions">
+              <button class="dialogo-boton boton-cancelar" id="btn-cancelar-sesion">Cancelar</button>
+              <button class="dialogo-boton dialogo-aceptar" id="btn-confirmar-sesion">Aceptar</button>
+          </div>
+      </div>
+  </dialog>
+
+  <dialog id="dialog-eliminar-cuenta" class="modal-dialog ocultar">
+      <div class="dialogo-contenido modal-content">
+          <i class="fa-solid fa-triangle-exclamation" style="font-size: 3.5rem; color: #E06C75; margin-bottom: 1rem;"></i>
+          <h3 class="modal-title">¿Eliminar Cuenta?</h3>
+          <p style="margin: 1em 0; color: #ccc;">Esta acción es permanente y no se puede deshacer. Todos tus cursos adquiridos se perderán.</p>
+          <div class="dialogo-botones modal-actions">
+              <button class="dialogo-boton boton-cancelar" id="btn-cancelar-eliminar">Cancelar</button>
+              <button class="dialogo-boton boton-peligro" id="btn-confirmar-eliminar">Eliminar Permanentemente</button> 
+          </div>
+      </div>
+  </dialog>
   </main>
 
   <footer class="footer">
@@ -51,5 +80,6 @@
   </footer>
 
   <script type="module" src="../../js/main.js"></script>
-  <script src="../../js/perfil.js"></script> </body>
+  <script src="../../js/perfil.js"></script> 
+</body>
 </html>

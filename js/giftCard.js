@@ -9,14 +9,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const previewMonto = document.getElementById("preview-monto");
   const botonContinuar = document.getElementById("btn-continuar");
 
-  inputNombre.addEventListener("input", () => {
-    previewNombre.textContent =  inputNombre.value.trim() !== "" ? inputNombre.value : "Nombre del destinatario";
-  });
+  function getUsuarioLogueado() {
+    const usuarioJSON = localStorage.getItem('usuarioLogueado');
+    return usuarioJSON ? JSON.parse(usuarioJSON) : null;
+  }
+  function getUsuarios() {
+    const usuariosJSON = localStorage.getItem('usuarios');
+    return usuariosJSON ? JSON.parse(usuariosJSON) : [];
+  }
+  function guardarUsuarios(listaUsuarios) {
+    localStorage.setItem('usuarios', JSON.stringify(listaUsuarios));
+  }
+  function guardarUsuarioLogueado(usuario) {
+    localStorage.setItem('usuarioLogueado', JSON.stringify(usuario));
+  }
 
+  inputNombre.addEventListener("input", () => {
+    previewNombre.textContent = inputNombre.value.trim() !== "" ? inputNombre.value : "Nombre del destinatario";
+  });
   inputColor.addEventListener("input", () => {
     tarjetaPreview.style.backgroundColor = inputColor.value;
   });
-
   inputTamanio.addEventListener("input", () => {
     let size = parseInt(inputTamanio.value);
     if (isNaN(size)) return;
@@ -25,11 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     inputTamanio.value = size;
     previewNombre.style.fontSize = size + "px";
   });
-
   selectMonto.addEventListener("change", () => {
     previewMonto.textContent = selectMonto.value.replace(/(\d+)/, "$$$1");
   });
-
   radiosUbicacion.forEach((radio) => {
     radio.addEventListener("change", () => {
       previewMonto.classList.remove(
@@ -42,12 +53,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+ 
   botonContinuar.addEventListener("click", (e) => {
     e.preventDefault();
-
+    const usuarioLogueado = getUsuarioLogueado();
+    if (!usuarioLogueado) {
+        alert("Necesitas iniciar sesión para comprar una Gift Card.");
+        window.location.href = "../html/login.html"; 
+        return;
+    }
     const ubicacionSeleccionada = Array.from(radiosUbicacion).find(r => r.checked)?.value;
-    console.log("Ubicación seleccionada:", ubicacionSeleccionada);
-
     const datosTarjeta = {
       nombre: inputNombre.value.trim(),
       color: inputColor.value,
@@ -56,9 +71,35 @@ document.addEventListener("DOMContentLoaded", () => {
       ubicacion: ubicacionSeleccionada
     };
 
-    console.log("Guardando en localStorage:", datosTarjeta);
+    if (datosTarjeta.nombre === "") {
+        alert("Por favor, ingresa el nombre del destinatario.");
+        inputNombre.focus();
+        return;
+    }
+
     localStorage.setItem("giftCardDatos", JSON.stringify(datosTarjeta));
 
-    window.location.href = "../../html/GiftCard/pagoGiftCard.html";
+    const itemGiftCard = {
+        id: `giftcard-${Date.now()}`, 
+        nombre: `Gift Card para ${datosTarjeta.nombre}`,
+        precio: parseFloat(datosTarjeta.monto),
+        cantidad: 1,
+        tipo: 'giftcard',
+        imagen: '../../Imagenes/Logos/logo5.png', 
+        datosInscrito: { nombre: datosTarjeta.nombre } 
+    };
+    const listaUsuarios = getUsuarios();
+    const indiceUsuario = listaUsuarios.findIndex(user => user.email === usuarioLogueado.email);
+    if (indiceUsuario === -1) {
+        alert("Error de consistencia de datos. Vuelve a iniciar sesión.");
+        return;
+    }
+    const carritoActual = listaUsuarios[indiceUsuario].carrito || [];
+    const carritoCombinado = [...carritoActual, itemGiftCard];
+    
+    listaUsuarios[indiceUsuario].carrito = carritoCombinado;
+    guardarUsuarios(listaUsuarios);
+    guardarUsuarioLogueado(listaUsuarios[indiceUsuario]); 
+    window.location.href = "../../html/carrito.html"; 
   });
 });
