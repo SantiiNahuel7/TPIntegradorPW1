@@ -42,7 +42,7 @@ const cursosDB = {
             nombre: "Martín Fernández",
             foto: "../../Imagenes/Detalle de Curso/profesorCSS.jpg",
             bio: "Martín es diseñador web y front-end developer con más de 8 años de experiencia creando sitios y aplicaciones responsivas. Se especializa en CSS, animaciones y frameworks modernos, ayudando a sus alumnos a dominar desde lo básico hasta las técnicas más avanzadas de maquetación.",
-            rating: 80 
+            rating: 80 // Valor de 0 a 100
         }
     },
     
@@ -82,7 +82,7 @@ const cursosDB = {
         ],
         docente: {
             nombre: "Jose",
-            foto: "../../Imagenes/Detalle de Curso/profesor.jpg", 
+            foto: "../../Imagenes/Detalle de Curso/profesor.jpg", // Necesitarás esta imagen
             bio: "Jose es un desarrollador Front-End apasionado por la enseñanza. Con 6 años de experiencia, se especializa en crear experiencias de usuario accesibles y bien estructuradas. Su enfoque es construir una base sólida en HTML para todos sus estudiantes.",
             rating: 90
         }
@@ -127,7 +127,7 @@ const cursosDB = {
         ],
         docente: {
             nombre: "Carlos Rivas",
-            foto: "../../Imagenes/Detalle de Curso/profesorjsjpg.jpg", 
+            foto: "../../Imagenes/Detalle de Curso/profesorjsjpg.jpg", // Necesitarás esta imagen
             bio: "Carlos es Full Stack Developer con una década de experiencia, especializándose en JavaScript y el ecosistema de React y Node.js. Le encanta desmitificar conceptos complejos y hacer que la programación sea accesible y divertida.",
             rating: 95
         }
@@ -139,8 +139,8 @@ const cursosDB = {
         descripcion: "Domina las bases de datos. Aprende a consultar, manipular y gestionar datos con SQL, el lenguaje estándar para bases de datos relacionales, desde cero.",
         requisitos: "Ninguno",
         valor: "$40.000",
-        imagen: "../../Imagenes/Cursos/sql.png", 
-        linkFormulario: "../../html/Formularios/formCursoSql.html", 
+        imagen: "../../Imagenes/Cursos/sql.png", // Asegúrate de tener esta imagen
+        linkFormulario: "../../html/Formularios/formCursoSql.html", // Asegúrate de tener este archivo
         unidades: [
             {
                 titulo: "INTRODUCCIÓN A BBDD",
@@ -171,7 +171,7 @@ const cursosDB = {
         ],
         docente: {
             nombre: "Laura Torres",
-            foto: "../../Imagenes/Detalle de Curso/profesorasql.jpg",
+            foto: "../../Imagenes/Detalle de Curso/profesorasql.jpg", // Asegúrate de tener esta imagen
             bio: "Laura es Administradora de Bases de Datos (DBA) con 10 años de experiencia. Se especializa en optimización de consultas y modelado de datos para grandes volúmenes de información.",
             rating: 85
         }
@@ -183,8 +183,8 @@ const cursosDB = {
         descripcion: "Aprende Java, uno de los lenguajes más robustos y demandados. Este curso te llevará desde los fundamentos de la sintaxis hasta la Programación Orientada a Objetos (POO) y el desarrollo de aplicaciones backend.",
         requisitos: "Lógica de programación (deseable)",
         valor: "$30.000",
-        imagen: "../../Imagenes/Cursos/java.png", 
-        linkFormulario: "../../html/Formularios/formCursoJava.html", 
+        imagen: "../../Imagenes/Cursos/java.png", // Asegúrate de tener esta imagen
+        linkFormulario: "../../html/Formularios/formCursoJava.html", // Asegúrate de tener este archivo
         unidades: [
             {
                 titulo: "FUNDAMENTOS DE JAVA",
@@ -215,7 +215,7 @@ const cursosDB = {
         ],
         docente: {
             nombre: "Sofia Castro",
-            foto: "../../Imagenes/Detalle de Curso/profesorJava.jpg", 
+            foto: "../../Imagenes/Detalle de Curso/profesorJava.jpg", // Asegúrate de tener esta imagen
             bio: "Sofia es Arquitecta de Software con 15 años de experiencia en el ecosistema Java. Se especializa en construir soluciones empresariales escalables y microservicios.",
             rating: 92
         }
@@ -227,8 +227,8 @@ const cursosDB = {
         descripcion: "Aprende a diseñar productos digitales que los usuarios amen. Cubriremos el proceso completo, desde la investigación de usuario (UX) hasta el diseño de interfaces visuales (UI).",
         requisitos: "Ninguno",
         valor: "$60.000",
-        imagen: "../../Imagenes/Cursos/ui.png", 
-        linkFormulario: "../../html/Formularios/formCursoUxUi.html", 
+        imagen: "../../Imagenes/Cursos/ui.png", // Asegúrate de tener esta imagen
+        linkFormulario: "../../html/Formularios/formCursoUxUi.html", // Asegúrate de tener este archivo
         unidades: [
             {
                 titulo: "FUNDAMENTOS UX (USER EXPERIENCE)",
@@ -259,7 +259,7 @@ const cursosDB = {
         ],
         docente: {
             nombre: "Sofía Medina",
-            foto: "../../Imagenes/Detalle de Curso/profeux.jpg",
+            foto: "../../Imagenes/Detalle de Curso/profeux.jpg", // Asegúrate de tener esta imagen
             bio: "Sofía es Product Designer líder con experiencia en startups y grandes corporaciones. Le apasiona crear interfaces intuitivas y estéticas que resuelvan problemas reales del usuario.",
             rating: 90
         }
