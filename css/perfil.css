@@ -31,7 +31,7 @@
 
 .perfil-dato strong {
   display: inline-block;
-  width: 120px; /* Alinea los datos */
+  width: 120px; 
   color: #000;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .perfil-acciones button {
-  flex-grow: 1; /* Ocupan el espacio disponible */
+  flex-grow: 1; 
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -63,7 +63,7 @@
 }
 
 #btn-eliminar-cuenta {
-  background-color: #e63946; /* Rojo peligro */
+  background-color: #e63946; 
   color: white;
 }
 
@@ -71,4 +71,3 @@
   background-color: #c9303d;
 }
 
-/*--- FIN: css/Login/perfil.css ---*/

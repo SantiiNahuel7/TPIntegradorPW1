@@ -53,7 +53,6 @@
   font-weight: bold;
 }
 
-/*cambia de color cuando toca el boton*/
 .calendario-nav button:hover {
   background-color: #e65c00; 
 }

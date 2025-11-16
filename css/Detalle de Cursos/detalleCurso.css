@@ -249,32 +249,32 @@ details[open] summary::before {
 }
 
 .rating {
-    --percent: 100%; /* Valor predeterminado */
+    --percent: 100%; 
     display: inline-block;
-    font-size: 0; /* Elimina espacios entre elementos inline */
-    position: relative; /* 5 estrellas * 20px por estrella = 100px */
+    font-size: 0; 
+    position: relative;
     height: 20px;
 }
 
-/* Base de estrellas (fondo gris) */
+
 .rating::before {
     content: "★★★★★";
     font-size: 20px;
-    color: #ccc; /* Estrellas grises de fondo */
-    letter-spacing: -2px; /* Ajusta el espaciado para que se vean compactas */
+    color: #ccc;
+    letter-spacing: -2px; 
 }
 
-/* Estrellas llenas (color amarillo) */
+
 .rating::after {
     content: "★★★★★";
     font-size: 20px;
-    color: gold; /* Color amarillo de las estrellas llenas */
+    color: gold; 
     letter-spacing: -2px;
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden; /* Oculta el exceso de estrellas amarillas */
-    width: var(--percent); /* Controlado por el valor 'percent' del HTML */
+    overflow: hidden; 
+    width: var(--percent); 
 }
 
 

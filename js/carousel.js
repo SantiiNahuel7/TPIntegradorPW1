@@ -1,27 +1,27 @@
 export const btnLeft = document.querySelector(".btn-left"),
-    btnRight = document.querySelector(".btn-right"),                // Seleccionamos los botones
+    btnRight = document.querySelector(".btn-right"),
     slider = document.querySelector("#slider"),
     sliderSection = document.querySelectorAll(".slider-section");
 
 console.log(sliderSection);
 
-btnLeft.addEventListener("click", e => moveToLeft())    // Listener para escuchar las acciones al apretar los botones de izquierda y derecha
+btnLeft.addEventListener("click", e => moveToLeft()) 
 btnRight.addEventListener("click", e => moveToRight())
 
 setInterval(() => {
-    moveToRight()      // Mueve a la derecha cada una cierta cantidad de tiempo, en este caso 5 seg
+    moveToRight()      
 }, 5000);
 
 let operacion = 0;
 let counter = 0;
-let widthImg = 100 / sliderSection.length;    // 100 / la cantidad de imagenes que tengamos, para realizar la operación de abajo
-                                                // y calcular como se tiene que mover el slide cada vez que se apreta. En este caso sería 33,33 el widthImg
+let widthImg = 100 / sliderSection.length;   
+                                                
 
                                                  
 function moveToRight() {                       
 
 
-    if(counter >= sliderSection.length-1) {  // Una vez que se llega a la última imagen restable a 0 las cuentas y salta a la primer imagen
+    if(counter >= sliderSection.length-1) { 
                                                 
 
         counter = 0;
@@ -31,7 +31,7 @@ function moveToRight() {
 
     } 
 
-    counter++;                                  // Sino sigue contando y pasando a la siguiente imagen hacía la derecha
+    counter++;                                 
     operacion = operacion + widthImg;
     slider.style.transform = `translate(-${operacion}%)`
     slider.style.transition = "all ease .6s"
@@ -43,10 +43,9 @@ function moveToRight() {
 function moveToLeft() {
 
     counter--;                      
-        if(counter < 0) {           // Acá sería al reves, si es menor que cero pasa a la última imagen
-
+        if(counter < 0) {           
         counter = sliderSection.length-1;
-        operacion = widthImg * (sliderSection.length-1);  // Calculo para pasar a la última imagen
+        operacion = widthImg * (sliderSection.length-1);  
         slider.style.transform = `translate(-${operacion}%)`;
         return;
 
