@@ -4,14 +4,12 @@ export class Navbar {
   render() {
     const navbarContainer = document.querySelector(".js-navbar");
 
-    // 1. Revisa si hay un usuario logueado en localStorage
     const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
 
     let usuarioHtml = ''; 
 
     if (usuarioLogueado) {
-      // --- CAMBIO AQUÍ ---
-      // 2. SI HAY USUARIO: El enlace apunta a la página de perfil
+    
       usuarioHtml = `
         <div class="usuario-iniciado">
           <a href="../html/perfil.html" title="Ver Perfil"> 
@@ -21,7 +19,6 @@ export class Navbar {
         </div>
       `;
     } else {
-      // 3. SI NO HAY USUARIO: Muestra el enlace "Acceder"
       usuarioHtml = `
         <div class="usuario-iniciado">
           <a href="../html/login.html"> 
@@ -71,12 +68,8 @@ export class Navbar {
     `;
 
     navbarContainer.innerHTML = template;
-
-    // --- CAMBIO AQUÍ ---
-    // 5. YA NO AGREGAMOS el evento de "Cerrar Sesión" aquí.
-    // Esa lógica se moverá a 'perfil.js'
     
-  } // Cierre del método render()
+  } 
 
   renderMenu(items) {
     const listContainer = document.querySelector(".js-menu-items");

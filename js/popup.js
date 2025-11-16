@@ -1,5 +1,3 @@
-// hice una array con los cursos del mes 
-
 const cursos = [
   { dia: 4, mes: 10, año: 2025, titulo: "Curso CSS", 
     resumen: "Aprende CSS desde cero y domina el diseño visual de páginas web. Con este curso podrás crear layouts modernos, animaciones, y responsive design para todo tipo de dispositivos.", 
@@ -12,7 +10,6 @@ const cursos = [
      link: "../html/detalle-curso.html?curso=js" }
 ];
 
-// Referencias
 const calendario = document.getElementById("calendario");
 const tituloMes = document.getElementById("tituloMes");
 const popup = document.getElementById("popupCurso");
@@ -25,7 +22,7 @@ const cerrarPopup = document.getElementById("cerrarPopup");
 let fechaActual = new Date(2025, 10, 1); 
 
 function generarCalendario() {
-  calendario.innerHTML = ""; // "borra" los dias anteriores para hacer con el mes correspondiente
+  calendario.innerHTML = ""; 
 
   
   const diasDeLaSemana = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
@@ -41,10 +38,10 @@ function generarCalendario() {
 
   tituloMes.textContent = `Calendario de próximos cursos - ${fechaActual.toLocaleString('es-ES', { month: 'long' })} ${año}`;
 
-  const primerDia = new Date(año, mes, 1).getDay(); // Domingo=0
-  let offset = primerDia === 0 ? 6 : primerDia - 1; // Ajuste lunes=0
+  const primerDia = new Date(año, mes, 1).getDay(); 
+  let offset = primerDia === 0 ? 6 : primerDia - 1; 
 
-  // Espacios iniciales
+  
   for (let i = 0; i < offset; i++) {
     const celdaVacia = document.createElement("div");
     celdaVacia.classList.add("celda");
@@ -57,7 +54,7 @@ function generarCalendario() {
     celda.classList.add("celda");
     celda.textContent = dia;
 
-    // Buscar curso
+ 
     const curso = cursos.find(c => c.dia === dia && c.mes === mes && c.año === año);
     if (curso) {
       celda.classList.add("curso");
@@ -75,17 +72,17 @@ function generarCalendario() {
   }
 }
 
-// Navegación de meses
+
 function cambiarMes(delta) {
   fechaActual.setMonth(fechaActual.getMonth() + delta);
   generarCalendario();
 }
 
-// Eventos popup
+
 cerrarPopup.addEventListener("click", () => popup.style.display = "none");
 popup.addEventListener("click", e => { if (e.target === popup) popup.style.display = "none"; });
 
-// Botones de navegación
+
 const navAnterior = document.createElement("button");
 navAnterior.textContent = "« Mes anterior";
 navAnterior.addEventListener("click", () => cambiarMes(-1));
@@ -94,15 +91,12 @@ const navSiguiente = document.createElement("button");
 navSiguiente.textContent = "Mes siguiente »";
 navSiguiente.addEventListener("click", () => cambiarMes(1));
 
-// Contenedor de botones
 const navContainer = document.createElement("div");
 navContainer.classList.add("calendario-nav");
 navContainer.appendChild(navAnterior);
 navContainer.appendChild(navSiguiente);
 
-// Insertar contenedor arriba del calendario
 calendario.parentNode.insertBefore(navContainer, calendario);
 
-// Generar calendario inicial
 generarCalendario();
 
