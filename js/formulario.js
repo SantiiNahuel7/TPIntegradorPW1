@@ -11,6 +11,7 @@ const inputAdicional = document.getElementById('input-adicional');
 const formulario = document.querySelector('form');
 
 const botonlimpiarCampos = document.querySelectorAll('.vaciar-campos');
+const botonEliminarPersona = document.querySelectorAll('.eliminar-persona');
 
 let contadorId = 1;
 
@@ -28,11 +29,14 @@ function mostrarFormularioElegido() {
             containerPersonal.style.display = 'none'
             inputsPersonal.forEach(input => input.disabled = true);
             inputsEmpresarial.forEach(input => input.disabled = false);
+            recalcularTotal();
         } else {
             containerEmpresarial.style.display = 'none'
             containerPersonal.style.display = 'block'
             inputsEmpresarial.forEach(input => input.disabled = true);
             inputsPersonal.forEach(input => input.disabled = false);
+            const lugar = document.querySelector('.total-curso')
+            lugar.innerHTML = `$${20000}`
         }
     });
 }
@@ -54,11 +58,14 @@ function agregarPersona() {
                         <input type="number" name="telefonoEmpresarial${contadorId}" id="telefonoEmpresarial${contadorId}" placeholder="Teléfono" required
                             title="Debe ingresar el teléfono de la persona">
                         <div class="resume">
-                            <span class="price">$10000</span>
+                            <span class="price costo-fijo">$5000</span>
                         </div>
                         <button class="eliminar-persona"><i class="fa-solid fa-circle-minus"></i></button>
                     </div>`;
 
+        const nuevaPersona = new personaInscripta('', '', '', '', '');
+        listadoPersonas.push(nuevaPersona);
+        recalcularTotal();
     });
 }
 
@@ -82,7 +89,9 @@ function eliminarPersona() {
             e.preventDefault();
             const camposAEliminar = botonEliminar.closest('.fields');
             if (camposAEliminar) {
+                listadoPersonas.pop();
                 camposAEliminar.remove();
+                recalcularTotal();
             }
         }
     });
@@ -104,9 +113,9 @@ function enviarFormulario() {
 
 
 function guardarPersona() {
-    listadoPersonas = []; 
-    const todasLasFilas = containerEmpresarial.querySelectorAll('.fields'); 
-    
+    listadoPersonas = [];
+    const todasLasFilas = containerEmpresarial.querySelectorAll('.fields');
+
     todasLasFilas.forEach(filaCampos => {
         const nombreInput = filaCampos.querySelector('.nombrePersona');
         const apellidoInput = filaCampos.querySelector('.apellido');
@@ -114,21 +123,21 @@ function guardarPersona() {
         if (nombreInput && nombreInput.value.trim() !== '') {
             const nombreValor = nombreInput.value;
             const apellidoValor = apellidoInput.value;
-            const nuevaPersona = new personaInscripta(nombreValor, apellidoValor); 
+            const nuevaPersona = new personaInscripta(nombreValor, apellidoValor);
             listadoPersonas.push(nuevaPersona);
         }
     });
 };
 
 function generarListadoPersonas() {
-    const listadoContenedor = dialog.querySelector('.listado-personas');  
-        listadoPersonas.forEach((nuevaPersona) => {
-            const nombre = nuevaPersona.nombre; 
-            const apellido = nuevaPersona.apellido;
-    
-            listadoContenedor.innerHTML += `<li>${nombre} ${apellido}</li>`;
-        });
-    }
+    const listadoContenedor = dialog.querySelector('.listado-personas');
+    listadoPersonas.forEach((nuevaPersona) => {
+        const nombre = nuevaPersona.nombre;
+        const apellido = nuevaPersona.apellido;
+
+        listadoContenedor.innerHTML += `<li>${nombre} ${apellido}</li>`;
+    });
+}
 
 botonFormulario.addEventListener('click', (e) => {
     e.preventDefault();
@@ -138,10 +147,17 @@ botonFormulario.addEventListener('click', (e) => {
 
 });
 
+function recalcularTotal() {
+    let cantidad = listadoPersonas.length + 1;
+
+    const lugar = document.querySelector('.total-curso')
+    lugar.innerHTML = `$${20000 + cantidad * 5000}`
+};
 
 mostrarFormularioElegido();
 limpiarCampos();
 agregarPersona();
 eliminarPersona();
 enviarFormulario();
+
 
