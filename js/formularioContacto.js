@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const nombre = form.querySelector('input[name="nombre"]');
   const email = form.querySelector('input[name="email"]');
   const telefono = form.querySelector('input[name="telefono"]');
+  telefono.addEventListener("input", () => {
+    let valor = telefono.value.replace(/\D/g, ""); 
+
+    if (valor.length > 8) valor = valor.slice(0, 8); 
+
+    if (valor.length > 4) {
+        telefono.value = valor.slice(0, 4) + "-" + valor.slice(4);
+     } else {
+      telefono.value = valor;
+    }
+ });
   const consulta = form.querySelector('textarea[name="consulta"]');
 
   const contador = document.createElement("p");
@@ -11,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   contador.style.fontSize = "0.9rem";
   contador.style.color = "#ccc";
   consulta.insertAdjacentElement("afterend", contador);
+
 
   consulta.addEventListener("input", () => {
     const longitud = consulta.value.length;
@@ -39,9 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const tel = telefono.value.trim();
-    if (tel && !telefonoRegex.test(tel)) {
-      alert("El teléfono debe tener 8 dígitos (puede tener guion en el medio). Ej: 1234-5678");
+    if (telefono.value.replace(/\D/g, "").length !== 8) {
+      alert("El teléfono debe tener exactamente 8 números.");
       return;
     }
 
@@ -50,22 +61,43 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-   
-    mostrarModal();
-    form.reset();
-    contador.textContent = "0 / 1000 caracteres";
-  });
+  
+mostrarPopupConfirmacion();
 
-  function mostrarModal() {
-  const popup = document.getElementById("popup");
-  popup.style.display = "flex";
+});
 
-  const aceptarBtn = document.getElementById("aceptarBtn");
-  aceptarBtn.addEventListener("click", () => {
-    popup.style.display = "none";
-    window.location.href = "../index.html";
-  });
-}
+function mostrarPopupConfirmacion() {
+    const popupConfirm = document.getElementById("popupConfirmacion");
+    popupConfirm.style.display = "flex";
 
- 
+    const enviarBtn = document.getElementById("enviarBtn");
+    const cancelarBtn = document.getElementById("cancelarConfirmBtn");
+
+  
+    cancelarBtn.onclick = () => popupConfirm.style.display = "none";
+
+    
+    enviarBtn.onclick = () => {
+      popupConfirm.style.display = "none";
+      form.reset();                          
+      contador.textContent = "0 / 1000 caracteres"; 
+      mostrarPopupFinal();
+    };
+  }
+
+  function mostrarPopupFinal() {
+    const popupFinal = document.getElementById("popup");
+    popupFinal.style.display = "flex";
+
+    const aceptarBtn = document.getElementById("aceptarBtn");
+
+  aceptarBtn.replaceWith(aceptarBtn.cloneNode(true));
+  const nuevoBtn = document.getElementById("aceptarBtn");
+
+    nuevoBtn.addEventListener("click", () => {
+      popupFinal.style.display = "none";
+      window.location.href = "../index.html"; 
+    });
+  }
+
 });

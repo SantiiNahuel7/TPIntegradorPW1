@@ -52,7 +52,7 @@ export class Navbar {
 
         </a>
 
-        <form action="../html/Detalle de Curos/detalle-curso.html" method="get" class="barra-busqueda">
+        <form action="../html/detalle-curso.html" method="get" class="barra-busqueda">
           <input list="cursos" name="curso" type="text" placeholder="Buscar...">
           <datalist id="cursos">
             <option value="html">HTML</option>

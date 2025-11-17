@@ -82,27 +82,19 @@ h1 {
     font-weight: bold;
 }
 
-@media (min-width: 768px) {   
-
-    
-}
 
 @media (min-width: 1024px) {
 
     
 .calendario {
-    display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem; 
-    width: 100%; 
-    box-sizing: border-box;
-    padding: 10rem;
+    padding: 2rem;
 }
 
 h1 {
 
-    padding-top: 7rem;
-    font-size: 3rem;
+    padding-top: 4rem;
+    font-size: 2rem;
 }
 
   

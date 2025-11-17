@@ -24,7 +24,6 @@
     <main>
         <h1>Contacto</h1>
         <section class="contacto">
-            <!-- aca empieza el formulario -->
             <form class="form-contacto" action="#" method="get">
                 <label>Nombre y Apellido *</label>
                 <input type="text" name="nombre" required>
@@ -53,46 +52,26 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-container">
+    
+<footer class="footer" >
+        
+        <div class="js-footer"></div>
 
 
-            <div class="footer-col">
-                <h3>Datos Del Grupo</h3>
-                <ul>
-                    <li>Alan Ibañez</li>
-                    <li>Yamila Santillan</li>
-                    <li>Santiago Orellana</li>
-                    <li>Adrián Amarilla</li>
-                    <li>Jennifer Caceres</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Menu Inferior</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html#cursos-destacados">Cursos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-
-
-            <div class="footer-col">
-                <h3>Redes Sociales</h3>
-                <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img
-                            src="../Imagenes/icono-redes/facebook.png"></img></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img
-                            src="../Imagenes/icono-redes/instagram.png"></img></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img
-                            src="../Imagenes/icono-redes/youtube.png"></img></a>
-                </div>
-            </div>
-        </div>
     </footer>
 
-    <!-- ventana-->
+    <!-- aca estan los html de los popup de confirmacion y que manda al inicio-->
+    <div class="overlay" id="popupConfirmacion" style="display: none;">
+  <div class="modal">
+    <h2>Confirmar Envío</h2>
+    <p>¿Estas seguro@ de enviar la consulta con los datos ingresados?<br>
+    Presiona "Cancelar" para desistir o editar tus datos.</p>
+    <button id="enviarBtn">Enviar Mensaje</button>
+    <button id="cancelarConfirmBtn">Cancelar</button>
+  </div>
+</div>
+
+    
 <div class="overlay" id="popup" style="display: none;">
   <div class="modal">
     <h2>Consulta enviada</h2>
@@ -100,6 +79,7 @@
     <button id="aceptarBtn">Aceptar</button>
   </div>
 </div>
+    
     <script src="../js/formularioContacto.js"></script>
     <script type="module" src="../js/main.js"></script>
 </body>
