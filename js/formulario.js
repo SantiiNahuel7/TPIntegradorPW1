@@ -149,13 +149,13 @@ function agregarPersona() {
         
         const nuevoHtmlPersona = `
         <div class="fields">
-            <input type="text" class="nombrePersona" name="firstName${contadorId}" id="firstName${contadorId}" placeholder="Nombre" required title="Debe ingresar el nombre de la persona">
-            <input type="text" class="apellido" name="lastName${contadorId}" id="lastName${contadorId}" placeholder="Apellido" required title="Debe ingresar el apellido de la persona">
-            <input type="text" class="dni" name="dni${contadorId}" id="dni${contadorId}" placeholder="DNI (sin puntos ni espacios)" required title="Debe ingresar el DNI de la persona (sin puntos ni espacios)" maxlength="8">
-            <input type="email" class="email" name="emailEmpresarial${contadorId}" id="emailEmpresarial${contadorId}" placeholder="Email" required title="Debe ingresar el email de la persona">
+            <input type="text" class="nombrePersona" name="firstName${contadorId}" id="firstName${contadorId}" placeholder="Nombre*" required title="Debe ingresar el nombre de la persona">
+            <input type="text" class="apellido" name="lastName${contadorId}" id="lastName${contadorId}" placeholder="Apellido*" required title="Debe ingresar el apellido de la persona">
+            <input type="text" class="dni" name="dni${contadorId}" id="dni${contadorId}" placeholder="DNI* (sin puntos ni espacios)" required title="Debe ingresar el DNI de la persona (sin puntos ni espacios)" maxlength="8">
+            <input type="email" class="email" name="emailEmpresarial${contadorId}" id="emailEmpresarial${contadorId}" placeholder="Email*" required title="Debe ingresar el email de la persona">
             
             <input type="text" class="telefono" name="telefonoEmpresarial${contadorId}" id="telefonoEmpresarial${contadorId}" 
-                   placeholder="Teléfono" required title="Debe ingresar el teléfono de 10 dígitos" 
+                   placeholder="Teléfono*" required title="Debe ingresar el teléfono de 10 dígitos" 
                    maxlength="10" minlength="10">
 
             <div class="resume">

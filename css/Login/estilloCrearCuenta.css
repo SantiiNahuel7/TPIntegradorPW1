@@ -7,6 +7,16 @@
 
 }
 
+body {
+    background-color: #0F111A;
+}
+
+.contenedor-formulario {
+    background-color: #1E1E2E;
+    color: #E0E0E0;
+}
+
+
 .barra-busqueda {
 
     display: flex;
@@ -22,8 +32,7 @@
     outline: none;
     padding: 10px;
     width: 500px;
-    font-weight:normal
-  
+    font-weight: normal
 }
 
 .lupa {
@@ -52,10 +61,10 @@
 
 
 .logo-link {
-    
+
     display: block;
     width: 70px;
-    
+
 
 }
 
@@ -90,14 +99,14 @@
 
 .logo {
 
-width: 7em;
+    width: 7em;
 
 }
 
 .carrito {
 
     margin-right: 20px;
-    
+
 }
 
 .carrito i {
@@ -117,7 +126,7 @@ width: 7em;
     padding-right: 300px;
     background-color: #1E1E2E;
     padding-bottom: 30px;
-    
+
 }
 
 .menu-principal-container {
@@ -136,15 +145,15 @@ width: 7em;
     padding: 0;
     margin: 0;
 
-     
+
 }
 
 
 
 .menu-principal-container li a {
-    margin: 0; 
-    text-decoration: none;   
-    color: #E0E0E0;              
+    margin: 0;
+    text-decoration: none;
+    color: #E0E0E0;
 }
 
 .menu-principal-container li a:hover {
@@ -166,8 +175,9 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #2E3A59;
+    background-color: black;
 }
+
 .contenedor-formulario {
     display: flex;
     flex-direction: column;
@@ -176,31 +186,32 @@ main {
     width: 800px;
     padding-top: 3em;
     padding-bottom: 3em;
-    min-height: 700px; 
+    min-height: 700px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    background-color: #F1F0E8;
+    background-color: #1E1E2E;
+    margin: 2% auto;
 }
 
 .creacion-input {
-  width: 100%;
-  position: relative;
-  margin-bottom: 1em;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1em;
 }
 
-.contenedor-formulario h2{
-    color: #333333;
+.contenedor-formulario h2 {
+    color: #E0E0E0;
     text-align: center;
     font-size: 2em;
     font-weight: 600;
     padding: 1em;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 2em;
     padding-bottom: 2em;
     width: 100%;
@@ -208,60 +219,61 @@ main {
 }
 
 .creacion-input input {
-  width: 100%;
-  padding: 15px 15px 15px 50px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-size: 1em;
-  outline: none;
-  transition: border-color 0.3s ease;
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
-.creacion-input input:focus{
+
+.creacion-input input:focus {
     border-color: #0072ff;
 }
 
-#boton-cuenta{
+#boton-cuenta {
     width: 100%;
-    padding: 1em;
-    background: linear-gradient(to right, #00c6ff, #0072ff); 
+    padding: 15px;
+    background: linear-gradient(to right, #ff9f55, #ff6d00);
     border: none;
     border-radius: 10px;
-    color: #fff;
+    color: #E0E0E0;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
     transition: opacity 0.3s ease;
-    justify-content: center;
 }
 
-#boton-cuenta:hover{
+
+#boton-cuenta:hover {
     opacity: 0.9;
 }
 
 .error-texto {
-  color: #e63946; 
-  font-size: 0.9em;
-  font-weight: 500;
-  position: absolute;
-  left: 0;
-  top: 100%; 
-  width: 100%;
-  word-wrap: break-word;
-  margin-top: 5px;
+    color: #e63946;
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    word-wrap: break-word;
+    margin-top: 5px;
 
 }
 
 dialog {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  padding: 2.5em 3em;
-  width: 90%;
-  max-width: 400px;
-  margin: auto; 
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 2.5em 3em;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 dialog[open] {
@@ -270,86 +282,98 @@ dialog[open] {
 }
 
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px); 
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
 }
 
 .dialog-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .dialog-content .fa-circle-check {
-  font-size: 4em;
-  color: #28a745; 
-  margin-bottom: 20px;
+    font-size: 4em;
+    color: #28a745;
+    margin-bottom: 20px;
 }
 
 .dialog-content h2 {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .dialog-content p {
-  font-size: 1.1em;
-  color: #555;
-  margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 25px;
 }
 
 
 #btn-ir-home {
-  width: 100%;
-  padding: 1em;
-  background: linear-gradient(to right, #00c6ff, #0072ff); 
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 600;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
+    width: 100%;
+    padding: 1em;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
 #btn-ir-home:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 @media (max-width: 768px) {
 
     .barra-superior {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: space-between;
     }
-    .logo-contenedor { order: 1; } 
+
+    .logo-contenedor {
+        order: 1;
+    }
+
     .barra-busqueda {
-        order: 3; 
+        order: 3;
         width: 100%;
         margin: 10px 0;
     }
+
     .barra-busqueda input {
-        width: 100%; 
+        width: 100%;
         padding: 0.8em;
     }
-    .lupa { padding: 0.8em; }
-    .carrito { order: 2; margin-right: 0; }
-    
+
+    .lupa {
+        padding: 0.8em;
+    }
+
+    .carrito {
+        order: 2;
+        margin-right: 0;
+    }
+
     .menu-toggle {
-        display: block; 
+        display: block;
         order: 2;
     }
 
     .menu-principal {
-        display: none; 
+        display: none;
         width: 100%;
         padding: 0;
         padding-bottom: 0;
     }
 
     .menu-principal-container ul {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         width: 100%;
     }
@@ -360,68 +384,78 @@ dialog::backdrop {
         padding: 10px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     .menu-principal-container li:last-child {
         border-bottom: none;
     }
 
     .contenedor {
-        flex-direction: column; 
+        flex-direction: column;
         width: 90%;
-        height: auto; 
+        height: auto;
     }
 
-    .seccion-bienvenida{
-        border-radius: 20px 20px 0 0; 
+    .seccion-bienvenida {
+        border-radius: 20px 20px 0 0;
         min-height: 250px;
-        padding: 3em 1em; 
+        padding: 3em 1em;
     }
 
-    .seccion-bienvenida h1{
+    .seccion-bienvenida h1 {
         font-size: 2.5em;
     }
-    .seccion-bienvenida p{
+
+    .seccion-bienvenida p {
         font-size: 1em;
         max-width: 90%;
     }
-    
-    .seccion-login{
+
+    .seccion-login {
         border-radius: 0 0 20px 20px;
         padding: 30px 20px;
     }
-    .seccion-login h2{
+
+    .seccion-login h2 {
         font-size: 2em;
         margin-bottom: 20px;
     }
+
     .seccion-login form {
         max-width: 400px;
     }
-    .grupo-input input{
-        padding: 12px 12px 12px 45px; 
+
+    .grupo-input input {
+        padding: 12px 12px 12px 45px;
     }
-    
+
     .shape {
         display: none;
     }
 }
 
-@media (max-width: 480px){
-    .contenedor{
+@media (max-width: 480px) {
+    .contenedor {
         width: 95%;
     }
-    .seccion-bienvenida h1{
+
+    .seccion-bienvenida h1 {
         font-size: 2em;
     }
-    .seccion-bienvenida p{
+
+    .seccion-bienvenida p {
         font-size: 0.9em;
     }
-    .seccion-login h2{
+
+    .seccion-login h2 {
         font-size: 1.8em;
     }
-    .opciones{
-        flex-direction: column; 
+
+    .opciones {
+        flex-direction: column;
         gap: 10px;
         align-items: flex-start;
     }
+
     #forgotpass {
         padding-left: 0;
     }
