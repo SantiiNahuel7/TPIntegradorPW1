@@ -20,9 +20,9 @@ export class Footer {
         <div class="footer-col">
           <h3>Menu Inferior</h3>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./html/cursos.html">Cursos</a></li>
-            <li><a href="./html/contacto.html">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/html/cursos.html">Cursos</a></li>
+            <li><a href="/html/contacto.html">Contacto</a></li>
           </ul>
         </div>
 
